@@ -1,4 +1,4 @@
-# 👋 Hi! 
+# Hey there :)
 
 
 ## Find me on the web

@@ -1,4 +1,4 @@
-![Marcel Rojas](https://raw.githubusercontent.com/Char-Al/char-al/master/puzzle.jpg)
+![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/puzzle.jpg)
 
 ## Info
 

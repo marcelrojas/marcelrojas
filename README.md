@@ -1,8 +1,8 @@
-![Charles VAN GOETHEM](https://raw.githubusercontent.com/Char-Al/char-al/master/puzzle.jpg)
+![Marcel Rojas](https://raw.githubusercontent.com/Char-Al/char-al/master/puzzle.jpg)
 
 ## Info
 
-Hi there, I'm Charles a bioinformatics engineer.
+Hi there, I'm Marcel a engineer.
 
 - :computer: I'm currently working for :whale: [MoBiDiC](https://github.com/mobidic) at :hospital: [CHU Montpellier](https://www.chu-montpellier.fr/en/)
 - :school: I'm currently learning : flask, streamlit
@@ -11,10 +11,9 @@ Hi there, I'm Charles a bioinformatics engineer.
 
 <b>Where to find me</b>
 
-[![Github](https://img.shields.io/badge/-Github-181717?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Char-Al)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/charles-van-goethem/)
-[![ResearchGate](https://img.shields.io/badge/-ResearchGate-00CCBB?style=for-the-badge&logo=ResearchGate&logoColor=white)](https://www.researchgate.net/profile/Charles_Van_Goethem)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/Char_Al_)
+[![Github](https://img.shields.io/badge/-Github-181717?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/marcelrojas)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/whyismarcel/)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/marcelrojas_)
 
 [![Twitter](https://github-readme-twitter.gazf.vercel.app/api?id=char_al_&layout=wide)](https://twitter.com/Char_Al_)
 [![TwitterMobidic](https://github-readme-twitter.gazf.vercel.app/api?id=MoBiDiC_BioInfo&layout=wide)](https://twitter.com/MoBiDiC_BioInfo)
@@ -65,14 +64,14 @@ Hi there, I'm Charles a bioinformatics engineer.
 
 <b>Stats</b>
 
-![stats](https://github-readme-stats.vercel.app/api?username=char-al&title_color=3498db&text_color=2ecc71&icon_color=3498db&bg_color=00000000&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=true)
+![stats](https://github-readme-stats.vercel.app/api?username=marcelrojas&title_color=3498db&text_color=2ecc71&icon_color=3498db&bg_color=00000000&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=true)
 ![trophy](https://github-profile-trophy.vercel.app/?username=char-Al&no-bg=true&no-frame=true&column=4&theme=algolia)
 ![graph](https://github-readme-activity-graph.vercel.app/graph?username=char-al&bg_color=0000000&color=2980b9&line=2980b9&point=27ae60&area_color=2980b9&area=true&hide_border=true)
 
-![streak](https://github-contributor-stats.vercel.app/api?username=char-al&title_color=3498db&text_color=2ecc71&icon_color=3498db&bg_color=00000000&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=true)
+![streak](https://github-contributor-stats.vercel.app/api?username=marcelrojas&title_color=3498db&text_color=2ecc71&icon_color=3498db&bg_color=00000000&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=true)
 ![streak](https://streak-stats.demolab.com/?user=char-al&hide_border=true&background=00000000&border=2980b9&stroke=2980b9&ring=27ae60&fire=27ae60&currStreakNum=2980b9&sideNums=2980b9&currStreakLabel=2980b9&sideLabels=2980b9&dates=2980b9)
 
 <!-- Image by <a href="https://pixabay.com/users/gagnonm1993-4710127/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2358911">gagnonm1993</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2358911">Pixabay</a> -->
 
-![](https://komarev.com/ghpvc/?username=Char-Al&style=flat-square&label=Views)
+![](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)
 ![](https://badges.pufler.dev/visits/char-al/char-al?color=black&logo=github&style=flat-square)

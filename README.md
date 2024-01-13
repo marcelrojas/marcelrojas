@@ -65,4 +65,4 @@ Hey there, I'm Marcel a web developer and product designer.
 ![streak](https://streak-stats.demolab.com/?user=marcelrojas&hide_border=true&background=00000000&border=2980b9&stroke=2980b9&ring=27ae60&fire=27ae60&currStreakNum=2980b9&sideNums=2980b9&currStreakLabel=2980b9&sideLabels=2980b9&dates=2980b9)
 
 ![](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)
-![](https://badges.pufler.dev/visits/char-al/char-al?color=black&logo=github&style=flat-square)
+![](https://badges.pufler.dev/visits/marcelrojas/marcelrojas?color=black&logo=github&style=flat-square)

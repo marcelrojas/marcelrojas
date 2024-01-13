@@ -2,11 +2,7 @@
 
 ## Info
 
-Hi there, I'm Marcel a engineer.
-
-- :computer: I'm currently working for :whale: [MoBiDiC](https://github.com/mobidic) at :hospital: [CHU Montpellier](https://www.chu-montpellier.fr/en/)
-- :school: I'm currently learning : flask, streamlit
-- :dart: Fun fact : I already made a Robin Hood in darts (twice)
+Hey there, I'm Marcel a web developer and product designer.
 
 
 <b>Where to find me</b>
@@ -15,8 +11,7 @@ Hi there, I'm Marcel a engineer.
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/whyismarcel/)
 [![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/marcelrojas_)
 
-[![Twitter](https://github-readme-twitter.gazf.vercel.app/api?id=char_al_&layout=wide)](https://twitter.com/Char_Al_)
-[![TwitterMobidic](https://github-readme-twitter.gazf.vercel.app/api?id=MoBiDiC_BioInfo&layout=wide)](https://twitter.com/MoBiDiC_BioInfo)
+[![Twitter](https://github-readme-twitter.gazf.vercel.app/api?id=marcelrojas_&layout=wide)](https://twitter.com/marcelrojas_)
 
 
 <b>Skills</b>

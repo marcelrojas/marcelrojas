@@ -1,11 +1,11 @@
 ![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/puzzle.jpg)
 
-## Info
+## Bio
 
 Hey there, I'm Marcel a web developer and product designer.
 
 
-<b>Where to find me</b>
+<b>Find me on the web</b>
 
 [![Github](https://img.shields.io/badge/-Github-181717?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/marcelrojas)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/whyismarcel/)
@@ -18,9 +18,7 @@ Hey there, I'm Marcel a web developer and product designer.
 [![perl](https://img.shields.io/badge/perl-★★☆-lightgrey?labelColor=39457E&logo=Perl&style=for-the-badge&logoColor=white)](https://www.perl.org/)
 [![R](https://img.shields.io/badge/R-★★☆-lightgrey?labelColor=276DC3&logo=R&style=for-the-badge&logoColor=white)](https://www.r-project.org/)
 
-[![mariaDB](https://img.shields.io/badge/MariaDB-★★☆-lightgrey?labelColor=003545&logo=MariaDB&style=for-the-badge&logoColor=white)](https://mariadb.org/)
-[![SQLite](https://img.shields.io/badge/SQLite-★★☆-lightgrey?labelColor=003B57&logo=SQLite&style=for-the-badge&logoColor=white)](https://www.sqlite.org/)
-[![postgreSQL](https://img.shields.io/badge/PostgreSQL-★★☆-lightgrey?labelColor=4169E1&logo=PostgreSQL&style=for-the-badge&logoColor=white)](https://www.postgresql.org/)
+
 [![mongoDB](https://img.shields.io/badge/MongoDB-★☆☆-lightgrey?labelColor=47A248&logo=MongoDB&style=for-the-badge&logoColor=white)](https://www.mongodb.com/)
 
 

@@ -27,7 +27,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 
 ![json](https://img.shields.io/badge/json-★★★-grey?labelColor=323330&logo=json&style=for-the-badge&logoColor=pink)
-![json web tokens](https://img.shields.io/badge/json_web_tokens-★★★-grey?labelColor=000000&logo=json-web-tokens&style=for-the-badge&logoColor=white)]
+![json web tokens](https://img.shields.io/badge/json_web_tokens-★★★-grey?labelColor=000000&logo=json-web-tokens&style=for-the-badge&logoColor=pink)
 
 
 [![html](https://img.shields.io/badge/html-★★★-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)](https://www.w3schools.com/html)

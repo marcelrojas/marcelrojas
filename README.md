@@ -27,7 +27,6 @@ Hey there, I'm Marcel a web developer and product designer.
 [![bash](https://img.shields.io/badge/bash-★★★-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 
 
-![xml](https://img.shields.io/badge/xml-★★★-grey?labelColor=323330&logo=xml&style=for-the-badge&logoColor=white)
 ![json](https://img.shields.io/badge/json-★★★-grey?labelColor=323330&logo=json&style=for-the-badge&logoColor=pink)
 ![json web tokens](https://img.shields.io/badge/json_web_tokens-★★★-grey?labelColor=323330&logo=json-web-tokens&style=for-the-badge&logoColor=pink)
 

@@ -18,7 +18,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Skills</b>
 
-![nextjs](https://img.shields.io/badge/nextjs-★★☆-grey?labelColor=000000&logo=nextjs&style=for-the-badge&logoColor=white)
+![react](https://img.shields.io/badge/react-★★☆-grey?labelColor=20232A&logo=react&style=for-the-badge&logoColor=white)
 ![python](https://img.shields.io/badge/python-★★☆-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
 ![markdown](https://img.shields.io/badge/markdown-★★★-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)
 

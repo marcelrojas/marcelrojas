@@ -49,14 +49,18 @@ Hey there, I'm Marcel a web developer and product designer.
 ![iOS](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&style=for-the-badge&logoColor=white)
 
+
 ![atom](https://img.shields.io/badge/atom-66595C?logo=Atom&style=for-the-badge&logoColor=white)
 ![vim](https://img.shields.io/badge/vim-019733?logo=Vim&style=for-the-badge&logoColor=white)
 ![nano](https://img.shields.io/badge/nano-000000?logo=nano&style=for-the-badge&logoColor=white)
 
-![Git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)
-![Overleaf](https://img.shields.io/badge/overleaf-47A141?logo=overleaf&style=for-the-badge&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-000000?logo=vercel&style=for-the-badge&logoColor=white)
+
+![git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)
+![overleaf](https://img.shields.io/badge/overleaf-47A141?logo=overleaf&style=for-the-badge&logoColor=white)
+![vercel](https://img.shields.io/badge/vercel-000000?logo=vercel&style=for-the-badge&logoColor=white)
+![netlify](https://img.shields.io/badge/netlify-00C7B7?logo=netlify&style=for-the-badge&logoColor=white)
 ![cloudflare](https://img.shields.io/badge/cloudflare-F38020?logo=cloudflare&style=for-the-badge&logoColor=white)
+
 
 ![Django](https://img.shields.io/badge/django-092E20?logo=django&style=for-the-badge&logoColor=white)
 ![flask](https://img.shields.io/badge/flask-000000?logo=flask&style=for-the-badge&logoColor=white)
@@ -69,8 +73,10 @@ Hey there, I'm Marcel a web developer and product designer.
 ![trophy](https://github-profile-trophy.vercel.app/?username=marcelrojas&no-bg=true&no-frame=true&column=4&theme=algolia)
 ![graph](https://github-readme-activity-graph.vercel.app/graph?username=marcelrojas&bg_color=0000000&color=2980b9&line=2980b9&point=27ae60&area_color=2980b9&area=true&hide_border=true)
 
+
 ![streak](https://github-contributor-stats.vercel.app/api?username=marcelrojas&title_color=3498db&text_color=2ecc71&icon_color=3498db&bg_color=00000000&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=true)
 ![streak](https://streak-stats.demolab.com/?user=marcelrojas&hide_border=true&background=00000000&border=2980b9&stroke=2980b9&ring=27ae60&fire=27ae60&currStreakNum=2980b9&sideNums=2980b9&currStreakLabel=2980b9&sideLabels=2980b9&dates=2980b9)
+
 
 ![](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)
 ![](https://badges.pufler.dev/visits/marcelrojas/marcelrojas?color=black&logo=github&style=flat-square)

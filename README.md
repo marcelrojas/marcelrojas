@@ -34,12 +34,14 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>OS & Tools</b>
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=Linux&style=for-the-badge&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&style=for-the-badge&logoColor=black)
 ![FreeBSD](https://img.shields.io/badge/freebsd-AB2B28?logo=freebsd&style=for-the-badge&logoColor=white)
+![Gentoo](https://img.shields.io/badge/Gentoo-54487A?logo=gentoo&style=for-the-badge&logoColor=white)
 ![Kali](https://img.shields.io/badge/Kali_Linux-557C94?logo=kali-linux&style=for-the-badge&logoColor=white)
 ![Arch](https://img.shields.io/badge/Arch_Linux-1793D1?logo=arch-linux&style=for-the-badge&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
-![Mac_OS](https://img.shields.io/badge/Mac_OS-999999?logo=Apple&style=for-the-badge&logoColor=white)
+![Mac_OS](https://img.shields.io/badge/Mac_OS-999999?logo=apple&style=for-the-badge&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-003399?logo=windows&style=for-the-badge&logoColor=white)
 
 ![atom](https://img.shields.io/badge/-atom-66595C?logo=Atom&style=for-the-badge&logoColor=white)
 ![vim](https://img.shields.io/badge/-vim-019733?logo=Vim&style=for-the-badge&logoColor=white)

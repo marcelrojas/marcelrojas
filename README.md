@@ -57,10 +57,11 @@ Hey there, I'm Marcel a web developer and product designer.
 ![Overleaf](https://img.shields.io/badge/-Overleaf-47A141?logo=overleaf&style=for-the-badge&logoColor=white)
 ![Vercel](https://img.shields.io/badge/-vercel-000000?logo=vercel&style=for-the-badge&logoColor=white)
 
-![Django](https://img.shields.io/badge/-Django-092E20?logo=Django&style=for-the-badge&logoColor=white)
-![flask](https://img.shields.io/badge/-flask-000000?logo=flask&style=for-the-badge&logoColor=white)
-![jinja](https://img.shields.io/badge/-jinja-B41717?logo=jinja&style=for-the-badge&logoColor=white)
+![Django](https://img.shields.io/badge/django-092E20?logo=django&style=for-the-badge&logoColor=white)
+![flask](https://img.shields.io/badge/flask-000000?logo=flask&style=for-the-badge&logoColor=white)
+![jinja](https://img.shields.io/badge/jinja-B41717?logo=jinja&style=for-the-badge&logoColor=white)
 
+![notion](https://img.shields.io/badge/notion-white?logo=jinja&style=for-the-badge&logoColor=black)
 
 <b>Stats</b>
 

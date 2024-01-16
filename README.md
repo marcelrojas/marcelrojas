@@ -56,7 +56,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![Git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)
 ![Overleaf](https://img.shields.io/badge/overleaf-47A141?logo=overleaf&style=for-the-badge&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-000000?logo=vercel&style=for-the-badge&logoColor=white)
-![claudflare](https://img.shields.io/badge/cloudflsre-F38020?logo=jinja&style=for-the-badge&logoColor=white)
+![cloudflare](https://img.shields.io/badge/cloudflare-F38020?logo=cloudflare&style=for-the-badge&logoColor=white)
 
 ![Django](https://img.shields.io/badge/django-092E20?logo=django&style=for-the-badge&logoColor=white)
 ![flask](https://img.shields.io/badge/flask-000000?logo=flask&style=for-the-badge&logoColor=white)

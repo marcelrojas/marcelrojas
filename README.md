@@ -46,9 +46,9 @@ Hey there, I'm Marcel a web developer and product designer.
 ![iOS](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&style=for-the-badge&logoColor=white)
 
-![atom](https://img.shields.io/badge/-atom-66595C?logo=Atom&style=for-the-badge&logoColor=white)
-![vim](https://img.shields.io/badge/-vim-019733?logo=Vim&style=for-the-badge&logoColor=white)
-![Rstudio](https://img.shields.io/badge/-Rstudio-75AADB?logo=RStudio&style=for-the-badge&logoColor=white)
+![atom](https://img.shields.io/badge/atom-66595C?logo=Atom&style=for-the-badge&logoColor=white)
+![vim](https://img.shields.io/badge/vim-019733?logo=Vim&style=for-the-badge&logoColor=white)
+![nano](https://img.shields.io/badge/nano-000000?logo=nano&style=for-the-badge&logoColor=white)
 
 ![Git](https://img.shields.io/badge/-Git-F05032?logo=Git&style=for-the-badge&logoColor=white)
 ![Github](https://img.shields.io/badge/-Github-181717?logo=Github&style=for-the-badge&logoColor=white)

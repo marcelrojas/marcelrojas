@@ -1,4 +1,4 @@
-![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/puzzle.jpg)
+![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/ryomen-sukuna.png)
 
 ## Bio
 

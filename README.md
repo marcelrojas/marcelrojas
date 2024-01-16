@@ -17,20 +17,20 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Skills</b>
 
-![nextjs](https://img.shields.io/badge/nextjs-★★☆-lightgrey?labelColor=000000&logo=nextjd&style=for-the-badge&logoColor=white)
-![python](https://img.shields.io/badge/python-★★★-lightgrey?labelColor=3776AB&logo=Python&style=for-the-badge&logoColor=white)
-![R](https://img.shields.io/badge/R-★☆☆-lightgrey?labelColor=276DC3&logo=R&style=for-the-badge&logoColor=white)
+![nextjs](https://img.shields.io/badge/nextjs-★★☆-grey?labelColor=000000&logo=nextjd&style=for-the-badge&logoColor=white)
+![python](https://img.shields.io/badge/python-★★★-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
+![R](https://img.shields.io/badge/R-★☆☆-grey?labelColor=276DC3&logo=r&style=for-the-badge&logoColor=white)
 
 
-![mongoDB](https://img.shields.io/badge/MongoDB-★☆☆-lightgrey?labelColor=47A248&logo=MongoDB&style=for-the-badge&logoColor=white)
 
 
-[![bash](https://img.shields.io/badge/bash-★★★-lightgrey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+
+[![bash](https://img.shields.io/badge/bash-★★★-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 
 
-[![html](https://img.shields.io/badge/html-★★★-lightgrey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)](https://www.w3schools.com/html)
-[![css](https://img.shields.io/badge/css-★★★-lightgrey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)](https://www.w3schools.com/css)
-[![javascript](https://img.shields.io/badge/javascript-★★☆-lightgrey?labelColor=F7DF1E&logo=JavaScript&style=for-the-badge&logoColor=black)](https://www.w3schools.com/js)
+[![html](https://img.shields.io/badge/html-★★★-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)](https://www.w3schools.com/html)
+[![css](https://img.shields.io/badge/css-★★★-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)](https://www.w3schools.com/css)
+[![javascript](https://img.shields.io/badge/javascript-★★☆-grey?labelColor=F7DF1E&logo=JavaScript&style=for-the-badge&logoColor=black)](https://www.w3schools.com/js)
 
 
 <b>OS & Tools</b>
@@ -51,14 +51,13 @@ Hey there, I'm Marcel a web developer and product designer.
 ![vim](https://img.shields.io/badge/vim-019733?logo=Vim&style=for-the-badge&logoColor=white)
 ![nano](https://img.shields.io/badge/nano-000000?logo=nano&style=for-the-badge&logoColor=white)
 
-![Git](https://img.shields.io/badge/-Git-F05032?logo=Git&style=for-the-badge&logoColor=white)
-![Overleaf](https://img.shields.io/badge/-Overleaf-47A141?logo=Overleaf&style=for-the-badge&logoColor=white)
-![Vercel](https://img.shields.io/badge/-vercel-000000?logo=Vercel&style=for-the-badge&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?logo=git&style=for-the-badge&logoColor=white)
+![Overleaf](https://img.shields.io/badge/-Overleaf-47A141?logo=overleaf&style=for-the-badge&logoColor=white)
+![Vercel](https://img.shields.io/badge/-vercel-000000?logo=vercel&style=for-the-badge&logoColor=white)
 
 ![Django](https://img.shields.io/badge/-Django-092E20?logo=Django&style=for-the-badge&logoColor=white)
-![flask](https://img.shields.io/badge/-flask-000000?logo=Flask&style=for-the-badge&logoColor=white)
-![Pelican](https://img.shields.io/badge/-Pelican-14A0C4?logo=Pelican&style=for-the-badge&logoColor=white)
-![jinja](https://img.shields.io/badge/-jinja-B41717?logo=Jinja&style=for-the-badge&logoColor=white)
+![flask](https://img.shields.io/badge/-flask-000000?logo=flask&style=for-the-badge&logoColor=white)
+![jinja](https://img.shields.io/badge/-jinja-B41717?logo=jinja&style=for-the-badge&logoColor=white)
 
 
 <b>Stats</b>

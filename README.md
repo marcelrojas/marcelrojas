@@ -42,6 +42,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![Kali](https://img.shields.io/badge/Kali_Linux-557C94?logo=kali-linux&style=for-the-badge&logoColor=white)
 ![Arch](https://img.shields.io/badge/Arch_Linux-1793D1?logo=arch-linux&style=for-the-badge&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&style=for-the-badge&logoColor=white)
 ![Mac_OS](https://img.shields.io/badge/Mac_OS-999999?logo=macos&style=for-the-badge&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-003399?logo=windows&style=for-the-badge&logoColor=white)
 

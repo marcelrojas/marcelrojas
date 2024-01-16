@@ -7,9 +7,9 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Find me on the web</b>
 
-[![Github](https://img.shields.io/badge/-Github-181717?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/marcelrojas)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/whyismarcel/)
-[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/marcelrojas_)
+[![Github](https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/marcelrojas)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/whyismarcel/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/marcelrojas_)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/marcelrojas_)
 
 
@@ -33,9 +33,10 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>OS & Tools</b>
 
-![Linux](https://img.shields.io/badge/-Linux-FCC624?logo=Linux&style=for-the-badge&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=Linux&style=for-the-badge&logoColor=black)
 ![Arch](https://img.shields.io/badge/Arch_Linux-1793D1?logo=arch-linux&style=for-the-badge&logoColor=white)
-![Mac_OS](https://img.shields.io/badge/-Mac_OS-999999?logo=Apple&style=for-the-badge&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
+![Mac_OS](https://img.shields.io/badge/Mac_OS-999999?logo=Apple&style=for-the-badge&logoColor=white)
 
 ![atom](https://img.shields.io/badge/-atom-66595C?logo=Atom&style=for-the-badge&logoColor=white)
 ![vim](https://img.shields.io/badge/-vim-019733?logo=Vim&style=for-the-badge&logoColor=white)

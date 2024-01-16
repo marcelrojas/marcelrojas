@@ -53,7 +53,6 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![atom](https://img.shields.io/badge/atom-66595C?logo=Atom&style=for-the-badge&logoColor=white)
 ![vim](https://img.shields.io/badge/vim-019733?logo=Vim&style=for-the-badge&logoColor=white)
-![nano](https://img.shields.io/badge/nano-000000?logo=nano&style=for-the-badge&logoColor=white)
 
 
 ![git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)

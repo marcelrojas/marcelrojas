@@ -60,6 +60,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 
 ![git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)
+![homebrew](https://img.shields.io/badge/homebrew-F05032?logo=homebrew&style=for-the-badge&logoColor=white)
 ![overleaf](https://img.shields.io/badge/overleaf-47A141?logo=overleaf&style=for-the-badge&logoColor=white)
 ![vercel](https://img.shields.io/badge/vercel-000000?logo=vercel&style=for-the-badge&logoColor=white)
 ![netlify](https://img.shields.io/badge/netlify-00C7B7?logo=netlify&style=for-the-badge&logoColor=white)

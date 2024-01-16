@@ -20,13 +20,13 @@ Hey there, I'm Marcel a web developer and product designer.
 ![nextjs](https://img.shields.io/badge/nextjs-★★☆-grey?labelColor=000000&logo=nextjd&style=for-the-badge&logoColor=white)
 ![python](https://img.shields.io/badge/python-★★☆-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
 ![r](https://img.shields.io/badge/r-★☆☆-grey?labelColor=276DC3&logo=r&style=for-the-badge&logoColor=white)
-![json](https://img.shields.io/badge/json-★★★-grey?labelColor=323330&logo=json&style=for-the-badge&logoColor=pink)]
 ![markdown](https://img.shields.io/badge/markdown-★★★-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)]
 
 
-
-
 [![bash](https://img.shields.io/badge/bash-★★★-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+
+
+![json](https://img.shields.io/badge/json-★★★-grey?labelColor=323330&logo=json&style=for-the-badge&logoColor=pink)]
 
 
 [![html](https://img.shields.io/badge/html-★★★-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)](https://www.w3schools.com/html)

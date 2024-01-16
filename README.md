@@ -61,7 +61,6 @@ Hey there, I'm Marcel a web developer and product designer.
 ![flask](https://img.shields.io/badge/flask-000000?logo=flask&style=for-the-badge&logoColor=white)
 ![jinja](https://img.shields.io/badge/jinja-B41717?logo=jinja&style=for-the-badge&logoColor=white)
 
-![notion](https://img.shields.io/badge/notion-white?logo=jinja&style=for-the-badge&logoColor=black)
 
 <b>Stats</b>
 

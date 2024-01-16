@@ -16,7 +16,6 @@ Hey there, I'm Marcel a web developer and product designer.
 <b>Skills</b>
 
 [![python](https://img.shields.io/badge/python-★★★-lightgrey?labelColor=3776AB&logo=Python&style=for-the-badge&logoColor=white)](https://www.python.org/)
-[![perl](https://img.shields.io/badge/perl-★★☆-lightgrey?labelColor=39457E&logo=Perl&style=for-the-badge&logoColor=white)](https://www.perl.org/)
 [![R](https://img.shields.io/badge/R-★★☆-lightgrey?labelColor=276DC3&logo=R&style=for-the-badge&logoColor=white)](https://www.r-project.org/)
 
 

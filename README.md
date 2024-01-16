@@ -36,6 +36,8 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&style=for-the-badge&logoColor=black)
 ![FreeBSD](https://img.shields.io/badge/freebsd-AB2B28?logo=freebsd&style=for-the-badge&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&style=for-the-badge&logoColor=white)
+![Fedora](https://img.shields.io/badge/Fedora-294172?logo=fedora&style=for-the-badge&logoColor=white)
 ![Gentoo](https://img.shields.io/badge/Gentoo-54487A?logo=gentoo&style=for-the-badge&logoColor=white)
 ![Kali](https://img.shields.io/badge/Kali_Linux-557C94?logo=kali-linux&style=for-the-badge&logoColor=white)
 ![Arch](https://img.shields.io/badge/Arch_Linux-1793D1?logo=arch-linux&style=for-the-badge&logoColor=white)

@@ -19,7 +19,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![nextjs](https://img.shields.io/badge/nextjs-★★☆-grey?labelColor=000000&logo=nextjd&style=for-the-badge&logoColor=white)
 ![python](https://img.shields.io/badge/python-★★☆-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
-![R](https://img.shields.io/badge/r-★☆☆-grey?labelColor=276DC3&logo=r&style=for-the-badge&logoColor=white)
+![r](https://img.shields.io/badge/r-★☆☆-grey?labelColor=276DC3&logo=r&style=for-the-badge&logoColor=white)
 ![markdown](https://img.shields.io/badge/markdown-★★★-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)]
 
 
@@ -30,7 +30,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 [![html](https://img.shields.io/badge/html-★★★-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)](https://www.w3schools.com/html)
 [![css](https://img.shields.io/badge/css-★★★-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)](https://www.w3schools.com/css)
-[![javascript](https://img.shields.io/badge/javascript-★★☆-grey?labelColor=F7DF1E&logo=JavaScript&style=for-the-badge&logoColor=black)](https://www.w3schools.com/js)
+[![javascript](https://img.shields.io/badge/javascript-★★☆-grey?labelColor=F7DF1E&logo=javascript&style=for-the-badge&logoColor=black)](https://www.w3schools.com/js)
 
 
 <b>OS & Tools</b>

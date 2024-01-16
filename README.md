@@ -24,6 +24,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![nuxt](https://img.shields.io/badge/nuxt.js-★★☆-grey?labelColor=00DC82&logo=nuxt.js&style=for-the-badge&logoColor=white)
 ![python](https://img.shields.io/badge/python-★★☆-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
 ![markdown](https://img.shields.io/badge/markdown-★★★-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)
+![jquery](https://img.shields.io/badge/jquery-★★☆-grey?labelColor=0769AD&logo=jquery&style=for-the-badge&logoColor=white)
 
 
 [![bash](https://img.shields.io/badge/bash-★★★-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))

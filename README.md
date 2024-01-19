@@ -56,6 +56,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![vim](https://img.shields.io/badge/vim-019733?logo=vim&style=for-the-badge&logoColor=white)
 ![unity](https://img.shields.io/badge/unity-000000?logo=unity&style=for-the-badge&logoColor=white)
 ![webflow](https://img.shields.io/badge/webflow-000000?logo=webflow&style=for-the-badge&logoColor=white)
+![framer](https://img.shields.io/badge/framer-000000?logo=framer&style=for-the-badge&logoColor=white)
 
 
 ![git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)

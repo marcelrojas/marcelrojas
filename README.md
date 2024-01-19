@@ -71,11 +71,6 @@ Hey there, I'm Marcel a web developer and product designer.
 ![cloudflare](https://img.shields.io/badge/cloudflare-F38020?logo=cloudflare&style=for-the-badge&logoColor=white)
 
 
-![Django](https://img.shields.io/badge/django-092E20?logo=django&style=for-the-badge&logoColor=white)
-![flask](https://img.shields.io/badge/flask-000000?logo=flask&style=for-the-badge&logoColor=white)
-![jinja](https://img.shields.io/badge/jinja-B41717?logo=jinja&style=for-the-badge&logoColor=white)
-
-
 <b>Stats</b>
 
 ![stats](https://github-readme-stats.vercel.app/api?username=marcelrojas&title_color=3498db&text_color=2ecc71&icon_color=3498db&bg_color=00000000&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=true)

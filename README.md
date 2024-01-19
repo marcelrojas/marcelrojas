@@ -7,7 +7,6 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Find me on the web</b>
 
-[![github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/marcelrojas)
 [![behance](https://img.shields.io/badge/behance-blue?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/whyismarcel)
 [![linkedin](https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/whyismarcel)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/marcelrojas_)

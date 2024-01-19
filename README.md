@@ -57,6 +57,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![unity](https://img.shields.io/badge/unity-000000?logo=unity&style=for-the-badge&logoColor=white)
 ![webflow](https://img.shields.io/badge/webflow-146EF5?logo=webflow&style=for-the-badge&logoColor=white)
 ![framer](https://img.shields.io/badge/framer-0055FF?logo=framer&style=for-the-badge&logoColor=white)
+![figma](https://img.shields.io/badge/figma-F24E1E?logo=figma&style=for-the-badge&logoColor=white)
 
 
 ![git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)

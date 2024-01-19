@@ -48,7 +48,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![gentoo](https://img.shields.io/badge/gentoo-54487A?logo=gentoo&style=for-the-badge&logoColor=white)
 ![kali](https://img.shields.io/badge/kali_linux-557C94?logo=kali-linux&style=for-the-badge&logoColor=white)
 ![MacOS](https://img.shields.io/badge/Mac_OS-999999?logo=macos&style=for-the-badge&logoColor=white)
-![windows](https://img.shields.io/badge/windows-003399?logo=windows&style=for-the-badge&logoColor=white)
+![windows](https://img.shields.io/badge/windows-0078D4?logo=windows&style=for-the-badge&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
 ![android](https://img.shields.io/badge/android-3DDC84?logo=android&style=for-the-badge&logoColor=white)
 

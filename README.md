@@ -61,6 +61,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&style=for-the-badge&logoColor=white)
+![yarn](https://img.shields.io/badge/yarn-000000?logo=yarn&style=for-the-badge&logoColor=white)
 ![homebrew](https://img.shields.io/badge/homebrew-FBB040?logo=homebrew&style=for-the-badge&logoColor=black)
 
 

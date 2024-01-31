@@ -19,10 +19,10 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![react](https://img.shields.io/badge/react-★★☆-grey?labelColor=20232A&logo=react&style=for-the-badge&logoColor=white)
 ![vue](https://img.shields.io/badge/vue.js-★★☆-grey?labelColor=35495E&logo=vue.js&style=for-the-badge&logoColor=white)
-![svelte](https://img.shields.io/badge/svelte.js-★★☆-grey?labelColor=00DC82&logo=svelte.js&style=for-the-badge&logoColor=white)
+![svelte](https://img.shields.io/badge/svelte-★★☆-grey?labelColor=00DC82&logo=svelte&style=for-the-badge&logoColor=white)
 ![next](https://img.shields.io/badge/next.js-★★☆-grey?labelColor=000000&logo=next.js&style=for-the-badge&logoColor=white)
 ![nuxt](https://img.shields.io/badge/nuxt.js-★★☆-grey?labelColor=00DC82&logo=nuxt.js&style=for-the-badge&logoColor=white)
-![astro](https://img.shields.io/badge/astro.js-★★☆-grey?labelColor=00DC82&logo=astro.js&style=for-the-badge&logoColor=white)
+![astro](https://img.shields.io/badge/astro-★★☆-grey?labelColor=00DC82&logo=astro&style=for-the-badge&logoColor=white)
 ![python](https://img.shields.io/badge/python-★★☆-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
 ![markdown](https://img.shields.io/badge/markdown-★★★-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)
 ![jquery](https://img.shields.io/badge/jquery-★★☆-grey?labelColor=0769AD&logo=jquery&style=for-the-badge&logoColor=white)

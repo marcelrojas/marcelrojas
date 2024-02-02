@@ -6,12 +6,12 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Find me on the web</b>
 
-[![behance](https://img.shields.io/badge/behance-blue?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/whyismarcel)
-[![linkedin](https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/whyismarcel)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/marcelrojas_)
-[![instagram](https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/marcelrojas_/)
-[![youtube](https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@marcelrojas)
-[![spotify](https://img.shields.io/badge/spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)](https://spotify.link/ibS5498edEb)
+[![behance]
+(https://img.shields.io/badge/behance-blue?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/whyismarcel)
+[![linkedin]
+(https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/whyismarcel)
+[![instagram]
+(https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/marcelrojas_/)
 
 
 <b>Skills</b>
@@ -27,16 +27,16 @@ Hey there, I'm Marcel a web developer and product designer.
 ![jquery](https://img.shields.io/badge/jquery-██░-grey?labelColor=0769AD&logo=jquery&style=for-the-badge&logoColor=white)
 
 
-[![bash](https://img.shields.io/badge/bash-███-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+![bash](https://img.shields.io/badge/bash-███-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)
 
 
 ![json](https://img.shields.io/badge/json-███-grey?labelColor=323330&logo=json&style=for-the-badge&logoColor=white)
 ![json web tokens](https://img.shields.io/badge/json_web_tokens-███-grey?labelColor=323330&logo=json-web-tokens&style=for-the-badge&logoColor=white)
 
 
-[![html](https://img.shields.io/badge/html-███-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)](https://www.w3schools.com/html)
-[![css](https://img.shields.io/badge/css-███-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)](https://www.w3schools.com/css)
-[![javascript](https://img.shields.io/badge/javascript-██░-grey?labelColor=F7DF1E&logo=javascript&style=for-the-badge&logoColor=black)](https://www.w3schools.com/js)
+![html](https://img.shields.io/badge/html-███-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)
+![css](https://img.shields.io/badge/css-███-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)
+![javascript](https://img.shields.io/badge/javascript-██░-grey?labelColor=F7DF1E&logo=javascript&style=for-the-badge&logoColor=black)
 
 
 <b>OS & Tools</b>
@@ -70,6 +70,11 @@ Hey there, I'm Marcel a web developer and product designer.
 ![vercel](https://img.shields.io/badge/vercel-000000?logo=vercel&style=for-the-badge&logoColor=white)
 ![netlify](https://img.shields.io/badge/netlify-00C7B7?logo=netlify&style=for-the-badge&logoColor=white)
 ![cloudflare](https://img.shields.io/badge/cloudflare-F38020?logo=cloudflare&style=for-the-badge&logoColor=white)
+
+![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
+
+![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+
 
 
 <b>Stats</b>

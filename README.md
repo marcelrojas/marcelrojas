@@ -1,6 +1,5 @@
 ![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/ryomen-sukuna.png)
 
-## Bio
 
 Hey there, I'm Marcel a web developer and product designer.
 

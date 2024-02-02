@@ -6,12 +6,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Find me on the web</b>
 
-[![behance]
-(https://img.shields.io/badge/behance-blue?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/whyismarcel)
-[![linkedin]
-(https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/whyismarcel)
-[![instagram]
-(https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/marcelrojas_/)
+[![behance](https://img.shields.io/badge/behance-blue?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/whyismarcel)
 
 
 <b>Skills</b>

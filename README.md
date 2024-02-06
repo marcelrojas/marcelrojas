@@ -54,18 +54,6 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>OS & Tools</b>
 
-![linux](https://img.shields.io/badge/linux-FCC624?logo=linux&style=for-the-badge&logoColor=black)
-![freebsd](https://img.shields.io/badge/freebsd-AB2B28?logo=freebsd&style=for-the-badge&logoColor=white)
-![debian](https://img.shields.io/badge/debian-A81D33?logo=debian&style=for-the-badge&logoColor=white)
-![fedora](https://img.shields.io/badge/fedora-294172?logo=fedora&style=for-the-badge&logoColor=white)
-![arch](https://img.shields.io/badge/arch_linux-1793D1?logo=arch-linux&style=for-the-badge&logoColor=white)
-![gentoo](https://img.shields.io/badge/gentoo-54487A?logo=gentoo&style=for-the-badge&logoColor=white)
-![kali](https://img.shields.io/badge/kali_linux-557C94?logo=kali-linux&style=for-the-badge&logoColor=white)
-![Macos](https://img.shields.io/badge/Mac_OS-999999?logo=macos&style=for-the-badge&logoColor=white)
-![windows](https://img.shields.io/badge/windows-0078D4?logo=windows&style=for-the-badge&logoColor=white)
-![ios](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
-![android](https://img.shields.io/badge/android-3DDC84?logo=android&style=for-the-badge&logoColor=white)
-
 
 ![vim](https://img.shields.io/badge/vim-019733?logo=vim&style=for-the-badge&logoColor=white)
 ![unity](https://img.shields.io/badge/unity-000000?logo=unity&style=for-the-badge&logoColor=white)
@@ -84,6 +72,18 @@ Hey there, I'm Marcel a web developer and product designer.
 ![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
 ### OS & Tools:
+
+![linux](https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![freebsd](https://img.shields.io/badge/freebsd-AB2B28?style=for-the-badge&logo=freebsd&logoColor=white)
+![debian](https://img.shields.io/badge/debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![fedora](https://img.shields.io/badge/fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
+![arch](https://img.shields.io/badge/arch_linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+![gentoo](https://img.shields.io/badge/gentoo-54487A?style=for-the-badge&logo=gentoo&logoColor=white)
+![kali](https://img.shields.io/badge/kali_linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
+![Macos](https://img.shields.io/badge/Mac_OS-999999?style=for-the-badge&logo=macos&logoColor=white)
+![windows](https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
+![android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
 ![vscode](https://img.shields.io/badge/visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![intelij](https://img.shields.io/badge/intellij_idea-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)

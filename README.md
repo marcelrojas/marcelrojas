@@ -100,6 +100,5 @@ Hey there, I'm Marcel a web developer and product designer.
 <img align="center" src="https://readmestats.999857.xyz/api?username=marcelrojas&show_icons=true&locale=en&theme=tokyonight" alt="Marcel Rojas">
 </p>
 
-![](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)
-
-![](https://badges.pufler.dev/visits/marcelrojas/marcelrojas?style=flat-square&logo=github&color=black)
+![Views](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)
+![Visits](https://badges.pufler.dev/visits/marcelrojas/marcelrojas?style=flat-square&logo=github&color=black)

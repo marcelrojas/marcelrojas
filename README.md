@@ -85,7 +85,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
 ![android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
-### - IDEs:
+#### - IDEs:
 
 ![vscode](https://img.shields.io/badge/visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![intelij](https://img.shields.io/badge/intellij_idea-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)

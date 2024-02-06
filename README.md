@@ -1,7 +1,5 @@
 ![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/ryomen-sukuna.png)
 
-<p>&nbsp;<img align="center" src="https://readmestats.999857.xyz/api?username=marcelrojas&show_icons=true&locale=en&theme=tokyonight" alt="Marcel Rojas" /></p>
-
 
 Hey there, I'm Marcel a web developer and product designer.
 
@@ -88,6 +86,10 @@ Hey there, I'm Marcel a web developer and product designer.
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
+#### - Database:
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+
 
 ### DevOps ♾️:
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
@@ -96,6 +98,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Stats</b>
 
+<p>&nbsp;<img align="center" src="https://readmestats.999857.xyz/api?username=marcelrojas&show_icons=true&locale=en&theme=tokyonight" alt="Marcel Rojas"></p>
 
 ![](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)
 ![](https://badges.pufler.dev/visits/marcelrojas/marcelrojas?color=black&logo=github&style=flat-square)

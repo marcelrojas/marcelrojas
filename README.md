@@ -67,11 +67,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![homebrew](https://img.shields.io/badge/homebrew-FBB040?logo=homebrew&style=for-the-badge&logoColor=black)
 
 
-![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
-
-![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
-
-### OS & Tools:
+### OS & Tools
 
 ![linux](https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![freebsd](https://img.shields.io/badge/freebsd-AB2B28?style=for-the-badge&logo=freebsd&logoColor=white)
@@ -99,6 +95,10 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+
+![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
+![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
 
 ## DevOps:

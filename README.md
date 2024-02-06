@@ -6,31 +6,31 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Find me on the web</b>
 
-[![behance](https://img.shields.io/badge/behance-blue?style=for-the-badge&logo=behance&logoColor=white)](https://www.behance.net/whyismarcel)
+[![My links](https://img.shields.io/badge/behance?style=for-the-badge&logo=behance&logoColor=white)](https://bento.me/marcelrojas)
 
 
 <b>Skills</b>
 
-![react](https://img.shields.io/badge/react-█░░-grey?labelColor=20232A&logo=react&style=for-the-badge&logoColor=white)
-![vue](https://img.shields.io/badge/vue.js-█░░-grey?labelColor=35495E&logo=vue.js&style=for-the-badge&logoColor=white)
-![svelte](https://img.shields.io/badge/svelte-██░-grey?labelColor=FF3E00&logo=svelte&style=for-the-badge&logoColor=white)
-![next](https://img.shields.io/badge/next.js-█░░-grey?labelColor=000000&logo=next.js&style=for-the-badge&logoColor=white)
-![nuxt](https://img.shields.io/badge/nuxt.js-█░░-grey?labelColor=00DC82&logo=nuxt.js&style=for-the-badge&logoColor=white)
-![astro](https://img.shields.io/badge/astro-██░-grey?labelColor=BC52EE&logo=astro&style=for-the-badge&logoColor=white)
-![python](https://img.shields.io/badge/python-█░░-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
-![markdown](https://img.shields.io/badge/markdown-███-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)
-![jquery](https://img.shields.io/badge/jquery-██░-grey?labelColor=0769AD&logo=jquery&style=for-the-badge&logoColor=white)
+![react](https://img.shields.io/badge/react-grey?labelColor=20232A&logo=react&style=for-the-badge&logoColor=white)
+![vue](https://img.shields.io/badge/vue.js-grey?labelColor=35495E&logo=vue.js&style=for-the-badge&logoColor=white)
+![svelte](https://img.shields.io/badge/svelte-grey?labelColor=FF3E00&logo=svelte&style=for-the-badge&logoColor=white)
+![next](https://img.shields.io/badge/next.js-grey?labelColor=000000&logo=next.js&style=for-the-badge&logoColor=white)
+![nuxt](https://img.shields.io/badge/nuxt.js-grey?labelColor=00DC82&logo=nuxt.js&style=for-the-badge&logoColor=white)
+![astro](https://img.shields.io/badge/astro-grey?labelColor=BC52EE&logo=astro&style=for-the-badge&logoColor=white)
+![python](https://img.shields.io/badge/python-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
+![markdown](https://img.shields.io/badge/markdown-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)
+![jquery](https://img.shields.io/badge/jquery-grey?labelColor=0769AD&logo=jquery&style=for-the-badge&logoColor=white)
 
 
-![bash](https://img.shields.io/badge/bash-███-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)
+![bash](https://img.shields.io/badge/bash-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)
 
 
-![json](https://img.shields.io/badge/json-███-grey?labelColor=323330&logo=json&style=for-the-badge&logoColor=white)
-![json web tokens](https://img.shields.io/badge/json_web_tokens-███-grey?labelColor=323330&logo=json-web-tokens&style=for-the-badge&logoColor=white)
+![json](https://img.shields.io/badge/json-grey?labelColor=323330&logo=json&style=for-the-badge&logoColor=white)
+![json web tokens](https://img.shields.io/badge/json_web_tokens-grey?labelColor=323330&logo=json-web-tokens&style=for-the-badge&logoColor=white)
 
 
-![html](https://img.shields.io/badge/html-███-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)
-![css](https://img.shields.io/badge/css-███-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)
+![html](https://img.shields.io/badge/html-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)
+![css](https://img.shields.io/badge/css-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)
 
 ![javascript](https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
@@ -44,9 +44,9 @@ Hey there, I'm Marcel a web developer and product designer.
 ![arch](https://img.shields.io/badge/arch_linux-1793D1?logo=arch-linux&style=for-the-badge&logoColor=white)
 ![gentoo](https://img.shields.io/badge/gentoo-54487A?logo=gentoo&style=for-the-badge&logoColor=white)
 ![kali](https://img.shields.io/badge/kali_linux-557C94?logo=kali-linux&style=for-the-badge&logoColor=white)
-![MacOS](https://img.shields.io/badge/Mac_OS-999999?logo=macos&style=for-the-badge&logoColor=white)
+![Macos](https://img.shields.io/badge/Mac_OS-999999?logo=macos&style=for-the-badge&logoColor=white)
 ![windows](https://img.shields.io/badge/windows-0078D4?logo=windows&style=for-the-badge&logoColor=white)
-![iOS](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
+![ios](https://img.shields.io/badge/iOS-000000?logo=ios&style=for-the-badge&logoColor=white)
 ![android](https://img.shields.io/badge/android-3DDC84?logo=android&style=for-the-badge&logoColor=white)
 
 
@@ -57,7 +57,6 @@ Hey there, I'm Marcel a web developer and product designer.
 ![figma](https://img.shields.io/badge/figma-F24E1E?logo=figma&style=for-the-badge&logoColor=white)
 
 
-![git](https://img.shields.io/badge/git-F05032?logo=git&style=for-the-badge&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&style=for-the-badge&logoColor=white)
 ![yarn](https://img.shields.io/badge/yarn-2C8EBB?logo=yarn&style=for-the-badge&logoColor=white)
 ![homebrew](https://img.shields.io/badge/homebrew-FBB040?logo=homebrew&style=for-the-badge&logoColor=black)
@@ -67,32 +66,33 @@ Hey there, I'm Marcel a web developer and product designer.
 ![netlify](https://img.shields.io/badge/netlify-00C7B7?logo=netlify&style=for-the-badge&logoColor=white)
 ![cloudflare](https://img.shields.io/badge/cloudflare-F38020?logo=cloudflare&style=for-the-badge&logoColor=white)
 
-![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
+![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
 
-![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
 ### IDEs and Tools 🛠:
 
-![VSCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 
-![InteliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![intelij](https://img.shields.io/badge/intellij_idea-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 
-![CLion](https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white)
+![clion](https://img.shields.io/badge/clion-000000?style=for-the-badge&logo=clion&logoColor=white)
 
 #### - Hosting Services and Web Tools:
 
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 #### - Database:
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![mongodb](https://img.shields.io/badge/mongodb-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
 
-### DevOps ♾️:
-![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
-![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+## DevOps:
+![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![shell script](https://img.shields.io/badge/shell_script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![git](https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
 
 <b>Stats</b>
 

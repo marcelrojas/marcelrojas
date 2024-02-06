@@ -94,7 +94,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![git](https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
 
-*Stats*
+_Stats_
 
 <p>&nbsp;<img align="center" src="https://readmestats.999857.xyz/api?username=marcelrojas&show_icons=true&locale=en&theme=tokyonight" alt="Marcel Rojas"></p>
 

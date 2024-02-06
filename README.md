@@ -79,23 +79,21 @@ Hey there, I'm Marcel a web developer and product designer.
 ![homebrew](https://img.shields.io/badge/homebrew-FBB040?logo=homebrew&style=for-the-badge&logoColor=black)
 
 
-![vercel](https://img.shields.io/badge/vercel-000000?logo=vercel&style=for-the-badge&logoColor=white)
-![netlify](https://img.shields.io/badge/netlify-00C7B7?logo=netlify&style=for-the-badge&logoColor=white)
-![cloudflare](https://img.shields.io/badge/cloudflare-F38020?logo=cloudflare&style=for-the-badge&logoColor=white)
-
 ![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
 
 ![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
 ### OS & Tools:
 
-![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-
+![vscode](https://img.shields.io/badge/visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![intelij](https://img.shields.io/badge/intellij_idea-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
-
 ![clion](https://img.shields.io/badge/clion-000000?style=for-the-badge&logo=clion&logoColor=white)
 
 #### - Hosting Services and Web Tools:
+
+![vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![cloudflare](https://img.shields.io/badge/cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
 ![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)

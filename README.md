@@ -34,7 +34,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![javascript](https://img.shields.io/badge/javascript?labelColor=F7DF1E&logo=javascript&style=for-the-badge&logoColor=black)
 
-![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=white)
+![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
 
 <b>OS & Tools</b>

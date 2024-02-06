@@ -15,15 +15,21 @@ Hey there, I'm Marcel a web developer and product designer.
 
 #### - Front-End:
 
-![react](https://img.shields.io/badge/react-grey?labelColor=20232A&logo=react&style=for-the-badge&logoColor=white)
-![vue](https://img.shields.io/badge/vue.js-grey?labelColor=35495E&logo=vue.js&style=for-the-badge&logoColor=white)
-![svelte](https://img.shields.io/badge/svelte-grey?labelColor=FF3E00&logo=svelte&style=for-the-badge&logoColor=white)
 ![next](https://img.shields.io/badge/next.js-grey?labelColor=000000&logo=next.js&style=for-the-badge&logoColor=white)
 ![nuxt](https://img.shields.io/badge/nuxt.js-grey?labelColor=00DC82&logo=nuxt.js&style=for-the-badge&logoColor=white)
 ![astro](https://img.shields.io/badge/astro-grey?labelColor=BC52EE&logo=astro&style=for-the-badge&logoColor=white)
-![python](https://img.shields.io/badge/python-grey?labelColor=3776AB&logo=python&style=for-the-badge&logoColor=white)
+
+![jquery](https://img.shields.io/badge/jquery-grey?style=for-the-badge&logo=jquery&logoColor=white)
+
+![bootstrap](https://img.shields.io/badge/-bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+![tailwind](https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+![reactjs](https://img.shields.io/badge/-reactjs-%2361DAFB?style=for-the-badge&logo=react&logoColor=white)
+![vue](https://img.shields.io/badge/vue.js-grey?labelColor=35495E&logo=vue.js&style=for-the-badge&logoColor=white)
+![svelte](https://img.shields.io/badge/svelte-grey?labelColor=FF3E00&logo=svelte&style=for-the-badge&logoColor=white)
+
 ![markdown](https://img.shields.io/badge/markdown-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)
-![jquery](https://img.shields.io/badge/jquery-grey?labelColor=0769AD&logo=jquery&style=for-the-badge&logoColor=white)
 
 
 ![bash](https://img.shields.io/badge/bash-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)
@@ -33,9 +39,8 @@ Hey there, I'm Marcel a web developer and product designer.
 ![json web tokens](https://img.shields.io/badge/json_web_tokens-grey?labelColor=323330&logo=json-web-tokens&style=for-the-badge&logoColor=white)
 
 
-![html](https://img.shields.io/badge/html-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)
-![css](https://img.shields.io/badge/css-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)
-
+![html](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![javascript](https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
 #### - Back-End:

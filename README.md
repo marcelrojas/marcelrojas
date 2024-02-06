@@ -101,4 +101,5 @@ Hey there, I'm Marcel a web developer and product designer.
 </p>
 
 ![](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)
-![](https://badges.pufler.dev/visits/marcelrojas/marcelrojas?color=black&logo=github&style=flat-square)
+
+![](https://badges.pufler.dev/visits/marcelrojas/marcelrojas?style=flat-square&logo=github&color=black)

@@ -11,6 +11,10 @@ Hey there, I'm Marcel a web developer and product designer.
 
 <b>Skills</b>
 
+### Web design & development
+
+#### - Front-End:
+
 ![react](https://img.shields.io/badge/react-grey?labelColor=20232A&logo=react&style=for-the-badge&logoColor=white)
 ![vue](https://img.shields.io/badge/vue.js-grey?labelColor=35495E&logo=vue.js&style=for-the-badge&logoColor=white)
 ![svelte](https://img.shields.io/badge/svelte-grey?labelColor=FF3E00&logo=svelte&style=for-the-badge&logoColor=white)
@@ -33,6 +37,14 @@ Hey there, I'm Marcel a web developer and product designer.
 ![css](https://img.shields.io/badge/css-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)
 
 ![javascript](https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+
+#### - Back-End:
+
+
+
+#### - Database:
+![mongodb](https://img.shields.io/badge/mongodb-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
 
 <b>OS & Tools</b>
@@ -82,10 +94,6 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
-#### - Database:
-![mongodb](https://img.shields.io/badge/mongodb-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
 
 ## DevOps:

@@ -1,5 +1,7 @@
 ![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/ryomen-sukuna.png)
 
+<p>&nbsp;<img align="center" src="https://readmestats.999857.xyz/api?username=marcelrojas&show_icons=true&locale=en&theme=tokyonight" alt="Marcel Rojas" /></p>
+
 
 Hey there, I'm Marcel a web developer and product designer.
 
@@ -73,14 +75,26 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
+### IDEs and Tools 🛠:
 
+![VSCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+![InteliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+
+![CLion](https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white)
+
+#### - Hosting Services and Web Tools:
+
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+
+### DevOps ♾️:
+![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
 <b>Stats</b>
-
-![stats](https://github-readme-stats.vercel.app/api?username=marcelrojas&title_color=3498db&text_color=2ecc71&icon_color=3498db&bg_color=00000000&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=true)
-
-
-![streak](https://streak-stats.demolab.com/?user=marcelrojas&hide_border=true&background=00000000&border=2980b9&stroke=2980b9&ring=27ae60&fire=27ae60&currStreakNum=2980b9&sideNums=2980b9&currStreakLabel=2980b9&sideLabels=2980b9&dates=2980b9)
 
 
 ![](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)

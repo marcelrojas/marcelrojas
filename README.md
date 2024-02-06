@@ -32,11 +32,9 @@ Hey there, I'm Marcel a web developer and product designer.
 ![html](https://img.shields.io/badge/html-███-grey?labelColor=E34F26&logo=HTML5&style=for-the-badge&logoColor=white)
 ![css](https://img.shields.io/badge/css-███-grey?labelColor=1572B6&logo=CSS3&style=for-the-badge&logoColor=white)
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge)
+![javascript](https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
-labelColor=F7DF1E&logo=javascript&
-
-style=for-the-badge&logoColor=black)
+labelColor=F7DF1E
 
 ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=white)
 

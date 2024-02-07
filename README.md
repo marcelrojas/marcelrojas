@@ -43,6 +43,11 @@ Hey there, I'm Marcel a web developer and product designer.
 ![mongodb](https://img.shields.io/badge/mongodb-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
+#### - Languages:
+
+![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![swift](https://img.shields.io/badge/swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+
 #### - Hosting Services and Web Tools:
 
 ![vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
@@ -51,12 +56,6 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
-
-#### - Languages:
-
-![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
-![swift](https://img.shields.io/badge/swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
 
 
 ### DevOps

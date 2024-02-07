@@ -15,9 +15,9 @@ Hey there, I'm Marcel a web developer and product designer.
 
 #### - Front-End:
 
-![next](https://img.shields.io/badge/next.js-grey?labelColor=000000&logo=next.js&style=for-the-badge&logoColor=white)
-![nuxt](https://img.shields.io/badge/nuxt.js-grey?labelColor=00DC82&logo=nuxt.js&style=for-the-badge&logoColor=white)
-![astro](https://img.shields.io/badge/astro-grey?labelColor=BC52EE&logo=astro&style=for-the-badge&logoColor=white)
+![next](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![nuxt](https://img.shields.io/badge/nuxt.js-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
+![astro](https://img.shields.io/badge/astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
 
 ![jquery](https://img.shields.io/badge/jquery-grey?style=for-the-badge&logo=jquery&logoColor=white)
 
@@ -26,17 +26,17 @@ Hey there, I'm Marcel a web developer and product designer.
 ![tailwind](https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ![reactjs](https://img.shields.io/badge/-reactjs-%2361DAFB?style=for-the-badge&logo=react&logoColor=white)
-![vue](https://img.shields.io/badge/vue.js-grey?labelColor=35495E&logo=vue.js&style=for-the-badge&logoColor=white)
-![svelte](https://img.shields.io/badge/svelte-grey?labelColor=FF3E00&logo=svelte&style=for-the-badge&logoColor=white)
+![vue](https://img.shields.io/badge/vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=white)
+![svelte](https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
 
-![markdown](https://img.shields.io/badge/markdown-grey?labelColor=000000&logo=markdown&style=for-the-badge&logoColor=white)
-
-
-![bash](https://img.shields.io/badge/bash-grey?labelColor=4EAA25&logo=GNU-Bash&style=for-the-badge&logoColor=white)
+![markdown](https://img.shields.io/badge/markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
 
-![json](https://img.shields.io/badge/json-grey?labelColor=323330&logo=json&style=for-the-badge&logoColor=white)
-![json web tokens](https://img.shields.io/badge/json_web_tokens-grey?labelColor=323330&logo=json-web-tokens&style=for-the-badge&logoColor=white)
+![bash](https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&labelColor=4EAA25&logo=gnu-bash&logoColor=white)
+
+
+![json](https://img.shields.io/badge/json-323330?style=for-the-badge&logo=json&logoColor=white)
+![json web tokens](https://img.shields.io/badge/json_web_tokens-323330?style=for-the-badge&logo=json-web-tokens&logoColor=white)
 
 
 ![html](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -80,9 +80,8 @@ Hey there, I'm Marcel a web developer and product designer.
 ![webflow](https://img.shields.io/badge/webflow-146EF5?style=for-the-badge&logo=webflow&logoColor=white)
 ![framer](https://img.shields.io/badge/framer-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![figma](https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
-![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
 ![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
 
 #### - OS:
 

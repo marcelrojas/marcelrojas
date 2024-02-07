@@ -46,7 +46,6 @@ Hey there, I'm Marcel a web developer and product designer.
 #### - Back-End:
 
 
-
 #### - Database:
 ![mongodb](https://img.shields.io/badge/mongodb-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)

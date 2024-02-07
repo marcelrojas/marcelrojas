@@ -9,9 +9,7 @@ Hey there, I'm Marcel a web developer and product designer.
 [![My links](https://img.shields.io/badge/behance?style=for-the-badge&logo=behance&logoColor=white)](https://bento.me/marcelrojas)
 
 
-<b>Skills</b>
-
-### Web design & development
+### Skills
 
 #### - Front-End:
 
@@ -55,7 +53,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 
-### Languages
+#### - Languages:
 
 ![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
 ![swift](https://img.shields.io/badge/swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)

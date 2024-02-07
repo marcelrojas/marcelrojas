@@ -60,11 +60,11 @@ Hey there, I'm Marcel a web developer and product designer.
 ### DevOps
 
 ![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![hyper](https://img.shields.io/badge/hyper-000000?style=for-the-badge&logo=hyper&logoColor=white)
+![iterm](https://img.shields.io/badge/iterm2-000000?style=for-the-badge&logo=iterm2&logoColor=white)
 ![shell script](https://img.shields.io/badge/shell_script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![gnu bash](https://img.shields.io/badge/GNU%20Bash-4EAA25?style=for-the-badge&logo=GNU%20Bash&logoColor=white)
 ![git](https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white)
-![hyper](https://img.shields.io/badge/hyper-000000?style=for-the-badge&logo=hyper&logoColor=white)
-![iterm](https://img.shields.io/badge/iterm2-000000?style=for-the-badge&logo=iterm2&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 ![yarn](https://img.shields.io/badge/yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white)
 ![homebrew](https://img.shields.io/badge/homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=black)

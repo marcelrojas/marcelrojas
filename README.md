@@ -72,10 +72,12 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ### IDEs & Other Tools
 
+![vim](https://img.shields.io/badge/vim-019733?style=for-the-badge&logo=vim&logoColor=white)
 ![vscode](https://img.shields.io/badge/visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![intelij](https://img.shields.io/badge/intellij_idea-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![clion](https://img.shields.io/badge/clion-000000?style=for-the-badge&logo=clion&logoColor=white)
-![vim](https://img.shields.io/badge/vim-019733?style=for-the-badge&logo=vim&logoColor=white)
+![android studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
+![xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 ![unity](https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 ![webflow](https://img.shields.io/badge/webflow-146EF5?style=for-the-badge&logo=webflow&logoColor=white)
 ![framer](https://img.shields.io/badge/framer-0055FF?style=for-the-badge&logo=framer&logoColor=white)

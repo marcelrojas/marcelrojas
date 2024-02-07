@@ -57,9 +57,13 @@ Hey there, I'm Marcel a web developer and product designer.
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 
-### DevOps
+### Languages
 
 ![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
+
+
+### DevOps
+
 ![hyper](https://img.shields.io/badge/hyper-000000?style=for-the-badge&logo=hyper&logoColor=white)
 ![iterm](https://img.shields.io/badge/iterm2-000000?style=for-the-badge&logo=iterm2&logoColor=white)
 ![shell script](https://img.shields.io/badge/shell_script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)

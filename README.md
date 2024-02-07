@@ -51,8 +51,17 @@ Hey there, I'm Marcel a web developer and product designer.
 ![mongodb](https://img.shields.io/badge/mongodb-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
+#### - Hosting Services and Web Tools:
 
-### OS & Tools
+![vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![cloudflare](https://img.shields.io/badge/cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+
+![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+
+### OS
 
 ![linux](https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![freebsd](https://img.shields.io/badge/freebsd-AB2B28?style=for-the-badge&logo=freebsd&logoColor=white)
@@ -66,7 +75,17 @@ Hey there, I'm Marcel a web developer and product designer.
 ![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
 ![android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
-#### - IDEs & Editing Tools:
+
+### DevOps:
+![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![shell script](https://img.shields.io/badge/shell_script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![git](https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![yarn](https://img.shields.io/badge/yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white)
+![homebrew](https://img.shields.io/badge/homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=black)
+
+
+#### - IDEs & Other Tools:
 
 ![vscode](https://img.shields.io/badge/visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![intelij](https://img.shields.io/badge/intellij_idea-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
@@ -77,27 +96,8 @@ Hey there, I'm Marcel a web developer and product designer.
 ![framer](https://img.shields.io/badge/framer-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![figma](https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
-#### - Hosting Services and Web Tools:
-
-![vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-![cloudflare](https://img.shields.io/badge/cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
-
-![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
-
 ![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
 ![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
-
-
-### DevOps:
-![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
-![shell script](https://img.shields.io/badge/shell_script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![git](https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-![yarn](https://img.shields.io/badge/yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white)
-![homebrew](https://img.shields.io/badge/homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=black)
 
 
 <b>Stats</b>

@@ -19,7 +19,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![nuxt](https://img.shields.io/badge/nuxt.js-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
 ![astro](https://img.shields.io/badge/astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
 
-![jquery](https://img.shields.io/badge/jquery-grey?style=for-the-badge&logo=jquery&logoColor=white)
+![jquery](https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
 ![bootstrap](https://img.shields.io/badge/-bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 

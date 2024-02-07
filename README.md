@@ -76,14 +76,15 @@ Hey there, I'm Marcel a web developer and product designer.
 ![vscode](https://img.shields.io/badge/visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![intelij](https://img.shields.io/badge/intellij_idea-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![clion](https://img.shields.io/badge/clion-000000?style=for-the-badge&logo=clion&logoColor=white)
-![android studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
-![xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
+![android studio](https://img.shields.io/badge/android_studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
+![xcode](https://img.shields.io/badge/xcode-007ACC?style=for-the-badge&logo=xcode&logoColor=white)
 ![unity](https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white)
 ![webflow](https://img.shields.io/badge/webflow-146EF5?style=for-the-badge&logo=webflow&logoColor=white)
 ![framer](https://img.shields.io/badge/framer-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![figma](https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 ![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
+![miro](https://img.shields.io/badge/miro-050038?style=for-the-badge&logo=miro&logoColor=white)
 
 #### - OS:
 

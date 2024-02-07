@@ -20,9 +20,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![astro](https://img.shields.io/badge/astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
 
 ![jquery](https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
-
 ![bootstrap](https://img.shields.io/badge/-bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-
 ![tailwind](https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ![reactjs](https://img.shields.io/badge/-reactjs-61DAFB?style=for-the-badge&logo=react&logoColor=black)

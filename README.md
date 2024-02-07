@@ -61,22 +61,8 @@ Hey there, I'm Marcel a web developer and product designer.
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 
-### OS
+### DevOps
 
-![linux](https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![freebsd](https://img.shields.io/badge/freebsd-AB2B28?style=for-the-badge&logo=freebsd&logoColor=white)
-![debian](https://img.shields.io/badge/debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![fedora](https://img.shields.io/badge/fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
-![arch](https://img.shields.io/badge/arch_linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
-![gentoo](https://img.shields.io/badge/gentoo-54487A?style=for-the-badge&logo=gentoo&logoColor=white)
-![kali](https://img.shields.io/badge/kali_linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
-![Macos](https://img.shields.io/badge/Mac_OS-999999?style=for-the-badge&logo=macos&logoColor=white)
-![windows](https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
-![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
-![android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-
-
-### DevOps:
 ![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
 ![shell script](https://img.shields.io/badge/shell_script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![git](https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white)
@@ -85,7 +71,7 @@ Hey there, I'm Marcel a web developer and product designer.
 ![homebrew](https://img.shields.io/badge/homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=black)
 
 
-#### - IDEs & Other Tools:
+### IDEs & Other Tools
 
 ![vscode](https://img.shields.io/badge/visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![intelij](https://img.shields.io/badge/intellij_idea-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
@@ -98,6 +84,20 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
 ![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+
+#### - OS:
+
+![linux](https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![freebsd](https://img.shields.io/badge/freebsd-AB2B28?style=for-the-badge&logo=freebsd&logoColor=white)
+![debian](https://img.shields.io/badge/debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![fedora](https://img.shields.io/badge/fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
+![arch](https://img.shields.io/badge/arch_linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+![gentoo](https://img.shields.io/badge/gentoo-54487A?style=for-the-badge&logo=gentoo&logoColor=white)
+![kali](https://img.shields.io/badge/kali_linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
+![Macos](https://img.shields.io/badge/Mac_OS-999999?style=for-the-badge&logo=macos&logoColor=white)
+![windows](https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
+![android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
 
 <b>Stats</b>

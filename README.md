@@ -25,7 +25,7 @@ Hey there, I'm Marcel a web developer and product designer.
 
 ![tailwind](https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-![reactjs](https://img.shields.io/badge/-reactjs-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![reactjs](https://img.shields.io/badge/-reactjs-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![vue](https://img.shields.io/badge/vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=white)
 ![svelte](https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
 

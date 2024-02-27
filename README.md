@@ -4,11 +4,6 @@
 Hey there, I'm Marcel a web developer and designer.
 
 
-<b>Find me on the web</b>
-
-[![My links](https://img.shields.io/badge/behance?style=for-the-badge&logo=behance&logoColor=white)](https://bento.me/marcelrojas)
-
-
 ### Skills
 
 #### - Front-End:

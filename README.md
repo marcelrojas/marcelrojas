@@ -10,7 +10,7 @@ Hey there, I'm Marcel a web developer and designer.
 ![next](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![nuxt](https://img.shields.io/badge/nuxt.js-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
 ![astro](https://img.shields.io/badge/astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
-![sveltekit](https://img.shields.io/badge/sveltekit-FF3E00?style=for-the-badge&logo=sveltekit&logoColor=white)
+![sveltekit](https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
 
 ![jquery](https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 ![bootstrap](https://img.shields.io/badge/-bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)

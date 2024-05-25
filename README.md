@@ -1,7 +1,7 @@
 ![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/ryomen-sukuna.png)
 
 
-Hey there, I'm Marcel a web developer and designer.
+Hey there, I'm Marcel...
 
 
 ### Skills

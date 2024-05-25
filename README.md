@@ -45,7 +45,7 @@ Hey there, I'm Marcel a web developer and designer.
 ![vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 ![cloudflare](https://img.shields.io/badge/cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
-![aws](https://img.shields.io/badge/amazon-aws-232F3E?style=for-the-badge&logo=aws&logoColor=white)
+![aws](https://img.shields.io/badge/aws-232F3E?style=for-the-badge&logo=amazon_aws&logoColor=white)
 
 ![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)

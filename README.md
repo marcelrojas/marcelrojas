@@ -1,7 +1,4 @@
-![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/ryomen-sukuna.png)
-
-
-Hey there, I'm Marcel...
+![Marcel Rojas](https://raw.githubusercontent.com/marcelrojas/marcelrojas/master/ryomen-sukuna.avif)
 
 
 ### Skills

@@ -77,17 +77,17 @@
 ![miro](https://img.shields.io/badge/miro-050038?style=for-the-badge&logo=miro&logoColor=white)
 
 #### - OS:
+![Macos](https://img.shields.io/badge/Mac_OS-999999?style=for-the-badge&logo=macos&logoColor=white)
 ![linux](https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![ubuntu](https://img.shields.io/badge/ubuntu-A81D33?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![freebsd](https://img.shields.io/badge/freebsd-AB2B28?style=for-the-badge&logo=freebsd&logoColor=white)
 ![debian](https://img.shields.io/badge/debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![fedora](https://img.shields.io/badge/fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
 ![arch](https://img.shields.io/badge/arch_linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![gentoo](https://img.shields.io/badge/gentoo-54487A?style=for-the-badge&logo=gentoo&logoColor=white)
 ![kali](https://img.shields.io/badge/kali_linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
-![Macos](https://img.shields.io/badge/Mac_OS-999999?style=for-the-badge&logo=macos&logoColor=white)
 ![windows](https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
-![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
 ![android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
 
 
 <b>Stats</b>

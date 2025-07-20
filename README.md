@@ -88,8 +88,3 @@
 ![windows](https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 ![android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
-
-
-<b>Stats</b>
-
-![Views](https://komarev.com/ghpvc/?username=marcelrojas&style=flat-square&label=Views)

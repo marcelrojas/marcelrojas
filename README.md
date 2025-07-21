@@ -1,5 +1,5 @@
 ## Marcel Rojas
-Marcel Rojas is a software and electronics engineer, and designer based in Lechería Venezuela.
+Marcel Rojas is a software and electronics engineer, and designer based in Lechería, Anzoátegui, Venezuela.
 
 ### Skills
 

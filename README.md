@@ -2,8 +2,8 @@
 Marcel Rojas is a software and electronics engineer, and designer based in Lechería, Anzoátegui, Venezuela.
 
 ```
-DUM-E@marcelrojas:~$fastfetch
-|   DUM-E@marcelrojas
+github@marcelrojas:~$fastfetch
+|   github@marcelrojas
 |   -----------------
 |
 |   
@@ -15,7 +15,7 @@ DUM-E@marcelrojas:~$fastfetch
 |
 |   # Reach me out using... 
 |   ❯ mail -s "Hello from..." whyismarcel@gmail.com
-|   ❯ xdg-open "https://"
+|   ❯ xdg-open "https://marcelrojas.com"
 |
 ```
 <p align="center">

@@ -1,37 +1,39 @@
 ## Marcel Rojas
 Marcel Rojas is a software and electronics engineer, and designer based in Lechería, Anzoátegui, Venezuela.
 
-### Skills
+```
+DUM-E@marcelrojas:~$fastfetch
+|   DUM-E@marcelrojas
+|   -----------------
+|
+|   
+|
+|
+|  
+|   
+|   
+|
+|   # Reach me out using... 
+|   ❯ mail -s "Hello from..." whyismarcel@gmail.com
+|   ❯ xdg-open "https://"
+|
+```
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=marcelrojas&label=Profile%20views&color=0e75b6&style=flat" alt="marcelrojas" />
+</p>
 
-#### - Front-End:
-![next](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![nuxt](https://img.shields.io/badge/nuxt.js-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
-![astro](https://img.shields.io/badge/astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
-
-![jquery](https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
-![bootstrap](https://img.shields.io/badge/-bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![tailwind](https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-![reactjs](https://img.shields.io/badge/-reactjs-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![vue](https://img.shields.io/badge/vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=white)
-![svelte](https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
-
-![markdown](https://img.shields.io/badge/markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+<h2 align="center">Skills</h2>
+<p align="center">
+  <a href="">
+    <img src="https://skillicons.dev/icons?i=rust,androidstudio,mysql,firebase,python,ts,js,css,html,dart,arch,dotnet,go,godot,supabase,vscode,visualstudio,npm,linux,flutter,c,cpp,cs,gtk,angular,apple,arch,arduino,astro,blender,bsd,cloudflare,debian,figma,godot,kotlin,laravel,lua,md,neovim,nextjs,notion,nuxtjs,p5js,pkl,postgres,pycharm,py,react,remix,regex,raspberrypi,ruby,supabase,svelte,svg,tailwind,threejs,ubuntu,unity,unreal,webflow,windows,yarn,xd" alt="Skills Icons" />
+  </a>
+</p>
 
 ![json](https://img.shields.io/badge/json-323330?style=for-the-badge&logo=json&logoColor=white)
 ![json web tokens](https://img.shields.io/badge/json_web_tokens-323330?style=for-the-badge&logo=json-web-tokens&logoColor=white)
 
-![html](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![css](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![javascript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
 #### - Database:
 ![mongodb](https://img.shields.io/badge/mongodb-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-
-#### - Languages:
-![swift](https://img.shields.io/badge/swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-![python](https://img.shields.io/badge/python-14354C?style=for-the-badge&logo=python&logoColor=white)
 
 #### - Hosting Services and Web Tools:
 ![vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
@@ -57,27 +59,15 @@ Marcel Rojas is a software and electronics engineer, and designer based in Leche
 
 ### IDEs & Other Tools
 
-![vim](https://img.shields.io/badge/vim-019733?style=for-the-badge&logo=vim&logoColor=white)
-![vscode](https://img.shields.io/badge/visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![android studio](https://img.shields.io/badge/android_studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
 ![xcode](https://img.shields.io/badge/xcode-007ACC?style=for-the-badge&logo=xcode&logoColor=white)
-![unity](https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white)
-![webflow](https://img.shields.io/badge/webflow-146EF5?style=for-the-badge&logo=webflow&logoColor=white)
 ![framer](https://img.shields.io/badge/framer-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![figma](https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![notion](https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 ![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
 ![miro](https://img.shields.io/badge/miro-050038?style=for-the-badge&logo=miro&logoColor=white)
 
 #### - OS:
 ![Macos](https://img.shields.io/badge/Mac_OS-999999?style=for-the-badge&logo=macos&logoColor=white)
-![linux](https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![ubuntu](https://img.shields.io/badge/ubuntu-A81D33?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![freebsd](https://img.shields.io/badge/freebsd-AB2B28?style=for-the-badge&logo=freebsd&logoColor=white)
-![debian](https://img.shields.io/badge/debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![arch](https://img.shields.io/badge/arch_linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![gentoo](https://img.shields.io/badge/gentoo-54487A?style=for-the-badge&logo=gentoo&logoColor=white)
 ![kali](https://img.shields.io/badge/kali_linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
-![windows](https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 ![android](https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![ios](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)

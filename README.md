@@ -32,10 +32,10 @@ github@marcelrojas:~$fastfetch
 ![json](https://img.shields.io/badge/json-323330?style=for-the-badge&logo=json&logoColor=white)
 ![json web tokens](https://img.shields.io/badge/json_web_tokens-323330?style=for-the-badge&logo=json-web-tokens&logoColor=white)
 
-#### - Database:
+
 ![mongodb](https://img.shields.io/badge/mongodb-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-#### - Hosting Services and Web Tools:
+
 ![vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 ![cloudflare](https://img.shields.io/badge/cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
@@ -44,8 +44,6 @@ github@marcelrojas:~$fastfetch
 ![vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![postman](https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
-
-### DevOps
 
 ![hyper](https://img.shields.io/badge/hyper-000000?style=for-the-badge&logo=hyper&logoColor=white)
 ![iterm](https://img.shields.io/badge/iterm2-000000?style=for-the-badge&logo=iterm2&logoColor=white)
@@ -57,14 +55,12 @@ github@marcelrojas:~$fastfetch
 ![homebrew](https://img.shields.io/badge/homebrew-FBB040?style=for-the-badge&logo=homebrew&logoColor=black)
 
 
-### IDEs & Other Tools
-
 ![xcode](https://img.shields.io/badge/xcode-007ACC?style=for-the-badge&logo=xcode&logoColor=white)
 ![framer](https://img.shields.io/badge/framer-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![trello](https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
 ![miro](https://img.shields.io/badge/miro-050038?style=for-the-badge&logo=miro&logoColor=white)
 
-#### - OS:
+
 ![Macos](https://img.shields.io/badge/Mac_OS-999999?style=for-the-badge&logo=macos&logoColor=white)
 ![freebsd](https://img.shields.io/badge/freebsd-AB2B28?style=for-the-badge&logo=freebsd&logoColor=white)
 ![gentoo](https://img.shields.io/badge/gentoo-54487A?style=for-the-badge&logo=gentoo&logoColor=white)

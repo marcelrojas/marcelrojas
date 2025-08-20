@@ -18,9 +18,6 @@ github@marcelrojas:~$fastfetch
 |   ❯ xdg-open "https://marcelrojas.com"
 |
 ```
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=marcelrojas&label=Profile%20views&color=0e75b6&style=flat" alt="marcelrojas" />
-</p>
 
 <h2 align="center">Skills</h2>
 <p align="center">

@@ -22,7 +22,7 @@ github@marcelrojas:~$fastfetch
 <h2 align="center">Skills</h2>
 <p align="center">
   <a href="">
-    <img src="https://skillicons.dev/icons?i=rust,androidstudio,mysql,firebase,python,ts,js,css,html,arch,dotnet,go,godot,supabase,vscode,visualstudio,npm,linux,flutter,c,cpp,cs,angular,apple,arduino,astro,blender,bsd,cloudflare,debian,figma,kotlin,laravel,lua,md,neovim,nextjs,notion,nuxtjs,p5js,pkl,postgres,pycharm,py,react,remix,regex,raspberrypi,ruby,supabase,svelte,svg,tailwind,threejs,ubuntu,unity,unreal,webflow,windows,yarn,xd" alt="Skills Icons" />
+    <img src="https://skillicons.dev/icons?i=,c,cpp,cs,rust,androidstudio,mysql,firebase,python,ts,js,css,html,arch,dotnet,go,godot,supabase,vscode,visualstudio,npm,linux,flutter,angular,apple,arduino,astro,blender,bsd,cloudflare,debian,figma,kotlin,laravel,lua,md,neovim,nextjs,notion,nuxtjs,p5js,pkl,postgres,pycharm,py,react,remix,regex,raspberrypi,ruby,supabase,svelte,svg,tailwind,threejs,ubuntu,unity,unreal,webflow,windows,yarn,xd" alt="Skills Icons" />
   </a>
 </p>
 

@@ -9,8 +9,6 @@ github@marcelrojas:~$fastfetch
 |   
 |
 |
-|  
-|   
 |   
 |
 |   # Reach me out using... 
@@ -18,6 +16,15 @@ github@marcelrojas:~$fastfetch
 |   ❯ xdg-open "https://marcelrojas.com"
 |
 ```
+
+<ul>
+  <li>
+    <a href=""><strong>Software Toolkit</strong></a>
+  </li>
+  <li>
+    <a href=""><strong>Software Stack</strong></a>
+  </li>
+</ul>
 
 <h2 align="center">Skills</h2>
 <p align="center">

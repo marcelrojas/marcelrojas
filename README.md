@@ -28,7 +28,7 @@ github@marcelrojas:~$fastfetch
 
 <h2 align="center">Skills</h2>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,cs,rust,androidstudio,mysql,firebase,python,ts,js,css,html,dotnet,go,godot,vscode,visualstudio,flutter,angular,apple,arduino,astro,blender,figma,kotlin,laravel,lua,md,neovim,p5js,postgres,pycharm,py,react,remix,svelte,nextjs,nuxtjs,regex,raspberrypi,ruby,supabase,svg,tailwind,threejs,unity,unreal,webflow,xd" alt="Skills Icons" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,cs,rust,androidstudio,mysql,firebase,python,ts,js,css,html,dotnet,go,godot,vscode,visualstudio,flutter,angular,arduino,astro,blender,figma,kotlin,laravel,lua,md,neovim,p5js,postgres,pycharm,py,react,remix,svelte,nextjs,nuxtjs,regex,raspberrypi,ruby,supabase,svg,tailwind,threejs,unity,unreal,webflow,xd" alt="Skills Icons" />
 </p>
 
 - JSON

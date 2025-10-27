@@ -19,25 +19,27 @@ github@marcelrojas:~$fastfetch
 
 <ul>
   <li>
-    <a href=""><strong>Software Toolkit</strong></a>
+    <a href="https://github.com/marcelrojas/"><strong>Software Toolkit</strong></a>
   </li>
   <li>
-    <a href=""><strong>Software Stack</strong></a>
+    <a href="https://github.com/marcelrojas/"><strong>Software Stack</strong></a>
   </li>
 </ul>
 
 <h2 align="center">Skills</h2>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,cs,rust,androidstudio,mysql,firebase,python,ts,js,css,html,dotnet,go,godot,vscode,visualstudio,flutter,angular,arduino,astro,blender,figma,kotlin,laravel,lua,md,neovim,p5js,postgres,pycharm,py,react,remix,svelte,nextjs,nuxtjs,regex,raspberrypi,ruby,supabase,svg,tailwind,threejs,unity,unreal,webflow,xd" alt="Skills Icons" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,cs,rust,firebase,python,ts,js,css,html,dotnet,go,godot,flutter,angular,arduino,astro,blender,figma,kotlin,laravel,lua,md,p5js,pycharm,py,react,remix,svelte,nextjs,nuxtjs,regex,raspberrypi,ruby,svg,tailwind,threejs,unity,unreal,webflow,xd" alt="Skills Icons" />
 </p>
 
 - JSON
 - JSON Web Tokens
+- XML
 - Pkl
 
 - Supabase
 - MongoDB
-
+- MySQL
+- PostgreSQL
 
 - Vercel
 - Cloudflare
@@ -46,8 +48,8 @@ github@marcelrojas:~$fastfetch
 - Vite
 - Postman
 
-
-- Hyper
+- Alacritty
+- Kitty
 - iTerm
 - Shell Script
 - GNU Bash
@@ -58,7 +60,11 @@ github@marcelrojas:~$fastfetch
 - Yarn
 - Homebrew
 
+- VS Code
+- Visual Studio
+- Android Studio
 - Xcode
+- Neovim
 - Framer
 - Notion
 - Trello

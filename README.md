@@ -4,14 +4,14 @@ Marcel Rojas is a software and electronics engineer, and designer based in Leche
 ```
 github@marcelrojas:~$fastfetch
 |   github@marcelrojas
-|   -----------------
+|   ------------------
 |
 |   
 |
 |
 |   
 |
-|   # Reach me out using... 
+|   # Reach me out using...
 |   ❯ mail -s "Hello from..." whyismarcel@gmail.com
 |   ❯ xdg-open "https://marcelrojas.com"
 |

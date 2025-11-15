@@ -20,7 +20,7 @@
   // 1. Variable reactiva
   let time = 'Loading hour...';
 
-  // 2. onMount, equivalent a useEffect[] of React
+  // 2. onMount, equivalent to useEffect[] on React
   onMount(() => {
     const updateClock = () => {
       const now = new Date();
@@ -41,15 +41,14 @@
   #clock {
     position: relative;
     width: max-content;
-    font-family: var(--font-family-monospace);
+    font-family: var(--font-family-mono);
     font-feature-settings: "zero", "tnum";
     font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0em;
-    line-height: 1em;
+    font-weight: var(--font-weight-500);
+    letter-spacing: 0;
+    line-height: 1;
     color: oklch(0.64 0 0);
-    user-select: text;
+    user-select: none;
     cursor: text
   }
 </style>

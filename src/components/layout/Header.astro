@@ -1,6 +1,7 @@
 ---
 import Anchor from '@components/ui/Anchor.astro';
 import Button from '@components/ui/Button.astro';
+import Clock from '@components/shared/Clock.svelte';
 
 const navAnchor = [
   { href: "/", text: "About" },
@@ -11,6 +12,7 @@ const navAnchor = [
 ];
 ---
 <header id="globalheader">
+  <Clock client:load />
   <div class="content" role="dialog" aria-modal="true" tabindex="-1">
     <nav id="globalnav" class="haptic-nav" aria-label="Global">
       <ul id="globalnav-list">

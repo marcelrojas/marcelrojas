@@ -87,7 +87,7 @@ const navAnchor = [
         }
       }
       nav#globalnav {
-        position: relative;
+        position: sticky;
         width: 100%;
         max-width: 420px;
         height: min-content;
@@ -119,49 +119,6 @@ const navAnchor = [
               }
             }
           }
-        }
-      }
-    }
-  }
-  body.is-menu-open header#globalheader nav#globalnav {
-    opacity: 1;
-    visibility: visible
-  }
-  body.is-menu-open header#globalheader nav#globalnav ul {
-    pointer-events: auto
-  }
-  /* Mobile Screen */
-  @media screen and (max-width: 733px) {
-    header#globalheader {
-      bottom: max(var(--spacing-sab) + 22px);
-      & div.content {
-        nav#globalnav {
-          content-visibility: hidden;
-          visibility: hidden;
-          opacity: 0;
-          body.is-menu-open & {
-            content-visibility: visible;
-            visibility: visible;
-            opacity: 1
-          }
-          & ul {
-            flex-direction: column
-          }
-        }
-      }
-    }
-  }
-  /* Desktop Screen */
-  @media screen and (min-width: 733px) {
-    header#globalheader {
-      & div.content {
-        flex-direction: row;
-        gap: 16px;
-        & ul {
-          flex-direction: row
-        }
-        & button#menutrigger {
-          display: none
         }
       }
     }

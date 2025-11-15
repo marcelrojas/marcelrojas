@@ -3,14 +3,7 @@ import Layout from '@layouts/Layout.astro';
 import PageHeader from '@components/layout/PageHeader.astro';
 import ModuleServices from '@components/layout/ModuleServices.astro';
 import ModulePricing from '@components/layout/ModulePricing.astro';
-import Marquee from '@components/decorative/Marquee.astro';
 import Button from '@components/ui/Button.astro';
-
-const myPhrases = [
-  "Frase para el marquee",
-  "Frase para el marquee",
-  "Frase para el marquee",
-];
 
 const {
   title = "Services",
@@ -21,7 +14,6 @@ const {
   <PageHeader title={title} />
   <ModuleServices />
   <section class="module">
-    <Marquee phrases={myPhrases} />
     <div class="module-content">
       <h2 class="headline">Contact Me</h2>
       <p class="subhead">Applications are now open for any of my services, don't lose<br />more opportunities and join with the button bellow!</p>

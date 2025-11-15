@@ -35,16 +35,21 @@
   });
 </script>
 
-<div class="reloj-venezuela">
-  {time}
-</div>
+<span id="clock">{time}</span>
 
 <style>
-  /* Estilos de Svelte están encapsulados (scoped) por defecto */
-  .reloj-venezuela {
-    font-family: monospace;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #333;
+  #clock {
+    position: relative;
+    width: max-content;
+    font-family: var(--font-family-monospace);
+    font-feature-settings: "zero", "tnum";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: 1em;
+    color: oklch(0.64 0 0);
+    user-select: text;
+    cursor: text
   }
 </style>

@@ -1,10 +1,11 @@
 ---
 import SocialHandles from '@components/ui/Socialhandles.astro';
-import Grain from '@components/decorative/Grain.astro';
+import Grain from '@components/shared/Grain.astro';
 
 const {encEmail = 'Y29udGFjdEBtYXJjZWxyb2phcy5jb20='} = Astro.props;
 
 const today = new Date();
+
 const mySocialHandles = [
   'X',
   'Instagram',
@@ -14,7 +15,6 @@ const mySocialHandles = [
   'GitHub',
 ];
 ---
-
 <footer id="globalfooter" role="contentinfo" aria-label="Global footer" tabindex="-1">
   <Grain />
   <div class="content">
@@ -26,12 +26,9 @@ const mySocialHandles = [
         <span class="label">Tab the flower to copy my email</span>
       </div>
     </aside>
-    <p>Welcome friend</p>
-    <p>
-      Thanks for stopping by! If you have any questions, want to collaborate, or
+    <p>Thanks for stopping by! If you have any questions, want to collaborate, or
       just want to say hi, feel free to reach out through any of the social
-      platforms below. Looking forward to connecting with you!
-    </p>
+      platforms below. Looking forward to connecting with you!</p>
     <address class="social-handles">
       <SocialHandles handlesToShow={mySocialHandles} />
     </address>
@@ -49,8 +46,7 @@ const mySocialHandles = [
           </li>
         </ul>
       </nav>
-      <small class="copyright"
-        >&copy; {today.getFullYear()} Marcel Rojas. All rights reserved.</small>
+      <small class="copyright">&copy; {today.getFullYear()} Marcel Rojas. All rights reserved.</small>
     </div>
   </div>
 </footer>
@@ -187,7 +183,6 @@ const mySocialHandles = [
       }
     }
   }
-
   div#ClipboardFlower {
     position: relative;
     display: flex;
@@ -213,4 +208,3 @@ const mySocialHandles = [
   }
 </style>
 <script src="@scripts/encEmail.js"></script>
-<!--script src="@scripts/info.js"></script-->

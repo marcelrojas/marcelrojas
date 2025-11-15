@@ -4,7 +4,6 @@ import react from '@astrojs/react';
 import svelte from '@astrojs/svelte';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import partytown from '@astrojs/partytown';
 import vesper from './src/data/vesper.json';
 
 // https://astro.build/config
@@ -25,7 +24,7 @@ export default defineConfig({
 
   prefetch: {
     defaultStrategy: 'viewport',
-    prefetchAll: true,
+    prefetchAll: true
   },
 
   security: {
@@ -36,10 +35,7 @@ export default defineConfig({
     react(),
     svelte(),
     mdx(),
-    sitemap(),
-    partytown({
-      config: { debug: false },
-    })
+    sitemap()
   ],
 
   markdown: {

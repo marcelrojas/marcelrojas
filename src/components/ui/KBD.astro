@@ -1,0 +1,7 @@
+<script>
+  export let kbdClass: string = '';
+</script>
+
+<kbd class={twMerge(kbdClass, $$props.class)}>
+  <slot />
+</kbd>

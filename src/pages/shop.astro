@@ -1,0 +1,21 @@
+---
+import Layout from '@layouts/Layout.astro';
+import PageHeader from '@components/layout/PageHeader.astro';
+
+const {
+  title = 'Shop',
+  description = 'Explore the latest products in my shop.',
+} = Astro.props;
+---
+<Layout title={title} description={description}>
+  <PageHeader title={title} />
+  <section>
+    <h2">Resources</h2>
+    <p>Explore my resources for guides, tutorials, and tools to help you succeed.</p>
+    <ul>
+      <li><a href="/resources/guide1">Guide 1</a></li>
+      <li><a href="/resources/tutorial1">Tutorial 1</a></li>
+      <li><a href="/resources/tool1">Tool 1</a></li>
+    </ul>
+  </section>
+</Layout>

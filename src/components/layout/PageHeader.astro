@@ -1,0 +1,80 @@
+---
+const { title } = Astro.props;
+
+const animHeading = {
+  old: {
+    name: "fade-out",
+    duration: "0.5s",
+    easing: "ease-in-out",
+  },
+  new: {
+    name: "fade-in",
+    duration: "0.5s",
+    easing: "ease-in-out",
+  },
+};
+
+const headingTransition = {
+  forwards: animHeading,
+  backwards: animHeading,
+};
+---
+<header id="PageHeader" role="banner" aria-label="Page header">
+  <h1 class="title" transition:animate={headingTransition}>{title}</h1>
+  <slot />
+</header>
+<style>
+  header#PageHeader {
+    --global-scrollbar-buffer: 15px;
+    overflow: hidden;
+    align-items: center;
+    padding-block: var(--offset);
+    margin-inline: auto;
+    max-width: 1680px;
+    width: calc(87.5vw - var(--global-scrollbar-buffer, 0px));
+    & > .title {
+      font-family: var(--font-family-sans);
+      color: var(--color-text-primary)
+    }
+  }
+  @media screen and (max-width: 733px) {
+    header#PageHeader {
+      --offset: 64px
+    }
+  }
+  @media screen and (min-width: 734px) and (max-width: 1068px) {
+    header#PageHeader {
+      --offset: 72px;
+      --col-gap: 64px
+    }
+  }
+  @media screen and (min-width: 734px) {
+    header#PageHeader {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      column-gap: var(--col-gap)
+    }
+  }
+  @media screen and (min-width: 1068px) {
+    header#PageHeader {
+      --offset: 80px
+    }
+  }
+  @keyframes fade-out {
+    from {
+      opacity: 1
+    }
+    to {
+      opacity: 0
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+  }
+</style>

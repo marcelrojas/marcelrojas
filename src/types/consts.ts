@@ -1,0 +1,2 @@
+export const SITE_TITLE = 'Marcel Rojas';
+export const SITE_DESCRIPTION = 'I’m a self-taught front-end developer and designer from Venezuela, who likes building simple, practical products. I focus on what works, stay consistent, and stick to the plan.';

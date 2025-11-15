@@ -1,0 +1,68 @@
+---
+import iconsIndex from '@data/icons.json';
+
+// Importa el contenido de todos los SVGs definidos en icons.json
+// El `?raw` es clave para obtener el SVG como texto.
+const icons = await Promise.all(
+  Object.values(iconsIndex).map(icon => import(/* @vite-ignore */ `${icon.src}?raw`))
+);
+const iconMap = new Map(Object.keys(iconsIndex).map((name, i) => [name, icons[i].default]));
+
+export interface Props {
+  /** El nombre del ícono a mostrar, debe existir en `icons.json`. */
+  name: keyof typeof iconsIndex;
+  /** El título del ícono para accesibilidad. Si se provee, el ícono deja de ser decorativo. */
+  title?: string;
+  /** Clases CSS adicionales para personalizar el estilo del SVG. */
+  class?: string;
+  /** Atributos adicionales como `width`, `height`, `aria-label`, etc. */
+  [key: string]: any;
+}
+
+const { name, title, class: className, ...rest } = Astro.props;
+
+// Busca el contenido del SVG en el mapa y extrae su contenido interno.
+const iconContent = iconMap.get(name)
+  .replace(/<svg[^>]*>/, '')
+  .replace(/<\/svg>/, '');
+
+const defaultAttributes = {
+  'aria-hidden': title ? 'false' : 'true',
+  focusable: 'false',
+  role: title ? 'img' : 'presentation',
+};
+
+const attributes = { ...defaultAttributes, ...rest };
+---
+<!--
+** Ejemplos de uso:
+* Ícono decorativo (por defecto)
+<Icon name="arrow-up-right" />
+
+* Ícono con significado y accesible para lectores de pantalla
+<Icon name="email" title="Enviar correo" />
+
+* Ícono con tamaño y clase personalizados
+<Icon name="copy" class="text-blue-500" width="32" height="32" />
+-->
+{
+  iconContent && (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class:list={['icon', `icon-${name}`, className]}
+      {...attributes}
+      set:html={iconContent}
+    >
+      {title && <title>{title}</title>}
+    </svg>
+  )
+}
+<style>
+  .icon {
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+  }
+</style>

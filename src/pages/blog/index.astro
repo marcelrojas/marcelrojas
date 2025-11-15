@@ -1,0 +1,17 @@
+---
+import Layout from '@layouts/Layout.astro';
+import PageHeader from '@components/layout/PageHeader.astro';
+import TileMosaic from '@components/layout/TileMosaic.astro';
+import TileList from '@components/layout/TileList.astro';
+
+
+const {
+  title = 'Blog',
+  description = 'Latest posts and updates.',
+} = Astro.props;
+---
+<Layout title={title} description={description}>
+  <PageHeader title={title} />
+  <TileMosaic aria-labelledby="section-blog-posts" />
+  <TileList aria-labelledby="section-external-articles" />
+</Layout>

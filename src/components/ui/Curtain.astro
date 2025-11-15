@@ -1,0 +1,30 @@
+<div id="curtain"></div>
+<style>
+  @layer components {
+    #curtain {
+      display: block;
+      position: fixed;
+      inset: 0;
+      z-index: 3;
+      height: 100dvh;
+      width: 100dvw;
+      touch-action: none;
+      background-color: transparent;
+      backdrop-filter: blur(0px);
+      visibility: hidden;
+      overscroll-behavior: contain;
+      will-change: background-color, backdrop-filter, visibility;
+      transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      @starting-style {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        visibility: hidden
+      }
+      body:is(.is-menu-open, .is-info-open) & {
+        background-color: var(--color-overlay);
+        backdrop-filter: blur(24px);
+        visibility: visible
+      }
+    }
+  }
+</style>

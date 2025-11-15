@@ -1,0 +1,12 @@
+<nav id="universalnav">
+  <slot />
+</nav>
+<style>
+  #universalnav .content {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: max(16px,env(safe-area-inset-left));
+    padding-right: max(16px,env(safe-area-inset-right))
+  }
+</style>

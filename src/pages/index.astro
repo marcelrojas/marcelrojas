@@ -1,0 +1,381 @@
+---
+import Layout from '@layouts/Layout.astro';
+import PageHeader from '@components/layout/PageHeader.astro';
+import Anchor from '@components/ui/Anchor.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
+
+const {
+  title = 'About',
+  description = 'Hey.',
+} = Astro.props;
+---
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <div id="hero-section" class="hero-container">
+    <div class="hero-content-wrapper">
+      <div class="hero-content">
+        <audio class="hero-audio" loop="" src="/beats.mp3"></audio>
+        <p class="hero-title">
+          <span class="y-w">
+            <span class="y" style="transform: translateY(0%) translateZ(0px);">Building better business with an individual approach to each client with a wide range of services</span>
+          </span>
+          <span class="y-w">
+            <span class="y" style="transform: translateY(0%) translateZ(0px);">I'm available for freelance work and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!</span>
+          </span>
+        </p>
+        <Anchor role="button" class="hero-button trigger" text="Book a discovery chat session" labelSymbolR="Chat" href="https://cal.com/marcelrojas" style="opacity: 1; transform: none;" />
+      </div>
+    </div>
+  </div>
+
+  <section class="product-showcase">
+    <div class="product-grid">
+      <a class="product-card product-card--" href="/">
+        <h3 class="product-title">Title</h3>
+        <p class="product-description">Description</p>
+        <div class="product-badge">Now $99</div>
+      </a>
+      <a class="product-card product-card--c1" href="/">
+        <h3 class="product-title">Title</h3>
+        <p class="product-description">Description</p>
+        <div class="product-badge">$299</div>
+      </a>
+      <a class="product-card product-card--composer" href="/">
+        <h3 class="product-title product-title--composer">Title</h3>
+        <p class="product-description product-description--composer">Description</p>
+      </a>
+    </div>
+  </section>
+</Layout>
+<style>
+  .action-group {
+    color: var(--primary-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    flex-direction: row;
+    gap: 40px
+  }
+
+
+  :root {
+    /* Valores personalizados inferidos de tus clases de Tailwind.
+      Debes definir estos valores según tu configuración de Tailwind (tailwind.config.js).
+    */
+    --color-opal-yellow-digital: #FACC15; /* Placeholder: Usando 'amber-400' como ejemplo */
+    --tracking-common: -0.01em;          /* Placeholder: 'common' suele ser un tracking ligero */
+    --screen-4xl: 1920px;                /* Placeholder: Estimación para el breakpoint '4xl' */
+  }
+
+  /* --- Contenedores y Layout --- */
+  
+  .hero-container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    max-width: 1648px;
+    padding-left: 1rem;  /* px-4 */
+    padding-right: 1rem; /* px-4 */
+  }
+
+  .hero-content {
+    padding-top: 157px;
+    text-align: center;
+  }
+  
+  .hero-audio {
+    display: none; /* hidden */
+  }
+
+  /* --- Tipografía y Contenido --- */
+
+  .hero-title {
+    padding-bottom: 22px; /* pb-[22px] (sobrescribe pb-2.5) */
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: var(--tracking-common);
+    color: #ffffff; /* text-white */
+  }
+
+  .hero-title .y-w {
+    display: block; /* block */
+  }
+
+  /* --- Botón --- */
+
+  .hero-button {
+    margin-top: 15px;
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px; /* rounded-full */
+    background-color: var(--color-opal-yellow-digital);
+    padding-left: 1.25rem;  /* px-5 */
+    padding-right: 1.25rem; /* px-5 */
+    padding-top: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0; /* opacity-0 (El estilo en línea 'opacity: 1' lo sobrescribe, probablemente para una animación) */
+  }
+
+  /* --- Media Queries (Breakpoints Responsivos) --- */
+
+  /* md: 768px */
+  @media (min-width: 768px) {
+    .hero-content {
+      padding-top: 170px;
+    }
+    .hero-title {
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 40px;
+    }
+  }
+
+  /* lg: 1024px */
+  @media (min-width: 1024px) {
+    .hero-container {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: 1rem; /* gap-x-4 */
+    }
+    .hero-content-wrapper {
+      grid-column: span 10 / span 10; /* col-span-10 */
+      grid-column-start: 2;          /* col-start-2 */
+    }
+    .hero-content {
+      padding-top: 275px;
+      text-align: left;
+    }
+    .hero-title {
+      text-align: left; /* lg:text-left (ya establecido en .hero-content pero estaba en ambos) */
+    }
+    .hero-button {
+      padding-top: 0;
+    }
+  }
+
+  /* xl: 1280px */
+  @media (min-width: 1280px) {
+    .hero-content {
+      padding-top: 315px;
+    }
+    .hero-title {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  /* 2xl: 1536px */
+  @media (min-width: 1536px) {
+    .hero-content {
+      padding-top: 468px;
+    }
+  }
+  
+  /* 4xl: (Breakpoint personalizado) */
+  @media (min-width: var(--screen-4xl)) {
+    .hero-title {
+      font-size: 48px;
+      line-height: 52px;
+    }
+  }
+
+
+  :root {
+    /* Debes definir estos valores según tu configuración de Tailwind (tailwind.config.js) */
+    --color-opal-yellow-digital: #FACC15; /* Placeholder: 'amber-400' como ejemplo */
+    --color-opal-grey1: #6B7280;          /* Placeholder: 'gray-500' como ejemplo */
+    --color-border-default: rgba(0, 0, 0, 0.1); /* border-black/10 */
+  }
+
+  /* --- Contenedor Principal --- */
+  
+  .product-grid {
+    background-color: #fafafa;
+    /* Aplicado en móvil, sobrescrito en 'md' por 'md:border-b' en el original */
+    border-bottom: 1px solid var(--color-border-default);
+  }
+
+  /* --- Tarjeta de Producto (Base) --- */
+
+  .product-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 46px;
+    text-align: center;
+  }
+  
+  /* Modificadores de tarjeta para bordes y altura */
+  .product-card--tadpole {
+    border-bottom: 1px solid var(--color-border-default);
+  }
+  .product-card--c1 {
+    min-height: 416px;
+    border-bottom: 1px solid var(--color-border-default);
+  }
+  .product-card--composer {
+    min-height: 416px;
+    /* Este no tiene borde inferior en móvil */
+  }
+
+  /* --- Elementos de la Tarjeta --- */
+
+  .product-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .product-title--composer {
+    padding-bottom: 0.375rem; /* pb-1.5 */
+  }
+
+  .product-description {
+    padding-bottom: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--color-opal-grey1);
+  }
+  .product-description--composer {
+    padding-bottom: 50px;
+  }
+  
+  .product-badge {
+    margin-bottom: 1.75rem; /* mb-7 */
+    display: inline-flex;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px; /* rounded-full */
+    background-color: var(--color-opal-yellow-digital);
+    padding-left: 1.25rem;  /* px-5 */
+    padding-right: 1.25rem; /* px-5 */
+    font-size: 14px;
+  }
+
+  .product-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product-image--tadpole {
+    width: 139px;
+  }
+  .product-image--c1 {
+    width: 183px;
+  }
+  .product-image--composer {
+    width: 170px;
+  }
+
+  /* --- Media Queries (Breakpoints Responsivos) --- */
+
+  /* md: 768px */
+  @media (min-width: 768px) {
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-bottom-width: 1px; /* md:border-b */
+    }
+
+    .product-card {
+      padding-top: 51px;
+    }
+    
+    /* Ajustes de layout para las tarjetas */
+    .product-card--tadpole {
+      width: 100%;
+      border-bottom-width: 1px; /* md:border-b */
+    }
+    .product-card--c1 {
+      min-height: 376px;
+      width: 50%;
+      border-bottom-width: 0; /* md:border-b-0 */
+      border-right: 1px solid var(--color-border-default); /* md:border-r */
+    }
+    .product-card--composer {
+      min-height: 376px;
+      width: 50%;
+    }
+    
+    /* Ajustes de contenido */
+    .product-description--composer {
+      padding-bottom: 33px;
+    }
+    
+    .product-badge {
+      margin-bottom: 2rem; /* md:mb-8 */
+    }
+  }
+
+  /* lg: 1024px */
+  @media (min-width: 1024px) {
+    .product-card {
+      padding-top: 56px;
+    }
+    .product-card--tadpole {
+      border-right-width: 0; /* lg:border-r-0 */
+    }
+    .product-card--c1 {
+      min-height: 552px;
+    }
+    .product-card--composer {
+      min-height: 552px;
+    }
+
+    .product-title {
+      padding-bottom: 0;
+      line-height: 50px;
+    }
+
+    .product-description {
+      padding-bottom: 18px; /* Se mantiene igual */
+      font-size: 16px;
+    }
+    .product-description--composer {
+      padding-bottom: 73px;
+    }
+
+    .product-badge {
+      margin-bottom: 46px;
+      height: 40px;
+      font-size: 16px;
+    }
+    
+    /* Imágenes */
+    .product-image--tadpole {
+      width: 237px;
+    }
+    .product-image--c1 {
+      width: 274px;
+    }
+    .product-image--composer {
+      width: 206px;
+    }
+  }
+
+  /* xl: 1280px */
+  @media (min-width: 1280px) {
+    /* Ajuste final del layout a 3 columnas */
+    .product-card--tadpole {
+      width: 33.333333%;
+      border-bottom-width: 0; /* xl:border-b-0 */
+      border-right: 1px solid var(--color-border-default); /* xl:border-r */
+    }
+    .product-card--c1 {
+      width: 33.333333%;
+      /* Mantiene el border-right de 'md' */
+    }
+    .product-card--composer {
+      width: 33.333333%;
+    }
+    
+    .product-image--tadpole {
+      width: 189px;
+    }
+  }
+</style>

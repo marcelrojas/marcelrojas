@@ -1,0 +1,26 @@
+---
+interface Props {
+  date: string | Date;
+  class?: string;
+}
+
+const { date, class: className } = Astro.props;
+
+const dateObj = new Date(date);
+
+const formattedDate = dateObj.toLocaleDateString('en-us', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+});
+---
+<time datetime={dateObj.toISOString()} class={className}>{formattedDate}</time>
+<style>
+  time {
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-14);
+    line-height: 1;
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-secondary)
+  }
+</style>

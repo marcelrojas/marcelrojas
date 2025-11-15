@@ -1,0 +1,74 @@
+---
+import Layout from '@layouts/Layout.astro';
+import PageHeader from '@components/layout/PageHeader.astro';
+import ModuleServices from '@components/layout/ModuleServices.astro';
+import ModulePricing from '@components/layout/ModulePricing.astro';
+import Marquee from '@components/decorative/Marquee.astro';
+import Button from '@components/ui/Button.astro';
+
+const myPhrases = [
+  "Frase para el marquee",
+  "Frase para el marquee",
+  "Frase para el marquee",
+];
+
+const {
+  title = "Services",
+  description = "Explore the services I offer to help you succeed.",
+} = Astro.props;
+---
+<Layout title={title} description="Explore the services I offer to help you succeed.">
+  <PageHeader title={title} />
+  <ModuleServices />
+  <section class="module">
+    <Marquee phrases={myPhrases} />
+    <div class="module-content">
+      <h2 class="headline">Contact Me</h2>
+      <p class="subhead">Applications are now open for any of my services, don't lose<br />more opportunities and join with the button bellow!</p>
+      <Button href="https://marcelrojas.typeform.com/to/?typeform-source=marcelrojas.com">Join in the loop →</Button>
+      <p class="subhead">Built for .</p>
+    </div>
+  </section>
+  <ModulePricing />
+  <section>
+    <h2 class="headline">FAQs</h2>
+    <p class="subhead">Here are some frequently asked questions about my services.</p>
+    <ul>
+      <li>How All This Work</li>
+      <li>What is the turnaround time for a project?</li>
+      <li>Do you offer ongoing support after project completion?</li>
+      <li>Can you work with existing codebases?</li>
+    </ul>
+  </section>
+</Layout>
+<style>
+  .module {
+    width: 100%;
+    max-width: 100%;
+    background-color: oklch(0.91 0.02 104.29);
+    position: relative;
+    overflow: hidden;
+  }
+  .module-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem 1.25rem 7.625rem;
+  }
+  .module-content h2 {
+    text-align: center;
+    line-height: 115%;
+    letter-spacing: -1.2px;
+    align-items: center;
+    max-width: 800px;
+  }
+  .module-content p {
+    max-width: 37.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+</style>

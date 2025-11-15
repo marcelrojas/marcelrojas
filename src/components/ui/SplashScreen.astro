@@ -1,0 +1,54 @@
+---
+import spinner from '/spinner.svg?raw';
+---
+<div id="splash-screen">
+  <div class="spinner-container" set:html={spinner} />
+</div>
+<style is:inline>
+  @layer components {
+    #splash-screen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      contain: layout paint;
+      content-visibility: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
+      opacity: 1;
+      visibility: visible;
+      user-select: none;
+      touch-action: none;
+      overscroll-behavior: contain;
+      will-change: opacity, visibility, allow-discrete;
+      transition: opacity 0.3s ease-out, visibility 0.3s ease-out
+    }
+    #splash-screen.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Spinner styles */
+    .spinner-container svg {
+      width: 48px;
+      height: 48px;
+      animation: spinner-rotate 1.2s steps(8, end) infinite;
+    }
+
+    .spinner-container rect {
+      fill: var(--color-text-primary, black);
+    }
+
+    @keyframes spinner-rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+</style>
+<script src="@scripts/splashscreen.js"></script>

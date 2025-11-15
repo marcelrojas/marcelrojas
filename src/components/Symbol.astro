@@ -1,0 +1,17 @@
+---
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+interface Props {
+  name: string;
+  class?: string;
+}
+
+const { name, ...rest } = Astro.props;
+
+// TODO: Adapta esta lógica para leer desde tu `symbolsindex.json`
+// Esto es un ejemplo de cómo leer un archivo SVG directamente.
+const symbolPath = resolve(`@assets/symbols/${name}.svg`);
+const svgContent = readFileSync(symbolPath, 'utf-8');
+---
+<Fragment set:html={svgContent} {...rest} />

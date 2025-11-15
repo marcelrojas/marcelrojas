@@ -1,0 +1,26 @@
+---
+
+---
+<article>
+  <header>
+    <slot name="header" />
+  </header>
+  <slot />
+  <footer>
+    <slot name="footer" />
+  </footer>
+</article>
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 100%
+  }
+  @media (min-width: 768px) {
+    article {
+      gap: 24px
+    }
+  }
+</style>

@@ -1,0 +1,112 @@
+---
+import Anchor from '@components/ui/Anchor.astro';
+---
+<section id="module_pricing">
+  <h2 class="headline">Pricing</h2>
+  <div class="cards-pricing">
+    <article class="card">
+      <h1 class="">You next?</h1>
+      <div class="container">
+        <Anchor class="" href="https://lemonsqueezy.com/" rel="noopener" style="background-color: rgb(0, 102, 255); height: 100%; border-radius: 30px;">Order - $150</Anchor>
+      </div>
+    </article>
+    <article class="card">
+      <h1 class="">For a Squad?</h1>
+      <div class="container">
+        <Anchor class="" href="mailto:contact@marcelrojas.com?subject=Hey, I want to order for my entire team!" target="_blank" rel="noopener" style="background-color: rgb(230, 230, 230); height: 100%; width: 100%; border-radius: 30px;">Get quote</a>
+      </div>
+    </article>
+  </div>
+  <div class="footer-pricing">
+    <div class="">
+      <span class="">300+ users &amp; companies made an order.</span>
+    </div>
+    <div class="crypto">
+      <span class="">crypto payments also accepted - <a class="" href="https://x.com/whyismarcel" target="_blank" rel="noopener">DM on X</Anchor>.</span>
+    </div>
+  </div>
+</section>
+<style>
+  section#module_pricing {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    will-change: transform;
+    & h2.headline {
+      align-items: flex-start;
+      display: flex;
+      flex: none;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 20px;
+      justify-content: flex-start;
+      position: relative;
+    }
+    & div.cards-pricing {
+      align-items: center;
+      display: flex;
+      flex: none;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 10px;
+      height: min-content;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      & article.card {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        background-color: rgb(243, 243, 243);
+        border-radius: 24px;
+
+        flex: 1 0 0px;
+        height: 230px;
+        position: relative;
+        width: 1px;
+        & h1 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        & div.container {
+          width: 100%;
+          height: 50px;
+          & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 400;
+            height: 100%;
+          }
+        }
+      }
+    }
+    & div.footer-pricing {
+      flex-flow: column;
+      flex: none;
+      align-items: flex-start;
+      gap: 4px;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      & div.crypto {
+        & a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+</style>

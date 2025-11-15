@@ -1,0 +1,46 @@
+{
+  "chevron-left": {
+    "name": "chevron-left",
+    "src": "@assets/icons/chevron-left.svg"
+  },
+  "chevron-right": {
+    "name": "chevron-right",
+    "src": "@assets/icons/chevron-right.svg"
+  },
+  "arrow-up-right": {
+    "name": "arrow-up-right",
+    "src": "@assets/icons/arrow-up-right.svg"
+  },
+  "copy": {
+    "name": "copy",
+    "src": "@assets/icons/copy.svg"
+  },
+  "copy-small": {
+    "name": "copy-small",
+    "src": "@assets/icons/copy-small.svg"
+  },
+  "cross": {
+    "name": "cross",
+    "src": "@assets/icons/cross.svg"
+  },
+  "cross-small": {
+    "name": "cross-small",
+    "src": "@assets/icons/cross-small.svg"
+  },
+  "email": {
+    "name": "email",
+    "src": "@assets/icons/email.svg"
+  },
+  "information": {
+    "name": "information",
+    "src": "@assets/icons/information.svg"
+  },
+  "information-fill": {
+    "name": "information-fill",
+    "src": "@assets/icons/information-fill.svg"
+  },
+  "information-fill-small": {
+    "name": "information-fill-small",
+    "src": "@assets/icons/information-fill-small.svg"
+  }
+}

@@ -17,25 +17,19 @@ github@marcelrojas:~$fastfetch
 |
 ```
 
-<ul>
-  <li>
-    <a href="https://github.com/marcelrojas/"><strong>Software Toolkit</strong></a>
-  </li>
-  <li>
-    <a href="https://github.com/marcelrojas/"><strong>Software Stack</strong></a>
-  </li>
-</ul>
+- <a href="https://github.com/marcelrojas/"><strong>Software Toolkit</strong></a>
+- <a href="https://github.com/marcelrojas/"><strong>Software Stack</strong></a>
 
 Features:
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+- Minimal styling (make it your own!)
+- 100/100 Lighthouse performance
+- SEO-friendly with canonical URLs and OpenGraph data
+- Sitemap support
+- RSS Feed support
+- Markdown & MDX support
 
-## 🚀 Project Structure
+## Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 

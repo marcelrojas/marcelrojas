@@ -3,7 +3,6 @@
 
   const options = {
     weekday: 'short',
-    year: 'numeric',
     month: 'short',
     day: 'numeric',
     hour: '2-digit',
@@ -18,7 +17,7 @@
   const formatter = new Intl.DateTimeFormat('en-US', options);
   
   // 1. Variable reactiva
-  let time = 'Loading hour...';
+  let time = 'Loading time...';
 
   // 2. onMount, equivalent to useEffect[] on React
   onMount(() => {

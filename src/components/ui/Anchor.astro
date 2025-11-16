@@ -98,6 +98,16 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
         cursor: default;
         pointer-events: none
       }
+      @media (hover: hover) {
+        &:hover {
+          border-radius: 8px;
+          transform: scale(1.04)
+        }
+      }
+      &:active {
+        border-radius: 8px;
+        transform: scale(1.04)
+      }
       &:focus-visible {
         outline: 2px solid var(--color-focus)
       }
@@ -105,11 +115,6 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
         
         &[aria-current="page"] {
           
-        }
-        @media (hover: hover) {
-          &:hover {
-            
-          }
         }
       }
       &.variant-platted {

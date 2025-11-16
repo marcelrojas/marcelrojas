@@ -34,28 +34,22 @@ const navAnchor = [
 <style>
   header#globalheader {
     position: relative;
-    left: max(var(--spacing-sal) + 22px);
-    right: max(var(--spacing-sar) + 22px);
-    z-index: 4;
+    padding-left: max(var(--spacing-sal) + 22px);
+    padding-right: max(var(--spacing-sar) + 22px);
     & div.content {
       position: relative;
       height: min-content;
       overflow: clip;
       display: flex;
       flex-flow: column;
-      padding: 56px 16px 40px;
+      padding-top: max(var(--spacing-sat) + 56px);
+      padding-bottom: max(var(--spacing-sab) + 40px);
       gap: 28px;
       align-items: center;
       & div.framer-tl3svo {
         position: relative;
         height: min-content;
         width: 100%;
-        gap: 10px;
-        overflow: clip;
-        display: flex;
-        flex-flow: column;
-        flex: none;
-        align-items: center;
         & div.framer-1haor4 {
           position: relative;
           width: auto;
@@ -70,10 +64,12 @@ const navAnchor = [
             width: auto;
             max-width: 496px;
             height: auto;
-            flex: none;
             white-space: pre-wrap;
             word-break: break-word;
             word-wrap: break-word;
+            & h1 {
+              
+            }
           }
         }
       }
@@ -97,8 +93,22 @@ const navAnchor = [
           & li {
             position: relative;
             & a.nav-anchor {
+              &:first-child {
+                border-radius: 32px 8px 8px 32px
+              }
+              &:last-child {
+                border-radius: 8px 32px 32px 8pxc
+              }
+              &:not(:first-child):not(:last-child) {
+                  border-radius: 8px
+              }
+              height: 40px;
+              box-shadow: inset 0px 1px 0px 0px oklch(0.94 0 0 / 0);
+              opacity: 1;
+              background-color: oklch(0.96 0 0);
               color: var(--color-label-primary);
               text-decoration: none;
+              will-change: color, background-color, border-radius, transform;
               transition: color 150ms, background-color 150ms, border-radius 150ms, transform 150ms;
               &:hover {
                 color: var(--color-primary);

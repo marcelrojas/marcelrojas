@@ -13,12 +13,8 @@ const navAnchor = [
 <header id="globalheader">
   <div class="content" role="dialog" aria-modal="true" tabindex="-1">
     <Clock client:load />
-    <div class="framer-tl3svo">
-      <div class="framer-1haor4">
-        <div class="framer-1smtx7k">
-          <h1>Marcel Rojas</h1>
-        </div>
-      </div>
+    <div class="framer-1smtx7k">
+      <h1>Marcel Rojas</h1>
     </div>
     <nav id="globalnav" class="haptic-nav" aria-label="Global">
       <ul id="globalnav-list">
@@ -46,31 +42,16 @@ const navAnchor = [
       padding-bottom: max(var(--spacing-sab) + 40px);
       gap: 28px;
       align-items: center;
-      & div.framer-tl3svo {
+      & div.framer-1smtx7k {
         position: relative;
-        height: min-content;
-        width: 100%;
-        & div.framer-1haor4 {
-          position: relative;
-          width: auto;
-          max-width: 496px;
-          height: auto;
-          flex: none;
-          white-space: pre-wrap;
-          word-break: break-word;
-          word-wrap: break-word;
-          & div.framer-1smtx7k {
-            position: relative;
-            width: auto;
-            max-width: 496px;
-            height: auto;
-            white-space: pre-wrap;
-            word-break: break-word;
-            word-wrap: break-word;
-            & h1 {
-              
-            }
-          }
+        width: auto;
+        max-width: 496px;
+        height: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+        word-wrap: break-word;
+        & h1 {
+
         }
       }
       nav#globalnav {
@@ -97,7 +78,7 @@ const navAnchor = [
                 border-radius: 32px 8px 8px 32px
               }
               &:last-child {
-                border-radius: 8px 32px 32px 8pxc
+                border-radius: 8px 32px 32px 8px
               }
               &:not(:first-child):not(:last-child) {
                   border-radius: 8px

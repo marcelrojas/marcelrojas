@@ -17,10 +17,10 @@ const navAnchor = [
       <h1>Marcel Rojas</h1>
     </div>
     <nav id="globalnav haptic-nav" aria-label="Global">
-      <ul id="globalnav-list">
+      <ul>
         {navAnchor.map(link => (
-          <li class="nav-item">
-            <a href={link.href} class="nav-anchor">{link.text}</a>
+          <li>
+            <a href={link.href}>{link.text}</a>
           </li>
         ))}
       </ul>
@@ -32,7 +32,7 @@ const navAnchor = [
     position: relative;
     padding-left: max(var(--spacing-sal) + 22px);
     padding-right: max(var(--spacing-sar) + 22px);
-    & div.content {
+    & > div.content {
       position: relative;
       height: min-content;
       overflow: clip;
@@ -42,7 +42,7 @@ const navAnchor = [
       padding-bottom: max(var(--spacing-sab) + 40px);
       gap: 28px;
       align-items: center;
-      & div.page-title {
+      & > div.page-title {
         position: relative;
         width: auto;
         max-width: 496px;
@@ -50,8 +50,7 @@ const navAnchor = [
         white-space: pre-wrap;
         word-break: break-word;
         word-wrap: break-word;
-        & h1 {
-          display: inline-block;
+        & > h1 {
           font-family: var(--font-family-sans);
           font-size: calc(calc(1rem * 5) * 1);
           font-weight: var(--font-weight-600);
@@ -61,14 +60,14 @@ const navAnchor = [
           color: oklch(0.19 0 0 / 0.1)
         }
       }
-      nav#globalnav {
+      & > nav#globalnav {
         position: relative;
         width: 100%;
         max-width: 420px;
         height: min-content;
         will-change: opacity, visibility, allow-discrete;
         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, allow-discrete 0.3s ease-in-out;
-        & ul {
+        & > ul {
           position: relative;
           width: 100%;
           height: min-content;
@@ -76,9 +75,9 @@ const navAnchor = [
           flex-flow: row;
           align-items: center;
           gap: 4px;
-          & li {
+          & > li {
             position: relative;
-            & a.nav-anchor {
+            & > a {
               height: 40px;
               font-family: var(--font-family-sans);
               text-decoration: none;

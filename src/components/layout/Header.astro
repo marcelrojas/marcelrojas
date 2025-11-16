@@ -84,13 +84,13 @@ const navAnchor = [
               background-color: oklch(0.96 0 0);
               will-change: color, background-color, border-radius, transform;
               transition: color 150ms, background-color 150ms, border-radius 150ms, transform 150ms;
-              &:first-child {
+              > &:first-child {
                 border-radius: 32px 8px 8px 32px
               }
-              &:last-child {
+              > &:last-child {
                 border-radius: 8px 32px 32px 8px
               }
-              &:not(:first-child):not(:last-child) {
+              > &:not(:first-child):not(:last-child) {
                 border-radius: 8px
               }
               &:hover {

@@ -13,10 +13,10 @@ const navAnchor = [
 <header id="globalheader">
   <div class="content" role="dialog" aria-modal="true" tabindex="-1">
     <Clock client:load />
-    <div class="framer-1smtx7k">
+    <div class="page-title">
       <h1>Marcel Rojas</h1>
     </div>
-    <nav id="globalnav" class="haptic-nav" aria-label="Global">
+    <nav id="globalnav haptic-nav" aria-label="Global">
       <ul id="globalnav-list">
         {navAnchor.map(link => (
           <li class="nav-item">
@@ -42,7 +42,7 @@ const navAnchor = [
       padding-bottom: max(var(--spacing-sab) + 40px);
       gap: 28px;
       align-items: center;
-      & div.framer-1smtx7k {
+      & div.page-title {
         position: relative;
         width: auto;
         max-width: 496px;
@@ -51,6 +51,7 @@ const navAnchor = [
         word-break: break-word;
         word-wrap: break-word;
         & h1 {
+          display: inline-block;
           font-family: var(--font-family-sans);
           font-size: calc(calc(1rem * 5) * 1);
           font-weight: var(--font-weight-600);
@@ -61,7 +62,7 @@ const navAnchor = [
         }
       }
       nav#globalnav {
-        position: sticky;
+        position: relative;
         width: 100%;
         max-width: 420px;
         height: min-content;
@@ -73,13 +74,20 @@ const navAnchor = [
           height: min-content;
           display: flex;
           flex-flow: row;
-          flex: none;
-          place-content: center;
           align-items: center;
           gap: 4px;
           & li {
             position: relative;
             & a.nav-anchor {
+              height: 40px;
+              font-family: var(--font-family-sans);
+              text-decoration: none;
+              color: var(--color-label-primary);
+              box-shadow: inset 0px 1px 0px 0px oklch(0.94 0 0 / 0);
+              opacity: 1;
+              background-color: oklch(0.96 0 0);
+              will-change: color, background-color, border-radius, transform;
+              transition: color 150ms, background-color 150ms, border-radius 150ms, transform 150ms;
               &:first-child {
                 border-radius: 32px 8px 8px 32px
               }
@@ -87,16 +95,8 @@ const navAnchor = [
                 border-radius: 8px 32px 32px 8px
               }
               &:not(:first-child):not(:last-child) {
-                  border-radius: 8px
+                border-radius: 8px
               }
-              height: 40px;
-              box-shadow: inset 0px 1px 0px 0px oklch(0.94 0 0 / 0);
-              opacity: 1;
-              background-color: oklch(0.96 0 0);
-              color: var(--color-label-primary);
-              text-decoration: none;
-              will-change: color, background-color, border-radius, transform;
-              transition: color 150ms, background-color 150ms, border-radius 150ms, transform 150ms;
               &:hover {
                 color: var(--color-primary);
                 transform: scale(2px)

@@ -48,7 +48,6 @@
     letter-spacing: 0;
     line-height: 1;
     color: oklch(0.64 0 0);
-    user-select: none;
-    cursor: text
+    user-select: none
   }
 </style>

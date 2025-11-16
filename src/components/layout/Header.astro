@@ -16,7 +16,7 @@ const navAnchor = [
     <div class="page-title">
       <h1>Marcel Rojas</h1>
     </div>
-    <nav id="globalnav haptic-nav" aria-label="Global">
+    <nav id="globalnav" class="haptic-nav" aria-label="Global">
       <ul>
         {navAnchor.map(link => (
           <li>
@@ -80,7 +80,6 @@ const navAnchor = [
             & > a {
               height: 40px;
               font-family: var(--font-family-sans);
-              text-decoration: none;
               color: var(--color-label-primary);
               box-shadow: inset 0px 1px 0px 0px oklch(0.94 0 0 / 0);
               opacity: 1;

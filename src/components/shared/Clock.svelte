@@ -42,8 +42,8 @@
     width: max-content;
     font-family: var(--font-family-mono);
     font-feature-settings: "zero", "tnum";
-    font-size: 12px;
-    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-medium);
     letter-spacing: 0;
     line-height: 1;
     color: oklch(0.64 0 0);

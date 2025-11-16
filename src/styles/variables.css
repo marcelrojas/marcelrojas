@@ -233,6 +233,8 @@
       --color-text-secondary: var(--color-gray-09); /* for secondary text on background */
       --color-text-onsuface-primary: var(--color-); /* for primary text on surface */
       --color-text-onsuface-secondary: var(--color-); /* for secondary text on surface */
+      --color-label-primary: oklch(0.22 0 0); /* for standard label */
+      --color-label-primary-active: oklch(0.99 0 0); /* for standard label active */
       --color-label-primary-controls: hsla(0, 0%, 25%, 1.00); /* for standard label on accent */
       --color-label-primary-controls: var(--color-black); /* for standard label on accent */
       --color-label-secondary: var(--color-); /* for descriptive label like footnotes and subtitles */
@@ -242,7 +244,7 @@
       --color-label-info: var(--color-); /* for label on info */
       --color-label-danger: var(--color-); /* for label on danger */
       --color-label-warning: var(--color-); /* for label on warning */
-      --color-background: var(--color-white);
+      --color-background: oklch(0.99 0 0); /* background */
       --color-background-secondary: var(--color-metal);
       --color-background-tertiary: var(--color-metal-light);
       --color-surface-primary: var(--color-metal);
@@ -254,10 +256,12 @@
       --color-foregroud-ultrathin: oklch(0.80466 0 0 / 0.44); /* full-screen views that require a dark color scheme */
       --color-overlay: var(--color-foregroud-regular);
       --color-glow: radial-gradient(#fff 50%, #0000 70%);
+      --color-fill: oklch(0.96 0 0);
       --color-fill-primary: hsla(0, 0%, 47%, 0.20);
       --color-fill-secondary: var(--color-);
       --color-fill-tertiary: hsla(240, 4%, 48%, 0.12);
       --color-fill-destructive: hsla(359, 100%, 61%, 0.14);
+      --color-fill-border: hsla(240, 4%, 48%, 0.20);
       --color-separator-opaque: hsla(240, 2%, 78%, 1.00);
       --color-separator-nonopaque: hsla(0, 0%, 0%, 0.12);
 

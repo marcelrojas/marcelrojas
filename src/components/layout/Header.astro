@@ -1,5 +1,5 @@
 ---
-import Button from '@components/ui/Button.astro';
+import Anchor from '@components/ui/Anchor.astro';
 import Clock from '@components/shared/Clock.svelte';
 
 const navAnchor = [
@@ -14,13 +14,13 @@ const navAnchor = [
   <div class="content" role="dialog" aria-modal="true" tabindex="-1">
     <Clock client:load />
     <div class="page-title">
-      <h1>Marcel Rojas</h1>
+      <h1>Marcel<br />Rojas</h1>
     </div>
     <nav id="globalnav" class="haptic-nav" aria-label="Global">
       <ul>
         {navAnchor.map(link => (
           <li>
-            <a href={link.href}>{link.text}</a>
+            <Anchor wide="fill" href={link.href}>{link.text}</Anchor>
           </li>
         ))}
       </ul>
@@ -53,7 +53,7 @@ const navAnchor = [
         & > h1 {
           font-family: var(--font-family-sans);
           font-size: calc(calc(1rem * 5) * 1);
-          font-weight: var(--font-weight-600);
+          font-weight: var(--font-weight-semibold);
           line-height: 1.1;
           letter-spacing: -0.01em;
           text-align: center;
@@ -87,24 +87,21 @@ const navAnchor = [
               border-radius: 8px
             }
             & > a {
-              padding-block: 9px;
-              display: flex;
-              justify-content: center;
-              font-family: var(--font-family-sans);
-              text-align: center;
+              padding-block: 10px;
+              font-size: var(--font-size-14);
               color: var(--color-label-primary);
               box-shadow: inset 0px 1px 0px 0px oklch(0.94 0 0 / 0);
               opacity: 1;
               background-color: oklch(0.96 0 0);
               will-change: color, background-color, border-radius, transform;
               transition: color 150ms, background-color 150ms, border-radius 150ms, transform 150ms;
-              &:hover {
-                color: var(--color-primary);
-                transform: scale(2px)
+              @media (hover: hover) {
+                &:hover {
+                  transform: scale(1.04)
+                }
               }
               &:active {
-                color: var(--color-primary);
-                transform: scale(2px)
+                transform: scale(1.04)
               }
             }
           }

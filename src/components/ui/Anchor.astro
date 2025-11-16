@@ -3,7 +3,7 @@ interface Props {
   /** El rol del elemento anchor. */
   role?: 'anchor' | 'button';
   /** La variante visual del botón. */
-  variant?: 'text' | 'platted' | 'borderless';
+  variant?: 'text' | 'platted';
   /** El color del botón. */
   action?: 'default' | 'neutral';
   /** El tamaño del ancla. */
@@ -24,7 +24,7 @@ interface Props {
 
 // 1. Desestructurar props con valores por defecto.
 const {
-  type = 'anchor',
+  role = 'anchor',
   variant = 'text',
   action = 'default',
   size = 'medium',
@@ -32,15 +32,15 @@ const {
   disabled = false,
   text,
   class: userClass,
+  href,
   ...rest
 } = Astro.props;
 
-// 2. Lógica para determinar los atributos.
+// 2. Atributos finales para el elemento (incluye el resto de props).
 const attrs: Record<string, any> = {
   ...rest,
-  // Atributos de accesibilidad y funcionales.
-  type: type,
-  disabled: disabled,
+  role,
+  disabled,
   'aria-disabled': disabled ? 'true' : undefined,
   tabindex: disabled ? -1 : undefined,
 };
@@ -48,7 +48,7 @@ const attrs: Record<string, any> = {
 // 3. Comprobar si se están usando los slots para los símbolos.
 const hasSymbol = Astro.slots.has('symbol');
 
-// 4. Construir la lista de clases dinámicamente.
+// 4. Construir la lista de clases dinámicamente y la clase final.
 const classList = [
   'anchor',
   `variant-${variant}`,
@@ -57,64 +57,83 @@ const classList = [
   `wide-${wide}`,
   userClass,
   hasSymbol && 'has-symbol',
-].filter(Boolean).join(' '); // `filter(Boolean)` elimina valores falsy (como `false` o `undefined`).
+].filter(Boolean);
 
-const { href, class: className, ...props } = Astro.props;
+const finalClass = classList.join(' ');
 
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
 const subpath = pathname.match(/[^\/]+/g);
 const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 ---
-<a href={href} class:list={[className]} aria-current={isActive ? 'page' : undefined} {...props} {...attrs}>
+<a href={href} class={finalClass} aria-current={isActive ? 'page' : undefined} {...attrs}>
   <slot />
 </a>
 <style>
-  :is(a, a[role="button"]).anchor {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    width: fit-content;
-    height: fit-content;
-    font-family: var(--font-family-sans);
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-22);
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    -webkit-font-smoothing: subpixel-antialiased;
-    touch-action: manipulation;
-    will-change: color, transform;
-    transition: color 150ms, transform 150ms;
-    transform: scale(1) translate3d(0px, 0px, 0px) perspective(1px);
-    &[aria-current="page"] {
-      cursor: default;
-      pointer-events: none
-    }
-    &:focus-visible {
-      outline: 2px solid var(--color-focus)
-    }
-    &.anchor-platter {
-      padding: 8px 10px;
-      border-radius: 8px;
-      background: var(--color-anchor-bg);
-      border-color: var(--color-anchor-border);
-      color: var(--color-anchor);
-      &[aria-current="page"] {
-        font-weight: var(--font-weight-bold);
-        color: var(--color-label-primary);
-        background-color: var(--color-anchor-bg-active)
+  @layer components {
+    :is(a, a[role="button"]).anchor {
+      height: fit-content;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-family: var(--font-family-sans);
+      font-weight: var(--font-weight-regular);
+      text-align: center;
+      backface-visibility: hidden;
+      -webkit-font-smoothing: subpixel-antialiased;
+      touch-action: manipulation;
+      will-change: color, transform;
+      transition: color 150ms, transform 150ms;
+      transform: scale(1) translate3d(0px, 0px, 0px) perspective(1px);
+      &.wide-fit {
+        width: fit-content
       }
-      @media (hover: hover) {
-        &:hover {
-          --color-anchor-hover: okchl(1 1 1 / 0.08);
-          background-color: var(--color-anchor-hover)
+      &.wide-fill {
+        width: 100%
+      }
+      &[aria-current="page"] {
+        border-radius: 32px;
+        color: var(--color-label-primary-active, oklch(0.99 0 0));
+        background-color: var(--color-anchor-bg-active, oklch(0.22 0 0));
+        cursor: default;
+        pointer-events: none
+      }
+      &:focus-visible {
+        outline: 2px solid var(--color-focus)
+      }
+      &.variant-text {
+        
+        &[aria-current="page"] {
+          
+        }
+        @media (hover: hover) {
+          &:hover {
+            
+          }
         }
       }
-    }
-    &[role="button"] {
-      
-    }
-    &[role="button"][aria-pressed="true"] {
-      
+      &.variant-platted {
+        padding: 8px 10px;
+        border-radius: 8px;
+        background: var(--color-fill);
+        color: var(--color-label-controls);
+        &[aria-current="page"] {
+          color: var(--color-label-primary);
+          background-color: var(--color-anchor-bg-active)
+        }
+        @media (hover: hover) {
+          &:hover {
+            --color-anchor-hover: okchl(1 1 1 / 0.08);
+            background-color: var(--color-anchor-hover)
+          }
+        }
+      }
+      &[role="button"] {
+        
+      }
+      &[role="button"][aria-pressed="true"] {
+        
+      }
     }
   }
 </style>

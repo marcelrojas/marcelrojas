@@ -82,8 +82,8 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       backface-visibility: hidden;
       -webkit-font-smoothing: subpixel-antialiased;
       touch-action: manipulation;
-      will-change: color, transform;
-      transition: color 150ms, transform 150ms;
+      will-change: color, background-color, border-radius, transform;
+      transition: color 150ms, background-color 150ms, border-radius 150ms, transform 150ms;
       transform: scale(1) translate3d(0px, 0px, 0px) perspective(1px);
       &.wide-fit {
         width: fit-content
@@ -101,12 +101,12 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       @media (hover: hover) {
         &:hover {
           border-radius: 8px;
-          transform: scale(1.04)
+          transform: scale(1.03)
         }
       }
       &:active {
         border-radius: 8px;
-        transform: scale(1.04)
+        transform: scale(1.03)
       }
       &:focus-visible {
         outline: 2px solid var(--color-focus)

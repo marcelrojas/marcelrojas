@@ -51,7 +51,13 @@ const navAnchor = [
         word-break: break-word;
         word-wrap: break-word;
         & h1 {
-
+          font-family: var(--font-family-sans);
+          font-size: calc(calc(1rem * 5) * 1);
+          font-weight: var(--font-weight-600);
+          line-height: 1.1;
+          letter-spacing: -0.01em;
+          text-align: center;
+          color: oklch(0.19 0 0 / 0.1)
         }
       }
       nav#globalnav {

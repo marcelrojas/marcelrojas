@@ -9,7 +9,7 @@ const {
 } = Astro.props;
 ---
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <header class="product-card product-card--c1">
+  <header class="product-card">
     <audio class="hero-audio" loop="" src="/beats.mp3"></audio>
     <h1 class="product-title">Title</h1>
     <p class="product-description">
@@ -20,12 +20,17 @@ const {
   </header>
   <section class="product-showcase">
     <div class="product-grid">
-      <a class="product-card product-card--c2" href="/shop/">
-        <h3 class="product-title">Title</h3>
+      <article class="product-card">
+        <h1 class="product-title">Curriculum</h1>
+        <p class="product-description">Location Venezuela<br />Languages Spanish, English<br />Skillset Development, Design and Strategy</p>
+        <Anchor class="product-badge" href="/curriculum">Open</Anchor>
+      </article>
+      <article class="product-card" href="/shop/">
+        <h1 class="product-title">Title</h1>
         <p class="product-description">Description.</p>
-        <span class="product-badge">$299</span>
-      </a>
-      <article class="product-card product-card--c3">
+        <Anchor class="product-badge" href="/curriculum">$299</Anchor>
+      </article>
+      <article class="product-card">
         <h1 class="product-title">Curriculum</h1>
         <p class="product-description">Location Venezuela<br />Languages Spanish, English<br />Skillset Development, Design and Strategy</p>
         <Anchor class="product-badge" href="/curriculum">Open</Anchor>
@@ -60,7 +65,7 @@ const {
         margin-top: 15px;
         height: 40px;
         background-color: var(--color-yellow-digital);
-        padding-inline: 1.25rem; /* px-5 */
+        padding-inline: 1.25rem;
         font-size: 16px
       }
     }
@@ -78,15 +83,14 @@ const {
       border-right: 1px solid var(--color-border-default)
     }
     & .product-card {
+      min-height: var(--min-height);
       display: block;
       margin-left: auto;
       margin-right: auto;
+      padding-top: var(--padding-top);
       text-align: center;
       border-bottom: 1px solid var(--color-border-default);
-      &.product-card--c2 {
-        width: 50%
-      }
-      &.product-card--c3 {
+      &:not(:first-child):not(:last-child) > .product-card--c3 {
         width: 50%
       }
       & .product-title {
@@ -115,44 +119,23 @@ const {
     }
   }
 
-  /* --- Media Queries (Breakpoints) --- */
-
   /* Mobile Screen */
   @media screen and (width <= 768px) {
     .product-card {
-      padding-top: 46px;
-      &.product-card--c2 {
-        min-height: 376px
-      }
-      &.product-card--c3 {
-        min-height: 376px
-      }
+      --padding-top: 46px;
+      --min-height: 376px
       & .product-badge {
         margin-bottom: 2rem
       }
     }
-
-    /* Ajustes de layout para las tarjetas */
-    .product-card--c2 {
-      min-height: 416px
-    }
-    .product-card--c3 {
-      min-height: 416px
-    }
   }
 
   /* Desktop Screen */
-  @media screen and (width >= 1024px) {
+  @media screen and (width <= 1024px) {
     .product-card {
-      padding-top: 56px;
-      &.product-card--c2 {
-        min-height: 552px
-      }
-      &.product-card--c3 {
-        min-height: 552px
-      }
+      --padding-top: 56px;
+      --min-height: 552px;
       & .product-title {
-        padding-bottom: 0;
         line-height: 50px
       }
       & .product-description {

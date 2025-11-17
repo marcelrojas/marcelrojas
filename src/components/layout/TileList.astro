@@ -7,7 +7,7 @@ import articles from '@data/articles.json';
   {
     Object.values(articles).map((article) => (
       <li class="tile-item">
-        <Anchor href={article.url} target="_blank" rel="noopener noreferrer" class="headline stretched-link">{article.title}</Anchor>
+        <Anchor href={article.url} target="_blank" rel="noopener noreferrer" class="headline">{article.title}</Anchor>
         <span class="publisher">Published by: <Anchor href={article.publisherURL} target="_blank" rel="noopener noreferrer">{article.publisher}</Anchor></span>
       </li>
     ))
@@ -18,6 +18,7 @@ import articles from '@data/articles.json';
     position: relative;
     padding-top: 80px;
     padding-bottom: 75px;
+    gap: var(--gap);
     & > li.tile-item {
       position: relative;
       display: flex;
@@ -70,16 +71,6 @@ import articles from '@data/articles.json';
         font-size: var(--font-size-18);
         line-height: var(--line-height-24);
         color: var(--color-label-primary);
-        & > a.stretched-link {
-          color: var(--color-label-primary);
-          text-decoration: none;
-          &::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            z-index: 1
-          }
-        }
         & > span.publisher {
           font-family: var(--font-family-mono);
           font-weight: var(--font-weight-medium);
@@ -88,7 +79,6 @@ import articles from '@data/articles.json';
           color: var(--color-label-secondary);
           & > a {
             position: relative;
-            z-index: 2;
             border-radius: 3px;
             background-color: var(--color-);
             @media (hover: hover) {
@@ -103,12 +93,12 @@ import articles from '@data/articles.json';
   }
   @media screen (max-width: 768px) {
     ul.tiles-list {
-      gap: 16px
+      --gap: 16px
     }
   }
   @media screen (min-width: 768px) {
     ul.tiles-list {
-      gap: 24px
+      --gap: 24px
     }
   }
 </style>

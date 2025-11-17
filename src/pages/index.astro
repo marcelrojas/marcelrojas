@@ -4,10 +4,6 @@ import PageHeader from '@components/layout/PageHeader.astro';
 import NewsletterForm from '@components/shared/NewsletterForm.astro';
 import Anchor from '@components/ui/Anchor.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
-
-const {
-  title = 'About',
-} = Astro.props;
 ---
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <header class="module-">
@@ -19,23 +15,24 @@ const {
     </p>
     <Anchor role="button" wide="fit" class="product-badge hero-button audio_trigger" href="https://cal.com/marcelrojas">Book a discovery chat session</Anchor>
   </header>
-  <section class="module-grid">
-    <article class="module-">
+
+  <section class="aboutpage-section collection-module">
+    <article class="module">
       <h1 class="module-title">Curriculum</h1>
       <p class="module-description">Location Venezuela<br />Languages Spanish, English<br />Skillset Development, Design and Strategy</p>
-      <Anchor class="module-badge" href="/curriculum">Open</Anchor>
+      <Anchor role="button" wide="fit" class="module-badge" href="/curriculum">Open</Anchor>
     </article>
-    <article class="module-">
+    <article class="module">
       <h1 class="module-title">Title</h1>
       <p class="module-description">Description.</p>
       <Anchor class="module-badge" href="/shop/">$299</Anchor>
     </article>
-    <article class="module-">
+    <article class="module">
       <h1 class="module-title">Curriculum</h1>
       <p class="module-description">Location Venezuela<br />Languages Spanish, English<br />Skillset Development, Design and Strategy</p>
-      <Anchor class="module-badge" href="/curriculum">Open</Anchor>
+      <Anchor role="button" wide="fit" class="module-badge" href="/curriculum">Open</Anchor>
     </article>
-    <article class="module-">
+    <article class="module">
       <h1 class="module-title">Subscribe to my newsletter</h1>
       <p class="module-description">Essays and other updates shared infrequently.</p>
       <NewsletterForm />
@@ -43,15 +40,6 @@ const {
   </section>
 </Layout>
 <style>
-  :root {
-    --tracking-common: -0.01em; /* Placeholder: 'common' suele ser un tracking ligero */
-    --screen-4xl: 1920px /* Placeholder: Estimación para el breakpoint '4xl' */
-  }
-
-  .hero-audio {
-    display: none
-  }
-
   #module-hero {
     & .content {
       & .title {
@@ -71,20 +59,24 @@ const {
     }
   }
 
-  .module-grid {
+  .hero-audio {
+    display: none
+  }
+
+  .collection-module {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     &:not(:last-child) > .product-card {
       border-right: 1px solid var(--color-border-default)
     }
-    &:is(:first-child, :last-child) > .module- {
+    &:is(:first-child, :last-child) > .module {
       width: 100%
     }
-    &:not(:first-child):not(:last-child) > .module- {
+    &:not(:first-child):not(:last-child) > .module {
       width: 50%
     }
-    & .module- {
+    & .module {
       min-height: var(--min-height);
       display: block;
       margin-left: auto;
@@ -94,7 +86,7 @@ const {
       border-bottom: 1px solid var(--color-border-default);
       & .module-title {
         font-size: 32px;
-        font-weight: 600;
+        font-weight: var(--font-weight-semibold);
         line-height: 40px
       }
       & .module-description {
@@ -120,10 +112,10 @@ const {
 
   /* Mobile Screen */
   @media screen and (width <= 768px) {
-    .module- {
+    .module {
       --padding-top: 46px;
-      --min-height: 376px
-      & .product-badge {
+      --min-height: 376px;
+      & .module-badge {
         margin-bottom: 2rem
       }
     }
@@ -131,21 +123,17 @@ const {
 
   /* Desktop Screen */
   @media screen and (width <= 1024px) {
-    .module- {
-      --padding-top: 56px;
-      --min-height: 552px;
-      & .product-title {
-        line-height: 50px
-      }
-      & .module-description {
-        padding-bottom: 18px;
-        font-size: 16px
-      }
-      & .module-badge {
-        margin-bottom: 46px;
-        height: 40px;
-        font-size: 16px
-      }
+    .module-title {
+      line-height: 50px
+    }
+    .module-description {
+      padding-bottom: 18px;
+      font-size: 16px
+    }
+    .module-badge {
+      margin-bottom: 46px;
+      height: 40px;
+      font-size: 16px
     }
   }
 </style>

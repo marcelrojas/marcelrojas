@@ -12,41 +12,49 @@ import spinner from '/spinner.svg?raw';
       align-items: center;
       position: fixed;
       inset: 0;
-      z-index: 9999;
+      z-index: 100;
       contain: layout paint;
       content-visibility: auto;
-      background-color: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(4px);
+      background-color: var(--color-overlay);
+      backdrop-filter: blur(24px);
       opacity: 1;
       visibility: visible;
       user-select: none;
       touch-action: none;
       overscroll-behavior: contain;
       will-change: opacity, visibility, allow-discrete;
-      transition: opacity 0.3s ease-out, visibility 0.3s ease-out
+      transition: opacity 0.3s ease-out, visibility 0.3s ease-out, allow-discrete 0.3s ease-out
+    }
+    @starting-style {
+      display: flex;
+      backdrop-filter: blur(24px);
+      opacity: 1;
+      visibility: visible
     }
     #splash-screen.hidden {
+      display: none;
+      backdrop-filter: blur(0px);
       opacity: 0;
-      visibility: hidden;
+      visibility: hidden
     }
 
     /* Spinner styles */
     .spinner-container svg {
       width: 48px;
       height: 48px;
-      animation: spinner-rotate 1.2s steps(8, end) infinite;
+      animation: spinner-rotate 1.2s steps(8, end) infinite
     }
 
     .spinner-container rect {
-      fill: var(--color-text-primary, black);
+      fill: var(--color-text-primary)
     }
 
     @keyframes spinner-rotate {
-      0% {
-        transform: rotate(0deg);
+      from {
+        transform: rotate(0deg)
       }
-      100% {
-        transform: rotate(360deg);
+      to {
+        transform: rotate(360deg)
       }
     }
   }

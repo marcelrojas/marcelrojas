@@ -44,7 +44,7 @@
     font-feature-settings: "zero", "tnum";
     font-size: var(--font-size-12);
     font-weight: var(--font-weight-medium);
-    letter-spacing: 0;
+    letter-spacing: var(--font-tracking-common);
     line-height: 1;
     color: oklch(0.64 0 0);
     user-select: none

@@ -1,26 +1,20 @@
 ---
+import Anchor from '@components/ui/Anchor.astro';
 import Icon from '@components/decorative/Icon.astro';
 import articles from '@data/articles.json';
 ---
-<ul class="tiles-list">
+<ul class="list-tiles">
   {
     Object.values(articles).map((article) => (
       <li class="tile-item">
-        <picture class="media" aria-hidden="true">
-          
-        </picture>
-        <header class="head" aria-hidden="true">
-          <h2 class="headline">
-            <a href={article.url} target="_blank" rel="noopener noreferrer" class="stretched-link">{article.title}</a>
-          </h2>
-          <span class="publisher">Published by: <a href={article.publisherURL} target="_blank" rel="noopener noreferrer">{article.publisher}</a></span>
-        </header>
+        <Anchor href={article.url} target="_blank" rel="noopener noreferrer" class="headline stretched-link">{article.title}</Anchor>
+        <span class="publisher">Published by: <Anchor href={article.publisherURL} target="_blank" rel="noopener noreferrer">{article.publisher}</Anchor></span>
       </li>
     ))
   }
 </ul>
 <style>
-  ul.tiles-list {
+  ul.list-tiles {
     position: relative;
     padding-top: 80px;
     padding-bottom: 75px;
@@ -70,26 +64,20 @@ import articles from '@data/articles.json';
           }
         }
       }
-      & > header.head {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        padding: 16px;
-        & > h2.headline {
-          font-family: var(--font-family-mono);
-          font-weight: var(--font-weight-semibold);
-          font-size: var(--font-size-18);
-          line-height: var(--line-height-24);
+      & > a.headline {
+        font-family: var(--font-family-mono);
+        font-weight: var(--font-weight-semibold);
+        font-size: var(--font-size-18);
+        line-height: var(--line-height-24);
+        color: var(--color-label-primary);
+        & > a.stretched-link {
           color: var(--color-label-primary);
-          & > a.stretched-link {
-            color: var(--color-label-primary);
-            text-decoration: none;
-            &::after {
-              content: '';
-              position: absolute;
-              inset: 0;
-              z-index: 1
-            }
+          text-decoration: none;
+          &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 1
           }
         }
         & > span.publisher {

@@ -17,10 +17,15 @@ const formattedDate = dateObj.toLocaleDateString('en-us', {
 <time datetime={dateObj.toISOString()} class={className}>{formattedDate}</time>
 <style>
   time {
-    font-family: var(--font-family-sans);
+    position: relative;
+    width: max-content;
+    font-family: var(--font-family-mono);
+    font-feature-settings: "zero", "tnum";
     font-size: var(--font-size-14);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--font-tracking-common);
     line-height: 1;
-    font-weight: var(--font-weight-regular);
-    color: var(--color-text-secondary)
+    color: var(--color-text-secondary);
+    user-select: none
   }
 </style>

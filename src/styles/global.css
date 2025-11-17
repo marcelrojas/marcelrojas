@@ -663,9 +663,6 @@ hr {
   border: none;
   border-top: 1px solid rgb(var(--gray-light))
 }
-@media (max-width: 720px) {
-  
-}
 .sr-only {
   position: absolute !important;
   height: 1px;
@@ -690,7 +687,7 @@ hr {
   }
 }
 
-/*  */
+/* Show hover only on supported devices */
 @media (hover:hover) and (pointer:fine) {
   #globalheader > nav:nth-child(1) ul.language-selector li a:hover {
     color: hsl(0 0% 62%)

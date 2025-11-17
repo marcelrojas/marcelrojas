@@ -1,3 +1,4 @@
+/* Opal DS */
 @layer properties {
   :root {
     color-scheme: light dark;
@@ -21,6 +22,9 @@
     --color-magenta: oklch(0.62 0.25 325);
     --color-red_violet: oklch(0.55335 0.2217 349.67);
     --color-yellow: oklch(0.90 0.21 105);
+    --color-yellow-digital: #FACC15; /* Placeholder: Usando 'amber-400' */
+    --color-grey1: #6B7280; /* Placeholder: 'gray-500' */
+    --color-border-default: rgba(0, 0, 0, 0.1); /* border-black/10 */
     --color-powder_blue: oklch(0.90293 0.06231 187.421);
     /* Colores de los Avatares */
     --color-bubblegum_pink: oklch(0.7 0.19 350);
@@ -91,8 +95,9 @@
    * Aero’s design token system
    * Alias token and component-specific token.
   */
-    --font-family-sans: 'Pretendard', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-family-display: 'InterDisplay';
+    --font-family-sans: 'Pretendard', 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-serif: 'AppleGaramond', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-family-mono: 'GeistMono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-style-roman: normal;
     --font-style-italic: italic;

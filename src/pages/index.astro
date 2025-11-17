@@ -6,7 +6,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
 
 const {
   title = 'About',
-  description = 'Hey.',
 } = Astro.props;
 ---
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -15,22 +14,27 @@ const {
     <div class="product-grid">
       <header class="product-card product-card--c1">
         <audio class="hero-audio" loop="" src="/beats.mp3"></audio>
-        <h3 class="product-title">Title</h3>
+        <h1 class="product-title">Title</h1>
         <p class="product-description">
-          <span>Building better business with an individual approach to each client with a wide range of services</span>
+          <span>Building better business with an individual approach to each client with a wide range of services.</span>
           <span>I'm available for freelance work and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!</span>
         </p>
         <Anchor role="button" wide="fit" class="product-badge hero-button audio_trigger" href="https://cal.com/marcelrojas">Book a discovery chat session</Anchor>
       </header>
       <a class="product-card product-card--c2" href="/shop/">
         <h3 class="product-title">Title</h3>
-        <p class="product-description">Description</p>
+        <p class="product-description">Description.</p>
         <span class="product-badge">$299</span>
       </a>
-      <a class="product-card product-card--c3" href="/shop/composer">
-        <h3 class="product-title">Title</h3>
-        <p class="product-description">Description</p>
-      </a>
+      <article class="product-card product-card--c3">
+        <h1 class="product-title">Curriculum</h1>
+        <p class="product-description">Location Venezuela<br />Languages Spanish, English<br />Skillset Development, Design and Strategy</p>
+        <Anchor class="product-badge"  href="/curriculum">Open</Anchor>
+      </article>
+      <article class="product-card">
+        <h1 class="product-title">Subscribe to my newsletter</h1>
+        <p class="product-description">Essays and other updates shared infrequentluy.</p>
+      </article>
     </div>
   </section>
 </Layout>
@@ -68,6 +72,9 @@ const {
   /* --- Contenedor Principal --- */
   
   .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     border-bottom: 1px solid var(--color-border-default);
     & .product-card {
       display: block;
@@ -76,6 +83,16 @@ const {
       padding-top: 46px;
       text-align: center;
       &.product-card--c1 {
+        width: 100%;
+        border-bottom: 1px solid var(--color-border-default)
+      }
+      &.product-card--c2 {
+        width: 50%;
+        border-bottom: 1px solid var(--color-border-default);
+        border-right: 1px solid var(--color-border-default)
+      }
+      &.product-card--c3 {
+        width: 50%;
         border-bottom: 1px solid var(--color-border-default)
       }
       & .product-title {
@@ -98,8 +115,7 @@ const {
         justify-content: center;
         border-radius: 32px;
         background-color: var(--color-yellow-digital);
-        padding-left: 1.25rem;  /* px-5 */
-        padding-right: 1.25rem; /* px-5 */
+        padding-inline: 1.25rem; /* px-5 */
         font-size: 14px
       }
     }
@@ -108,28 +124,17 @@ const {
   /* --- Media Queries (Breakpoints) --- */
 
   /* Mobile Screen */
-  @media screen and (width >= 768px) {
-    .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      & .product-card {
-        padding-top: 51px;
-        &.product-card--c1 {
-          width: 100%
-        }
-        &.product-card--c2 {
-          min-height: 376px;
-          width: 50%;
-          border-right: 1px solid var(--color-border-default)
-        }
-        &.product-card--c3 {
-          min-height: 376px;
-          width: 50%
-        }
-        & .product-badge {
-          margin-bottom: 2rem
-        }
+  @media screen and (width <= 768px) {
+    .product-card {
+      padding-top: 51px;
+      &.product-card--c2 {
+        min-height: 376px
+      }
+      &.product-card--c3 {
+        min-height: 376px
+      }
+      & .product-badge {
+        margin-bottom: 2rem
       }
     }
 
@@ -146,15 +151,10 @@ const {
   @media screen and (width >= 1024px) {
     .product-card {
       padding-top: 56px;
-      &.product-card--c1 {
-        width: 100%
-      }
       &.product-card--c2 {
-        width: 50%;
         min-height: 552px
       }
       &.product-card--c3 {
-        width: 50%;
         min-height: 552px
       }
       & .product-title {

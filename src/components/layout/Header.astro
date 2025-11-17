@@ -16,7 +16,7 @@ const navAnchor = [
     <div class="page-title">
       <h1>Marcel<br />Rojas</h1>
     </div>
-    <nav id="globalnav" class="haptic-nav" aria-label="Global">
+    <nav class="globalnav haptic-nav" aria-label="Global">
       <ul>
         {navAnchor.map(link => (
           <li>
@@ -61,7 +61,7 @@ const navAnchor = [
           user-select: none
         }
       }
-      & > nav#globalnav {
+      & > nav {
         position: relative;
         width: 100%;
         max-width: 420px;

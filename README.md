@@ -1,5 +1,5 @@
 <h1>Marcel Rojas</h1>
-I`m a software and electronics engineer, designer, digital maketer, and administrator in progress based in Lechería, Anzoátegui, Venezuela.
+I am a software and electronics engineer, designer, digital maketer, and administrator in progress based in Lechería, Anzoátegui, Venezuela.
 
 ```sh
 github@marcelrojas:~$fastfetch

@@ -32,7 +32,7 @@
 
     --color-tan: oklch(0.88 0.01 93.58);
     --color-dark-clay: oklch(0.37 0.01 31.09);
-  
+
     --color-primary-01: var(--);
     --color-primary-02: var(--);
     --color-primary-03: var(--);
@@ -43,7 +43,7 @@
     --color-primary-08: var(--);
     --color-primary-09: var(--);
     --color-primary-10: var(--);
-  
+
     --color-secondary-01: var(--);
     --color-secondary-02: var(--);
     --color-secondary-03: var(--);
@@ -54,7 +54,7 @@
     --color-secondary-08: var(--);
     --color-secondary-09: var(--);
     --color-secondary-10: var(--);
-  
+
     --color-tertiary-01: var(--);
     --color-tertiary-02: var(--);
     --color-tertiary-03: var(--);
@@ -65,7 +65,7 @@
     --color-tertiary-08: var(--);
     --color-tertiary-09: var(--);
     --color-tertiary-10: var(--);
-  
+
     --color-white: oklch(1 0 0);
     --color-black: oklch(0.16685 0.00843 296.872);
     --color-neutral-50: oklch(0.985 0 0);
@@ -79,7 +79,7 @@
     --color-neutral-800: oklch(0.269 0 0);
     --color-neutral-900: oklch(0.205 0 0);
     --color-neutral-950: oklch(0.145 0 0);
-  
+
     --color-neutral-variant-01: oklch(0.985 0.013 106.424);
     --color-neutral-variant-02: oklch(0.97 0.013 106.424);
     --color-neutral-variant-03: oklch(0.923 0.013 48.717);
@@ -156,22 +156,22 @@
     --spacing-fluid-4: 0.25rem;
     --spacing-fluid-8: 0.5rem;
     --spacing-fluid-12: 0.75rem;
-  
+
     --rounding-default: 4px;
     --rounding-small: 2px;
     --rounding-full: 50vh;
-  
+
     --border-width-x1: 1px;
     --border-width-x2: 2px;
     --border-width-x4: 4px;
-  
+
     --aspect-anamophic: 2.39/1;
     --aspect-univisium: 2/1;
     --aspect-widescreen: 16/9;
     --aspect-landscape: 3/2;
     --aspect-portrait: 2/3;
     --aspect-square: 1;
-  
+
     --breakpoint-sm: 320px;
     --breakpoint-md: 672px;
     --breakpoint-lg: 1056px;
@@ -182,19 +182,39 @@
     --background-color: rgba(0, 0, 0, 0.1);
     --focus-regular: blur(24px);
     --focus-prominent: blur(40px);
-  
+
     --opacity-regular: 10px;
     --opacity-clear: 0px;
-  
+
     --saturation-min: saturation(0);
     --saturation-med: saturation(1);
     --saturation-max: saturation(1.12);
     --brightness-min: brightness(0);
     --brightness-med: brightness(.7);
     --brightness-max: brightness(1);
-  
+
     --box-shadow-outset-l1: 0px 4px 10px 0px hsla(0 0 0 / 0.25);
-  
+
+    --ease-default: cubic-bezier(0.25, 0.1, 0.25, 1);
+    --in-1: cubic-bezier(0.47, 0, 0.745, 0.715);
+    --out-1: cubic-bezier(0.39, 0.575, 0.565, 1);
+    --in-out-1: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    --in-2: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    --out-2: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --in-out-2: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    --in-3: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    --out-3: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --in-out-3: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --in-4: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    --out-4: cubic-bezier(0.165, 0.84, 0.44, 1);
+    --in-out-4: cubic-bezier(0.77, 0, 0.175, 1);
+    --in-5: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    --out-5: cubic-bezier(0.23, 1, 0.32, 1);
+    --in-out-5: cubic-bezier(0.86, 0, 0.07, 1);
+    --in-6: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    --out-6: cubic-bezier(0.19, 1, 0.22, 1);
+    --in-out-6: cubic-bezier(1, 0, 0, 1);
+
     --motion-easing-ease-out: cubic-bezier(0, 0, 0.40, 1);
     --motion-easing-ease-in: cubic-bezier(0.50, 0, 1, 1);
     --motion-easing-ease-in-out: cubic-bezier(0.45, 0, 0.40, 1);
@@ -208,14 +228,14 @@
     --motion-duration-macro-x4: 400ms;
     --motion-duration-macro-x5: 450ms;
     --motion-duration-macro-x6: 500ms;
-  
+
     --motion-page-rendered-wait: var(--motion-duration-micro-x2);
     --motion-page-transition-time: var(--motion-duration-micro-x3);
     --motion-slider-transition-time: var(--motion-duration-macro-x3);
     --motion-hover-transition-time: var(--motion-duration-micro-x2);
     --motion-animate-pulse: pulse 2s var(--motion-easing-ease-in-out) infinite;
     --motion-animate-blink: blink 2s var(--motion-easing-ease-in-out) infinite;
-  
+
     --focus-offset: 1px;
     --focus-offset-container: 3px;
   }

@@ -3,7 +3,9 @@ function setupSplashScreen() {
   if (!splashScreen) return;
 
   const hideSplashScreen = () => {
-    splashScreen.classList.add('hidden');
+    //splashScreen.classList.add('hidden');
+    splashScreen.style.opacity = '0';
+    splashScreen.style.visibility = 'hidden';
     // Usamos 'transitionend' para ocultarlo del DOM flow después de que la animación termine.
     // 'once: true' asegura que el listener se ejecute una sola vez.
     splashScreen.addEventListener('transitionend', () => {
@@ -13,9 +15,11 @@ function setupSplashScreen() {
 
   const showSplashScreen = () => {
     splashScreen.style.display = 'flex';
+    splashScreen.style.opacity = '1';
+    splashScreen.style.visibility = 'visible';
     // Forzar un reflow para asegurar que la transición se aplique
-    splashScreen.getBoundingClientRect(); 
-    splashScreen.classList.remove('hidden');
+    splashScreen.getBoundingClientRect();
+    //splashScreen.classList.remove('hidden');
   };
 
   // Lógica para la carga inicial de la página
@@ -29,7 +33,9 @@ function setupSplashScreen() {
   } else {
     // Ya se mostró en esta sesión, lo ocultamos inmediatamente.
     splashScreen.style.display = 'none';
-    splashScreen.classList.add('hidden');
+    splashScreen.style.opacity = '0';
+    splashScreen.style.visibility = 'hidden';
+    //splashScreen.classList.add('hidden');
   }
 
   // Lógica para las transiciones de página de Astro

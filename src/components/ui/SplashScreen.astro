@@ -15,25 +15,21 @@ import spinner from '/spinner.svg?raw';
       z-index: 100;
       contain: layout paint;
       content-visibility: auto;
-      background-color: var(--color-overlay);
-      backdrop-filter: blur(24px);
+      background-color: black;
       opacity: 1;
       visibility: visible;
       user-select: none;
       touch-action: none;
       overscroll-behavior: contain;
       will-change: opacity, visibility, allow-discrete;
-      transition: opacity 0.3s ease-out, visibility 0.3s ease-out, allow-discrete 0.3s ease-out
-    }
-    @starting-style {
-      display: flex;
-      backdrop-filter: blur(24px);
-      opacity: 1;
-      visibility: visible
+      transition: allow-discrete 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
+      @starting-style {
+        display: flex;
+        opacity: 1;
+        visibility: visible
+      }
     }
     #splash-screen.hidden {
-      display: none;
-      backdrop-filter: blur(0px);
       opacity: 0;
       visibility: hidden
     }

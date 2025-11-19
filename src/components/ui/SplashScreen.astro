@@ -8,11 +8,9 @@ import spinner from '/spinner.svg?raw';
   @layer components {
     #splash-screen {
       display: flex;
-      justify-content: center;
-      align-items: center;
       position: fixed;
       inset: 0;
-      z-index: 100;
+      z-index: 20;
       contain: layout paint;
       content-visibility: auto;
       background-color: black;
@@ -21,7 +19,7 @@ import spinner from '/spinner.svg?raw';
       user-select: none;
       touch-action: none;
       overscroll-behavior: contain;
-      will-change: opacity, visibility, allow-discrete;
+      will-change: allow-discrete, opacity, visibility;
       transition: allow-discrete 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
       @starting-style {
         display: flex;

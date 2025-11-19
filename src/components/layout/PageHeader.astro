@@ -28,9 +28,12 @@ const { title } = Astro.props;
         --offset: 72px
       }
       & > h1.title {
-        --fontSize: 80px
+        --fontSize: 80px;
         font-family: var(--font-family-sans);
+        font-size: var(--fontSize);
         font-weight: var(--font-weight-semibold);
+        line-height: 1.05;
+        letter-spacing: -.015em;
         color: var(--color-text-primary);
         @media screen and (width <= 480px) {
           --fontSize: 40px

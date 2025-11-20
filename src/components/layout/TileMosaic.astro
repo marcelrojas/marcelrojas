@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 import FormattedDate from '@components/FormattedDate.astro';
 import Anchor from '@components/ui/Anchor.astro';
 import Icon from '@components/shared/Icon.astro';
-import arrow-right from '@icons/arrow-right.svg?raw';
+//import arrow-right from '@icons/arrow-right.svg?raw';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -26,7 +26,7 @@ const posts = (await getCollection('blog')).sort(
           </h2>
           <p class="description"></p>
           <Anchor role="button" class="" href={`/blog/${post.id}/`}>
-            <Icon name={arrow-right.icon} />
+            <Icon name="chevron-right" />
           </Anchor>
         </section>
       </article>

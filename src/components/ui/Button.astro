@@ -33,7 +33,7 @@ const {
   variant = 'tonal',
   action = 'default',
   size = 'medium',
-  wide = 'min',
+  wide = 'fit',
   disabled = false,
   text,
   class: userClass,
@@ -53,8 +53,8 @@ const attrs: Record<string, any> = {
   tabindex: disabled ? -1 : undefined,
 };
 
-// 3. Comprobar si se están usando los slots para los símbolos.
-const hasIcon = Astro.slots.has('symbol');
+// 3. Comprobar si se están usando los slots para los iconos.
+const hasIcon = Astro.slots.has('iconLeft') || Astro.slots.has('iconRight') || Astro.slots.has('symbol');
 
 // 4. Construir la lista de clases dinámicamente.
 const classList = [
@@ -65,11 +65,11 @@ const classList = [
   `wide-${wide}`,
   userClass,
   hasIcon && 'has-icon',
-].filter(Boolean).join(' '); // `filter(Boolean)` elimina valores falsy (como `false` o `undefined`).
+].filter(Boolean).join(' ');
 ---
 <Tag class={classList} {...attrs}>
   <slot name="iconLeft" />
-  {Tag !== 'input' && text && (
+  {Tag !== 'input' && (
     <slot name="text">{text}</slot>
   )}
   <slot name="iconRight" />

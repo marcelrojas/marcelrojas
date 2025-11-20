@@ -40,28 +40,20 @@ const faqs = [
   },
 ]
 ---
-
-<section class="max-w-4xl rounded-2xl px-5 py-36 md:mx-auto">
-  <SectionHead title="Preguntas Frecuentes" class="mb-10" />
+<section class="">
+  <SectionHead title="Preguntas Frecuentes" class="" />
   <ul>
     {
       faqs.map((faq) => (
-        <li class="mb-4">
-          <details class="group rounded-xl border border-transparent bg-zinc-800/50 transition-all duration-300 hover:border-[#00d7c9] hover:shadow-xl">
-            <summary class="focus-visible:ring-[#00d7c9]-400 duration-600 flex cursor-pointer select-none items-center gap-3 px-6 py-4 text-sm font-bold text-[#00d7c9] outline-none transition-all focus-visible:ring-2 group-open:text-pink-300 lg:text-lg">
-              <svg
-                class="mr-1 inline-block h-7 w-7 flex-shrink-0 text-[#00d7c9] transition-transform duration-300 group-open:rotate-180 lg:h-5 lg:w-5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path d="M6 9l6 6 6-6" />
+        <li>
+          <details class="">
+            <summary class="question">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.643555 7.66309C0.643555 7.39355 0.740234 7.16211 0.933594 6.96875C1.12695 6.76953 1.3584 6.66992 1.62793 6.66992H7.01562V1.29102C7.01562 1.02148 7.1123 0.790039 7.30566 0.59668C7.49902 0.40332 7.73047 0.306641 8 0.306641C8.27539 0.306641 8.50977 0.40332 8.70312 0.59668C8.89648 0.790039 8.99316 1.02148 8.99316 1.29102V6.66992H14.3721C14.6416 6.66992 14.873 6.76953 15.0664 6.96875C15.2598 7.16211 15.3564 7.39355 15.3564 7.66309C15.3564 7.93848 15.2598 8.17285 15.0664 8.36621C14.873 8.55371 14.6416 8.64746 14.3721 8.64746H8.99316V14.0439C8.99316 14.3076 8.89648 14.5361 8.70312 14.7295C8.50977 14.9229 8.27539 15.0195 8 15.0195C7.73047 15.0195 7.49902 14.9229 7.30566 14.7295C7.1123 14.5361 7.01562 14.3076 7.01562 14.0439V8.64746H1.62793C1.3584 8.64746 1.12695 8.55371 0.933594 8.36621C0.740234 8.17285 0.643555 7.93848 0.643555 7.66309Z" fill="#0E0F10"></path>
               </svg>
               {faq.question}
             </summary>
-            <div class="animate-fadeInFaq px-8 pb-4 pt-1 font-sans text-base leading-relaxed text-white opacity-95 transition-all duration-300 [text-transform:none]">
+            <div class="answer">
               <p set:html={faq.answer} />
             </div>
           </details>
@@ -69,20 +61,65 @@ const faqs = [
       ))
     }
   </ul>
-  {/* Animación fadeInFaq para respuestas */}
   <style>
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      & details {
+        padding-bottom: 0.625rem;
+        border-bottom: 1px solid oklch(0.17 0 0 / 0.1);
+        & > summary.question {
+          font-weight: var(--font-weight-500);
+          cursor: pointer;
+          padding: 0.5rem;
+          color: oklch(0.17 0 0 / 0.8);
+          transition: 0.2s ease-out;
+          & > svg {
+            flex-shrink: 0;
+            transition: transform 0.2s ease-in-out;
+          }
+        }
+        &[open] svg {
+          transform: rotate(45deg)
+        }
+        & > div.answer {
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          gap: 0.875rem;
+          padding: 0.875rem 0.5rem 0.5rem;
+          & > p {
+            font-family: var(--font-family-sans);
+            font-weight: var(--font-weight-500);
+            font-size: var(--font-size-16);
+            line-height: 130%;
+            letter-spacing: -0.32px;
+            color: oklch(0.17 0 0 / 0.6);
+            a {
+              color: var(--color-link);
+              text-decoration: underline;
+              &:hover {
+                color: var(--color-link-hover)
+              }
+            }
+          }
+        }
+      }
+    }
     @keyframes fadeInFaq {
       from {
         opacity: 0;
-        transform: translateY(-8px);
+        transform: translateY(-8px)
       }
       to {
         opacity: 0.95;
-        transform: translateY(0);
+        transform: translateY(0)
       }
     }
     .animate-fadeInFaq {
-      animation: fadeInFaq 0.3s;
+      animation: fadeInFaq 0.3s
     }
   </style>
 </section>

@@ -1,9 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import PageHeader from '@components/layout/PageHeader.astro';
-import ModuleServices from '@components/layout/ModuleServices.astro';
-import ModulePricing from '@components/layout/ModulePricing.astro';
-import Button from '@components/ui/Button.astro';
+import PageHeader from '@components/structure/PageHeader.astro';
+import ModuleServices from '@components/structure/ModuleServices.astro';
+import ModulePricing from '@components/structure/ModulePricing.astro';
+import FAQ from '@components/structure/FAQ.astro';
+import Button from '@components/Button.astro';
 
 const {
   title = "Services",
@@ -32,6 +33,7 @@ const {
       <li>Can you work with existing codebases?</li>
     </ul>
   </section>
+  <FAQ />
 </Layout>
 <style>
   .module {

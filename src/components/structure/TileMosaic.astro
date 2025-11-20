@@ -2,8 +2,8 @@
 import { getCollection, getEntry } from 'astro:content';
 import { Image } from 'astro:assets';
 import FormattedDate from '@components/FormattedDate.astro';
-import Anchor from '@components/shared/Anchor.astro';
-import Icon from '@components/shared/Icon.astro';
+import Anchor from '@components/Anchor.astro';
+import Icon from '@components/Icon.astro';
 //import arrow-right from '@icons/arrow-right.svg?raw';
 
 const posts = (await getCollection('blog')).sort(

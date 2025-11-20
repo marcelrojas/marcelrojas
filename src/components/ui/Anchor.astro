@@ -1,7 +1,5 @@
 ---
 interface Props {
-  /** El rol del elemento anchor. */
-  role?: 'anchor' | 'button';
   /** La variante visual del botón. */
   variant?: 'text' | 'platted';
   /** El color del botón. */
@@ -12,10 +10,6 @@ interface Props {
   wide?: 'fit' | 'fill';
   /** Si el botón debe estar deshabilitado. */
   disabled?: boolean;
-  /** El tipo de contenido. */
-  label?: 'TextOnly' | 'IconOnly' | 'TextAndIcon';
-  /** If 'Label' is set on 'TextAndIcon' then: */
-  Icon?: 'before' | 'after';
   /** Clases CSS adicionales para personalizar. */
   class?: string;
   /** Atributos adicionales como `onclick`, `id`, `data-*`, etc. */
@@ -24,31 +18,26 @@ interface Props {
 
 // 1. Desestructurar props con valores por defecto.
 const {
-  role = 'anchor',
   variant = 'text',
   action = 'default',
   size = 'medium',
   wide = 'fit',
   disabled = false,
-  text,
   class: userClass,
   href,
   ...rest
 } = Astro.props;
 
 // 2. Atributos finales para el elemento (incluye el resto de props).
+// Sólo añadir `role` cuando se haya pasado como prop.
 const attrs: Record<string, any> = {
   ...rest,
-  role,
   disabled,
   'aria-disabled': disabled ? 'true' : undefined,
   tabindex: disabled ? -1 : undefined,
 };
 
-// 3. Comprobar si se están usando los slots para los símbolos.
-const hasSymbol = Astro.slots.has('symbol');
-
-// 4. Construir la lista de clases dinámicamente y la clase final.
+// 3. Construir la lista de clases dinámicamente y la clase final.
 const classList = [
   'anchor',
   `variant-${variant}`,
@@ -56,7 +45,6 @@ const classList = [
   `size-${size}`,
   `wide-${wide}`,
   userClass,
-  hasSymbol && 'has-symbol',
 ].filter(Boolean);
 
 const finalClass = classList.join(' ');

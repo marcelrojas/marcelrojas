@@ -6,21 +6,15 @@ import Anchor from '@components/ui/Anchor.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
 ---
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <header class="module-">
-    <audio class="hero-audio" loop="" src="/beats.mp3"></audio>
-    <h1 class="module-title">Title</h1>
-    <p class="module-description">
-      <span>Building better business with an individual approach to each client with a wide range of services.</span>
-      <span>I'm available for freelance work and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!</span>
-    </p>
-    <Anchor role="button" wide="fit" class="product-badge hero-button audio_trigger" href="https://cal.com/marcelrojas">Book a discovery chat session</Anchor>
-  </header>
-
   <section class="aboutpage-section collection-module">
     <article class="module">
+      <audio class="hero-audio" loop="" src="/beats.mp3"></audio>
       <h1 class="module-title">Curriculum</h1>
-      <p class="module-description">Location Venezuela<br />Languages Spanish, English<br />Skillset Development, Design and Strategy</p>
-      <Anchor role="button" wide="fit" class="module-badge" href="/curriculum">Open</Anchor>
+      <p class="module-description">
+        <span>Building better business with an individual approach to each client with a wide range of services.</span>
+        <span>I'm available for freelance work and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!</span>  
+      </p>
+      <Anchor role="button" wide="fit" class="product-badge hero-button audio_trigger" href="https://cal.com/marcelrojas">Book a discovery chat session</Anchor>
     </article>
     <article class="module">
       <h1 class="module-title">Title</h1>

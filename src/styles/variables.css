@@ -2,6 +2,7 @@
 @layer properties {
   :root {
     color-scheme: light dark;
+    --global-scrollbar-buffer: 15px;
   /*
    * General design tokens
    * Base token in raw format.
@@ -95,12 +96,13 @@
    * Aero’s design token system
    * Alias token and component-specific token.
   */
+    --font-family-sans: 'InterVariable', 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-display: 'InterDisplay';
-    --font-family-sans: 'Pretendard', 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-serif: 'AppleGaramond', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-family-mono: 'GeistMono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-style-roman: normal;
     --font-style-italic: italic;
+    --font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
     --font-size-12: 0.75rem;
     --font-size-14: 0.875rem;
     --font-size-16: 1rem;

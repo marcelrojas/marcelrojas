@@ -36,24 +36,33 @@ const { title, description, image = FallbackImage } = Astro.props;
 <link rel="search" type="application/opensearchdescription+xml" title="Marcel Rojas: By Marcel Rojas" href="/opensearch.xml" />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link rel="alternate" type="application/rss+xml" title={SITE_TITLE} href={new URL('rss.xml', Astro.site)} />
-<meta name="keywords" content="marcelrojas, Marcel Rojas, whyismarcel, immarcelrojas, immarcel, MarcelRojas, marcel rojas, Juan Marcel Rojas Hernandez" />
+<meta name="keywords" content="marcelrojas, Marcel Rojas, whyismarcel, immarcelrojas, immarcel, MarcelRojas, marcel rojas, Juan Rojas, Juan Marcel Rojas Hernandez" />
 <meta name="author" content="Marcel Rojas" />
 <meta name="generator" content={Astro.generator} />
-<!-- Font preloads -->
-<link rel="preload" href="/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin />
+
+<!-- Font Preloads -->
+<link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/InterVariable-Italic.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/InterDisplay.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/fonts/GeistMono.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/fonts/GeistMono-Italic.woff2" as="font" type="font/woff2" crossorigin />
+
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 <link rel="canonical" href="marcelrojas.marcelrojas.workers.dev" />
 <!-- link rel="alternate" href={} hreflang={} /-->
+
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
-<!-- Web analytics -->
 
+<!-- Web Analytics -->
+<!-- Web analytics code here -->
+
+<!-- Scripts -->
 <script async src="/script.js"></script>
+
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content={SITE_TITLE} />
@@ -64,11 +73,13 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image.src, Astro.url)} />
 <meta property="og:image:type" content="image/jpeg" />
-<!-- Twitter/X.com -->
+
+<!-- Twitter / X.com -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:creator" content="@whyismarcel" />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+
 <ClientRouter fallback="animate" />

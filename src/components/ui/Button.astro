@@ -68,17 +68,11 @@ const classList = [
 ].filter(Boolean).join(' '); // `filter(Boolean)` elimina valores falsy (como `false` o `undefined`).
 ---
 <Tag class={classList} {...attrs}>
-  {hasIcon && (
-    <slot name="icon" />
-  )}
-
   <slot name="iconLeft" />
-  <slot name="text" />
-  <slot name="iconRight" />
-
   {Tag !== 'input' && text && (
     <slot name="text">{text}</slot>
   )}
+  <slot name="iconRight" />
 </Tag>
 <style>
   :is(button, input:is([type="button"], [type="submit"], [type="reset"])).button {

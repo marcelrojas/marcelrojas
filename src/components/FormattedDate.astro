@@ -16,7 +16,7 @@ const formattedDate = dateObj.toLocaleDateString('en-us', {
 ---
 <time datetime={dateObj.toISOString()} class={className}>{formattedDate}</time>
 <style>
-  time {
+  time, time.timestamp {
     position: relative;
     width: max-content;
     font-family: var(--font-family-mono);

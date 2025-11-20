@@ -47,22 +47,17 @@ const attributes = { ...defaultAttributes, ...rest };
 -->
 {
   iconContent && (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class:list={['icon', `icon-${name}`, className]}
-      {...attributes}
-      set:html={iconContent}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" class:list={['icon', `icon-${name}`, className]} {...attributes} set:html={iconContent}>
       {title && <title>{title}</title>}
     </svg>
   )
 }
 <style>
-  .icon {
+  svg.icon {
     width: 1.2em;
     height: 1.2em;
     display: inline-block;
     vertical-align: middle;
-    fill: currentColor;
+    fill: currentColor
   }
 </style>

@@ -72,6 +72,10 @@ const classList = [
     <slot name="icon" />
   )}
 
+  <slot name="iconLeft" />
+  <slot name="text" />
+  <slot name="iconRight" />
+
   {Tag !== 'input' && text && (
     <slot name="text">{text}</slot>
   )}

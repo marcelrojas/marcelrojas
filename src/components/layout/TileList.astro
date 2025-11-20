@@ -1,6 +1,6 @@
 ---
 import Anchor from '@components/ui/Anchor.astro';
-import Icon from '@components/decorative/Icon.astro';
+import Icon from '@components/shared/Icon.astro';
 import articles from '@data/articles.json';
 ---
 <ul class="list-tiles">
@@ -9,6 +9,9 @@ import articles from '@data/articles.json';
       <li class="tile-item">
         <Anchor href={article.url} target="_blank" rel="noopener noreferrer" class="headline">{article.title}</Anchor>
         <span class="publisher">Published by: <Anchor href={article.publisherURL} target="_blank" rel="noopener noreferrer">{article.publisher}</Anchor></span>
+        <Anchor class="media" aria-hidden="true">
+          <Icon name={arrow-up-right.icon} />
+        </Anchor>
       </li>
     ))
   }

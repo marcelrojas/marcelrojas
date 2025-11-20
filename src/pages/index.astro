@@ -1,8 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import PageHeader from '@components/layout/PageHeader.astro';
-import NewsletterForm from '@components/shared/NewsletterForm.astro';
-import Anchor from '@components/ui/Anchor.astro';
+import NewsletterForm from '@components/shared/NewsletterForm.svelte';
+import Anchor from '@components/shared/Anchor.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
 ---
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -14,7 +13,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
         <span>Building better business with an individual approach to each client with a wide range of services.</span>
         <span>I'm available for freelance work and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!</span>  
       </p>
-      <Anchor role="button" wide="fit" class="product-badge hero-button audio_trigger" href="https://cal.com/marcelrojas">Book a discovery chat session</Anchor>
+      <Anchor wide="fit" class="product-badge hero-button audio_trigger" href="https://cal.com/marcelrojas">Book a discovery chat session</Anchor>
     </article>
     <article class="module">
       <h1 class="module-title">Title</h1>
@@ -61,7 +60,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    &:not(:last-child) > .product-card {
+    &:not(:last-child) > .module {
       border-right: 1px solid var(--color-border-default)
     }
     &:is(:first-child, :last-child) > .module {

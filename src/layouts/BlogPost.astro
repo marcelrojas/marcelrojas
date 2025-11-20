@@ -40,7 +40,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <SplashScreen />
     <Header />
     <Curtain />
-    <main>
+    <main id="main" tabindex="-1">
       <article id="blogpost">
         <picture class="hero-media">
           {heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}

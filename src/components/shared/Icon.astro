@@ -1,11 +1,21 @@
 ---
 import iconsIndex from '@data/icons.json';
 
-// Importa el contenido (raw) de todos los SVGs definidos en icons.json.
-const icons = await Promise.all(
-  Object.values(iconsIndex).map(icon => import(/* @vite-ignore */ `${icon.src}?raw`))
-);
-const iconMap = new Map(Object.keys(iconsIndex).map((n, i) => [n, icons[i].default]));
+// Importa todos los SVGs desde `src/assets/icons` usando import.meta.glob (eager/raw).
+const modules = import.meta.glob('../../assets/icons/*.svg', { as: 'raw', eager: true });
+const fileMap = new Map(Object.entries(modules).map(([p, content]) => {
+  const file = p.split('/').pop() || '';
+  const name = file.replace(/\.svg$/i, '');
+  return [name, String(content)];
+}));
+
+// Construye un mapa de íconos usando las claves de icons.json -> contenido SVG.
+const iconMap = new Map<string, string>();
+for (const key of Object.keys(iconsIndex)) {
+  const src = (iconsIndex as any)[key].src as string;
+  const base = src.split('/').pop()?.replace(/\.svg$/i, '') || '';
+  iconMap.set(key, fileMap.get(base) || '');
+}
 
 export interface Props {
   name: keyof typeof iconsIndex;
@@ -15,6 +25,20 @@ export interface Props {
 
 const { name, class: className, ...rest } = Astro.props;
 const raw = iconMap.get(name) || '';
+
+// Procesa el SVG raw para inyectar clases en la etiqueta <svg> raíz.
+let processed = raw;
+if (raw) {
+  processed = raw.replace(/^\s*<svg([^>]*)>/i, (match: string, existingAttrs: string) => {
+    if (/\bclass\s*=/.test(existingAttrs)) {
+      return `<svg${existingAttrs.replace(/class\s*=\s*("[^"]*"|'[^']*')/, (m: string, q: string) => {
+        const existing = q.slice(1, -1);
+        return `class="${existing} icon icon-${name}"`;
+      })}>`;
+    }
+    return `<svg${existingAttrs} class="icon icon-${name}">`;
+  });
+}
 ---
 <!--
 ** Ejemplos de uso:
@@ -28,8 +52,8 @@ const raw = iconMap.get(name) || '';
 <Icon name="copy" class="text-blue-500" width="32" height="32" />
 -->
 {
-  raw && (
-    <span class={className} {...rest} set:html={raw} />
+  processed && (
+    <span class={className} {...rest} set:html={processed} />
   )
 }
 <style>

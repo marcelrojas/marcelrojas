@@ -26,9 +26,7 @@ const posts = (await getCollection('blog')).sort(
           </h2>
           <p class="description"></p>
           <Anchor role="button" class="" href={`/blog/${post.id}/`}>
-            <Fragment slot="iconRight">
-              <Icon name="chevron-right" />
-            </Fragment>
+            <Icon slot="iconRight" name="arrow-right" />
           </Anchor>
         </section>
       </article>

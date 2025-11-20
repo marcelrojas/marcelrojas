@@ -10,9 +10,7 @@ import articles from '@data/articles.json';
         <Anchor href={article.url} target="_blank" rel="noopener noreferrer" class="headline">{article.title}</Anchor>
         <span class="publisher">Published by: <Anchor href={article.publisherURL} target="_blank" rel="noopener noreferrer">{article.publisher}</Anchor></span>
         <Anchor class="media" aria-hidden="true">
-          <Fragment slot="iconRight">
-            <Icon name="arrow-up-right" />
-          </Fragment>
+          <Icon slot="iconRight" name="arrow-up-right" />
         </Anchor>
       </li>
     ))

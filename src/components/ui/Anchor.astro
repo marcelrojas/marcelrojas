@@ -67,7 +67,7 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 ---
 <a href={href} class={finalClass} aria-current={isActive ? 'page' : undefined} {...attrs}>
   <slot name="iconLeft" />
-  <slot />
+  <slot name="text" />
   <slot name="iconRight" />
 </a>
 <style>

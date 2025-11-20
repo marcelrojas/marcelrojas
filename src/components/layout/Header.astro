@@ -20,7 +20,9 @@ const navAnchor = [
       <ul>
         {navAnchor.map(link => (
           <li>
-            <Anchor wide="fill" href={link.href}>{link.text}</Anchor>
+            <Anchor wide="fill" href={link.href}>
+              <Fragment slot="text">{link.text}</Fragment>
+            </Anchor>
           </li>
         ))}
       </ul>

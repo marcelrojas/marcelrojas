@@ -74,13 +74,6 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       touch-action: manipulation;
       will-change: color, background-color, border-radius, transform;
       transition: color 150ms, background-color 150ms, border-radius 150ms, transform 150ms;
-      transform: scale(1) translate3d(0px, 0px, 0px) perspective(1px);
-      &.wide-fit {
-        width: fit-content
-      }
-      &.wide-fill {
-        width: 100%
-      }
       &[aria-current="page"] {
         border-radius: 32px;
         color: var(--color-label-primary-active, oklch(0.99 0 0));
@@ -90,7 +83,7 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       }
       @media (hover: hover) {
         &:hover {
-          border-radius: 8px;
+          border-radius: 4px;
           transform: scale(1.03)
         }
       }
@@ -101,21 +94,20 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       &:focus-visible {
         outline: 2px solid var(--color-focus)
       }
+      &.wide-fit {
+        width: fit-content
+      }
+      &.wide-fill {
+        width: 100%
+      }
       &.variant-text {
         
-        &[aria-current="page"] {
-          
-        }
       }
       &.variant-platted {
         padding: 8px 10px;
         border-radius: 8px;
         background: var(--color-fill);
         color: var(--color-label-controls);
-        &[aria-current="page"] {
-          color: var(--color-label-primary);
-          background-color: var(--color-anchor-bg-active)
-        }
         @media (hover: hover) {
           &:hover {
             --color-anchor-hover: okchl(1 1 1 / 0.08);

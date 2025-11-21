@@ -32,7 +32,7 @@ const navAnchor = [
     z-index: 40;
     padding-left: max(var(--spacing-sal) + 22px);
     padding-right: max(var(--spacing-sar) + 22px);
-    & > div.content {
+    & div.content {
       position: relative;
       height: min-content;
       overflow: clip;
@@ -42,7 +42,7 @@ const navAnchor = [
       padding-bottom: max(var(--spacing-sab) + 40px);
       gap: 28px;
       align-items: center;
-      & a.skip-to-content {
+      & > a.skip-to-content {
         position: absolute;
         overflow: hidden;
         clip: rect(0 0 0 0);
@@ -121,8 +121,6 @@ const navAnchor = [
               padding-inline: 10px;
               font-size: var(--font-size-14);
               color: var(--color-label-primary);
-              box-shadow: inset 0px 1px 0px 0px oklch(0.94 0 0 / 0);
-              opacity: 1;
               background-color: oklch(0.96 0 0)
             }
           }

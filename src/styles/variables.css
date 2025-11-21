@@ -2,15 +2,44 @@
 @layer properties {
   :root {
     color-scheme: light dark;
+
   /*
    * General design tokens
    * Base token in raw format.
    * Global token with value.
   */
+
     /* Tonos Neutros */
     --color-metal: oklch(0.75 0 0);
     --color-tan: oklch(0.88 0.01 93.58);
     --color-dark_clay: oklch(0.37 0.01 31.09);
+
+    --color-white: oklch(1 0 0);
+    --color-black: oklch(0 0 0);
+    --color-neutral-50: oklch(0.985 0 0);
+    --color-neutral-100: oklch(0.97 0 0);
+    --color-neutral-200: oklch(0.922 0 0);
+    --color-neutral-300: oklch(0.87 0 0);
+    --color-neutral-400: oklch(0.708 0 0);
+    --color-neutral-500: oklch(0.556 0 0);
+    --color-neutral-600: oklch(0.439 0 0);
+    --color-neutral-700: oklch(0.371 0 0);
+    --color-neutral-800: oklch(0.269 0 0);
+    --color-neutral-900: oklch(0.205 0 0);
+    --color-neutral-950: oklch(0.145 0 0);
+
+    --color-neutral-variant-50: oklch(0.985 0.013 106.424);
+    --color-neutral-variant-100: oklch(0.97 0.013 106.424);
+    --color-neutral-variant-200: oklch(0.923 0.013 48.717);
+    --color-neutral-variant-300: oklch(0.869 0.013 56.366);
+    --color-neutral-variant-400: oklch(0.709 0.013 56.259);
+    --color-neutral-variant-500: oklch(0.553 0.013 58.071);
+    --color-neutral-variant-600: oklch(0.444 0.013 73.639);
+    --color-neutral-variant-700: oklch(0.374 0.013 67.558);
+    --color-neutral-variant-800: oklch(0.268 0.013 34.298);
+    --color-neutral-variant-900: oklch(0.216 0.013 56.043);
+    --color-neutral-variant-950: oklch(0.147 0.013 49.25);
+
     /* Colores de Acento Vibrantes */
     --color-red_violet: oklch(0.55335 0.2217 349.67);
     --color-yellow_digital: oklch(86.055% 0.17305 91.942); /* Placeholder: Usando 'amber-400' */
@@ -42,42 +71,21 @@
     --color-secondary-09: var(--);
     --color-secondary-10: var(--);
 
-    --color-white: oklch(1 0 0);
-    --color-black: oklch(0 0 0);
-    --color-neutral-50: oklch(0.985 0 0);
-    --color-neutral-100: oklch(0.97 0 0);
-    --color-neutral-200: oklch(0.922 0 0);
-    --color-neutral-300: oklch(0.87 0 0);
-    --color-neutral-400: oklch(0.708 0 0);
-    --color-neutral-500: oklch(0.556 0 0);
-    --color-neutral-600: oklch(0.439 0 0);
-    --color-neutral-700: oklch(0.371 0 0);
-    --color-neutral-800: oklch(0.269 0 0);
-    --color-neutral-900: oklch(0.205 0 0);
-    --color-neutral-950: oklch(0.145 0 0);
-
-    --color-neutral-variant-01: oklch(0.985 0.013 106.424);
-    --color-neutral-variant-02: oklch(0.97 0.013 106.424);
-    --color-neutral-variant-03: oklch(0.923 0.013 48.717);
-    --color-neutral-variant-04: oklch(0.869 0.013 56.366);
-    --color-neutral-variant-05: oklch(0.709 0.013 56.259);
-    --color-neutral-variant-06: oklch(0.553 0.013 58.071);
-    --color-neutral-variant-07: oklch(0.444 0.013 73.639);
-    --color-neutral-variant-08: oklch(0.374 0.013 67.558);
-    --color-neutral-variant-09: oklch(0.268 0.013 34.298);
-    --color-neutral-variant-10: oklch(0.216 0.013 56.043);
-    --color-neutral-variant-11: oklch(0.147 0.013 49.25);
   /*
-   * Aero’s design token system
+   * Opal’s design token system
    * Alias token and component-specific token.
   */
+
     --font-family-sans: 'InterVariable', 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-display: 'InterDisplay';
     --font-family-serif: 'AppleGaramond', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-family-mono: 'GeistMono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
     --font-style-roman: normal;
     --font-style-italic: italic;
+
     --font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+
     --font-size-12: 0.75rem;
     --font-size-14: 0.875rem;
     --font-size-16: 1rem;
@@ -95,6 +103,7 @@
     --font-size-76: 4.75rem;
     --font-size-84: 5.25rem;
     --font-size-92: 5.75rem;
+
     --font-weight-thin: 100;
     --font-weight-ultralight: 200;
     --font-weight-ligth: 300;
@@ -104,15 +113,18 @@
     --font-weight-bold: 700;
     --font-weight-ultrabold: 800;
     --font-weight-black: 900;
+
     --font-leading-tight: 1.3;
     --font-leading-normal: 1.5;
     --font-leading-1_7x: 1.7;
+
     --font-tracking-common: -0.01em;
     --font-tracking-1: -0.04em;
     --font-tracking-2: -0.12em;
 
     --global-scrollbar-buffer: 15px;
     --header-height: 64px;
+
     --spacing-sat: env(safe-area-inset-top);
     --spacing-sar: env(safe-area-inset-right);
     --spacing-sab: env(safe-area-inset-bottom);
@@ -130,6 +142,7 @@
     --spacing-11: 80px;
     --spacing-12: 96px;
     --spacing-13: 160px;
+
     --space-01: 0.25rem;
     --space-02: 0.5rem;
     --space-04: 1rem;
@@ -212,10 +225,12 @@
     --easing-ease-out: cubic-bezier(0, 0, 0.40, 1);
     --easing-ease-in: cubic-bezier(0.50, 0, 1, 1);
     --easing-ease-in-out: cubic-bezier(0.45, 0, 0.40, 1);
+
     --duration-micro-x1: 100ms;
     --duration-micro-x2: 160ms;
     --duration-micro-x3: 190ms;
     --duration-micro-x4: 220ms;
+
     --duration-macro-x1: 250ms;
     --duration-macro-x2: 300ms;
     --duration-macro-x3: 350ms;
@@ -234,6 +249,7 @@
     --ring-offset: 1px;
     --width-ring-offset: 2px;
   }
+
   @media screen and (prefers-color-scheme: light) {
     :root {
       --color-accent: var(--color-yellow-digital);
@@ -308,6 +324,7 @@
       --glow: radial-gradient(#fff 50%, #0000 70%);
     }
   }
+
   @media screen and (prefers-color-scheme: dark) {
     :root {
       --background-primary: oklch(0 0 0);
@@ -318,6 +335,7 @@
       --separator-translucent: oklch(0% 0 0 / 0.17);
     }
   }
+
   @media (prefers-reduced-transparency) {
     :root {
       

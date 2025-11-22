@@ -1,4 +1,5 @@
 @charset "utf-8";
+@layer variables, base, utilities, components, forms, themes, pages, states, animations, print;
 /*/
  * scroll-padding-top: var(--)
  *
@@ -29,6 +30,87 @@
   ol { list-style-type: decimal; list-style-position: outside }
   ol ol { list-style-type: upper-latin }
   li { list-style: none }
+
+  :open {
+    
+  }
+  :not(:open) {
+    
+  }
+  [open] {
+    
+  }
+
+  :popover-open {
+    
+  }
+
+  dialog {
+    transition-behavior: allow-discrete
+  }
+  dialog[open]::backdrop {
+    display: block;
+    opacity: 1
+    @starting-style {
+      display: none;
+      opacity: 0
+      /* This represents dialog[open] and not its ::backdrop! */
+    }
+  }
+
+  /* Demo of '::picke-icon' */
+  ::picker-icon {
+    color: var();
+    background-color: var();
+    fill: var();
+    transition-behavior: allow-discrete
+  }
+  :not(:open)::picker-icon {c
+    
+  }
+  :open::picker-icon {
+    /* make sure the icon is a plus character before the transition starts */
+    @starting-style {
+      
+    }
+  }
+  select, ::picker(select) {
+    appearance: base-select
+  }
+
+  select {
+    /* Required to "reset" the element's appearance for customization */
+    &, &::picker(select) {
+      appearance: base-select
+    }
+    &::picker(select) {
+      transition: display allow-discrete 1s, opacity 1s, overlay 1s allow-discrete
+    }
+    &:not(:open)::picker(select) {
+      opacity: 0
+    }
+    &:open::picker(select) {c
+      opacity: 1;
+      @starting-style {
+        opacity: 0
+      }
+    }
+    & option {
+      
+      &::before {
+        content: '►c';
+        color: var(--color-accent)
+      }
+      &:checked {
+        content: '✔';
+        color: var(--color-accent)
+      }
+      &::checkmark {
+        content: '⮕'
+      }
+    }
+  }
+
   @media screen and (prefers-reduced-motion: reduce) {
     * { transition: all 0s ease 0s }
   }
@@ -804,11 +886,6 @@ hr {
   }
 }
 
-
-@layer utilities {
-  
-}
-
 @layer components {
   /* --- 1. Estilos del Emisor --- */
   .glow-emitter {
@@ -870,26 +947,6 @@ hr {
     position: relative; /* Asegura que esté sobre el fondo */
     z-index: 1;
   }
-}
-
-@layer forms {
-  
-}
-
-@layer themes {
-  
-}
-
-@layer pages {
-  
-}
-
-@layer states {
-  
-}
-
-@layer animations {
-  
 }
 
 @layer print {

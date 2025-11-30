@@ -20,7 +20,7 @@
   main { display: block; position: relative; z-index: 1; unicode-bidi: isolate; background-color: var(--color-background) }
   nav, aside, footer { user-select: none }
   footer { overflow: hidden }
-  
+
   div { display: block; unicode-bidi: isolate }
 
   p + p { margin-top: 2lh }
@@ -32,17 +32,17 @@
   li { list-style: none }
 
   :open {
-    
+
   }
   :not(:open) {
-    
+
   }
   [open] {
-    
+
   }
 
   :popover-open {
-    
+
   }
 
   dialog {
@@ -50,7 +50,7 @@
   }
   dialog[open]::backdrop {
     display: block;
-    opacity: 1
+    opacity: 1;
     @starting-style {
       display: none;
       opacity: 0
@@ -66,12 +66,12 @@
     transition-behavior: allow-discrete
   }
   :not(:open)::picker-icon {c
-    
+
   }
   :open::picker-icon {
     /* make sure the icon is a plus character before the transition starts */
     @starting-style {
-      
+
     }
   }
   select, ::picker(select) {
@@ -89,14 +89,14 @@
     &:not(:open)::picker(select) {
       opacity: 0
     }
-    &:open::picker(select) {c
+    &:open::picker(select) {
       opacity: 1;
-      @starting-style {
+      starting-style {
         opacity: 0
       }
     }
     & option {
-      
+
       &::before {
         content: '►c';
         color: var(--color-accent)
@@ -354,13 +354,13 @@ table {
   width: 100%
 }
 hgroup {
-  
+
 }
 br {
-  
+
 }
 hr {
-  
+
 }
 p, span {
   text-indent: unset
@@ -369,30 +369,30 @@ article ul::marker {
   content: '\203B'
 }
 dl {
-  
+
 }
 dt {
-  
+
 }
 dd {
-  
+
 }
 menu {
-  
+
 }
 blockquote {
   font: 600 16px/1.25 'Inter';
   hanging-punctuation: first
 }
 cite {
-  
+
 }
 blockquote cite::before {
   content: '\2014\2002'
 }
 blockquote,
 q {
-  
+
 }
 :is(blockquote, q)::before {
   content: open-quote
@@ -465,7 +465,7 @@ ins {
   text-decoration: unset
 }
 small {
-  
+
 }
 sub,
 sup {
@@ -479,7 +479,7 @@ sup {
   top: -.5em
 }
 data {
-  
+
 }
 bdi {
   unicode-bidi: isolate
@@ -488,10 +488,10 @@ bdo {
   unicode-bidi: bidi-override
 }
 rp {
-  
+
 }
 rt {
-  
+
 }
 ruby {
   text-transform: full-width;
@@ -504,7 +504,7 @@ u {
   text-decoration-skip-ink: all
 }
 wbr {
-  
+
 }
 table {
   width: 100%;
@@ -520,7 +520,7 @@ caption {
   text-align: start
 }
 table thead {
-  
+
 }
 table thead tr {
   border-bottom: solid oklch(0% 0 0)
@@ -532,7 +532,7 @@ table thead tr th {
   vertical-align: bottom
 }
 table tbody {
-  
+
 }
 table tbody tr {
   border-top: solid oklch(42.024% 0.00005 271.152)
@@ -552,16 +552,16 @@ td {
   border-width: 1px
 }
 th[scope="row"] {/* header for the row it is in */
-  
+
 }
 th[scope="col"] {/* header for the column it is in */
-  
+
 }
 th[scope="rowgroup"] {/* header that sit over the top of multiple rows */
-  
+
 }
 th[scope="colgroup"] {/* header that sit over the top of multiple columns */
-  
+
 }
 abbr[title] {
   text-decoration: underline dashed initial;
@@ -571,7 +571,7 @@ abbr[title] {
   cursor: help
 }
 details {
-  
+
 }
 details details {
   margin-inline: 10px
@@ -593,7 +593,7 @@ code {
   width: fit-content
 }
 :is(h1, h2, h3, h4, h5, h6, p, li) code {
-  
+
 }
 pre code {
   padding: 8px 14px;
@@ -629,19 +629,19 @@ dialog {
   user-select: none
 }
 figure {
-  
+
 }
 figcaption {
   font: var(--font-caption-emphasized)
 }
 area {
-  
+
 }
 map {
-  
+
 }
 track {
-  
+
 }
 svg { width: fit-content; height: fit-content }
 picture, video, source, img {
@@ -659,19 +659,19 @@ audio {
 
 }
 object {
-  
+
 }
 iframe, portal {
   border: none
 }
 form {
-  
+
 }
 fieldset {
-  
+
 }
 label {
-  
+
 }
 input {
   appearance: none
@@ -687,7 +687,7 @@ input:is([type="email"], [type="number"], [type="password"], [type="search"], [t
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):enabled {
-  
+
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):disabled {
@@ -699,7 +699,7 @@ input:is([type="email"], [type="number"], [type="password"], [type="search"], [t
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):required {
-  
+
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):optional {
@@ -707,15 +707,15 @@ input:is([type="email"], [type="number"], [type="password"], [type="search"], [t
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):is(:valid,:user-invalid) {
-  
+
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):invalid {
-  
+
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):active {
-  
+
 }
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):focus {
   border: 1px solid oklch(77.526% 0.08058 171.087);
@@ -724,22 +724,22 @@ input:is([type="email"], [type="number"], [type="password"], [type="search"], [t
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):autofill {
-  
+
 }
 input:is([type="datetime-local"], [type="date"], [type="week"], [type="month"], [type="time"]) {
-  
+
 }
 input[type="number"] {
-  
+
 }
 input[type="color"] {
-  
+
 }
 input:in-range {
-  
+
 }
 input:out-of-range {
-  
+
 }
 input[type="file"]::file-selector-button {
   padding: .2em .4em;
@@ -750,41 +750,41 @@ input[type="file"]::file-selector-button {
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):read-only {
-  
+
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):read-write {
-  
+
 }
 input:default {
-  
+
 }
 input:indeterminate {
-  
+
 }
 textarea,
 input:is([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]):placeholder-shown {
-  
+
 }
 input:empty {
-  
+
 }
 input:checked {
-  
+
 }
 :is([type="radio"], [type="checkbox"]) input[checked] {
-  
+
 }
 :is([type="radio"], [type="checkbox"]) input[checked]:default {
-  
+
 }
 
 legend {
-  
+
 }
 
 aside {
-  
+
 }
 address {
   font-style: normal
@@ -852,7 +852,7 @@ hr {
     color:hsl(0 0% 100%)
   }
   to {
-    
+
   }
 }
 
@@ -904,13 +904,13 @@ hr {
     --glow-size: 400px;
     --card-radius: 8px;
     --card-bg: #1a1a1a;
-    
+
     position: relative;
     border-radius: var(--card-radius);
-    
+
     /* El 'padding' define el espacio para el borde brillante */
     padding: var(--glow-border-width);
-    
+
     /* Para que el contenido interno no se desborde */
     overflow: hidden;
 
@@ -918,9 +918,9 @@ hr {
       Usamos las variables CSS que el script actualizará.
     */
     background: radial-gradient(
-      var(--glow-size) circle at 
-      var(--mouse-x) var(--mouse-y), 
-      var(--glow-color), 
+      var(--glow-size) circle at
+      var(--mouse-x) var(--mouse-y),
+      var(--glow-color),
       transparent 70%
     );
 
@@ -937,7 +937,7 @@ hr {
   /* --- 3. Estilos del Contenido Interno --- */
   .glow-content {
     /* Este es el contenido real de tu tarjeta.
-      Cubre el fondo (el 'glow') del padre, 
+      Cubre el fondo (el 'glow') del padre,
       dejando visible solo el 'padding' de 2px.
     */
     background-color: var(--card-bg);

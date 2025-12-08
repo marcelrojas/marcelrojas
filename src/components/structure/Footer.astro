@@ -19,16 +19,14 @@ const mySocialHandles = [
   <Grain />
   <div class="content">
     <aside aria-label="Contact me">
-      <div id="ClipboardFlower" data-encemail={encEmail}>
+      <div id="ClipboardFlower" class="copy-email" data-encemail={encEmail}>
         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" height="16" stroke-linejoin="round" style="color:currentColor" viewBox="0 0 16 16" width="16">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.57757 0 0 3.61682 0 8.03093C0 12.411 3.54999 16 7.9384 16C9.42621 16 10.8841 15.5819 12.1457 14.7934L12.3975 14.636L11.6025 13.364L11.3507 13.5214C10.3275 14.1609 9.14508 14.5 7.9384 14.5C4.38672 14.5 1.5 11.5909 1.5 8.03093C1.5 4.43692 4.4143 1.5 8 1.5C11.5899 1.5 14.5 4.41015 14.5 8V8.60714C14.5 9.3764 13.8764 10 13.1071 10C12.2195 10 11.5 9.28046 11.5 8.39286V8V4.5H10V5.12734C9.43308 4.73191 8.74362 4.5 8 4.5C6.067 4.5 4.5 6.067 4.5 8C4.5 9.933 6.067 11.5 8 11.5C9.05713 11.5 10.0048 11.0313 10.6466 10.2904C11.2148 11.0262 12.1056 11.5 13.1071 11.5C14.7048 11.5 16 10.2048 16 8.60714V8C16 3.58172 12.4183 0 8 0ZM10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8Z" fill="currentColor"></path>
         </svg>
         <span class="label">Tab the flower to copy my email</span>
       </div>
     </aside>
-    <p>Thanks for stopping by! If you have any questions, want to collaborate, or
-      just want to say hi, feel free to reach out through any of the social
-      platforms below. Looking forward to connecting with you!</p>
+    <p>Thanks for stopping by! If you have any questions, want to collaborate, or just want to say hi, feel free to reach out through any of the social platforms below. Looking forward to connecting with you!</p>
     <address class="social-handles">
       <SocialHandles handlesToShow={mySocialHandles} />
     </address>
@@ -52,18 +50,10 @@ const mySocialHandles = [
 </footer>
 <div inert="" class="section-make-it-real_Root">
   <div class="section-make-it-real_Inner">
-    <span class="section-make-it-real_Text__kVVz9">make it&nbsp;real</span>
+    <span class="section-make-it-real_Text">make it&nbsp;real</span>
   </div>
 </div>
 <style>
-  .section-make-it-real_Root {
-    @media (width >= 800px) {
-      white-space: nowrap;
-      font-size: calc(21 * var(--spacing-vw));
-      line-height: .7;
-      height: 1lh;
-    }
-  }
   .section-make-it-real_Root {
     --background: #111;
     --text: #333;
@@ -76,15 +66,21 @@ const mySocialHandles = [
     color: var(--text);
     font-weight: 500;
     letter-spacing: -.04em;
-  }
-  .section-make-it-real_Inner {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    @media (width >= 800px) {
+      white-space: nowrap;
+      font-size: calc(21 * var(--spacing-vw));
+      line-height: .7;
+      height: 1lh;
+    }
+    & .section-make-it-real_Inner {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   footer#globalfooter {
@@ -96,10 +92,8 @@ const mySocialHandles = [
     contain: layout paint;
     content-visibility: auto;
     will-change: visibility, opacity;
-    transition:
-      visibility 0.3s ease-in-out,
-      opacity 0.3s ease-in-out;
-    font-family: var(--font-family-mono);
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    font-family: var(--font-family-sans);
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-12);
     & div.content {
@@ -117,6 +111,29 @@ const mySocialHandles = [
         padding-top: 18px;
         padding-bottom: 12px;
         margin-block: auto;
+        & div.copy-email {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 8px;
+          gap: 16px;
+          cursor: pointer;
+          & svg {
+            fill: var(--color-label-);
+            stroke: var(--color-label-);
+            stroke-width: 0.5px;
+            transition: transform 0.3s ease-in-out;
+            will-change: transform;
+          }
+          &:hover svg {
+            transform: scale(1.1);
+          }
+          & span.label {
+            color: var(--color-label-tertiary);
+          }
+        }
       }
       & p {
         position: relative;
@@ -177,30 +194,8 @@ const mySocialHandles = [
       & small.copyright {
         position: relative;
         display: block;
+        font-family: var(--font-family-serif);
       }
-    }
-  }
-  div#ClipboardFlower {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    gap: 16px;
-    cursor: pointer;
-    & svg {
-      fill: var(--color-label-);
-      stroke: var(--color-label-);
-      stroke-width: 0.5px;
-      transition: transform 0.3s ease-in-out;
-      will-change: transform;
-    }
-    &:hover svg {
-      transform: scale(1.1);
-    }
-    & span.label {
-      color: var(--color-label-tertiary);
     }
   }
 </style>

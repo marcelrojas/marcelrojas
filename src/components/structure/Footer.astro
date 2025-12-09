@@ -1,19 +1,30 @@
 ---
-import SocialHandles from '@components/Socialhandles.astro';
 import Grain from '@components/decorators/Grain.astro';
+import { getHandles } from '@types/social';
 
 const {encEmail = 'Y29udGFjdEBtYXJjZWxyb2phcy5jb20='} = Astro.props;
 
-const today = new Date();
+// 1. Obtener los datos
+const socialLinks = getHandles(['x', 'instagram', 'pinterest', 'linkedin', 'youtube', 'github']);
 
-const mySocialHandles = [
-  'X',
-  'Instagram',
-  'Pinterest',
-  'LinkedIn',
-  'YouTube',
-  'GitHub',
-];
+// 2. Importar los SVGs como TEXTO (Raw strings)
+// 'query: "?raw"' le dice a Vite que queremos el código del SVG, no la ruta del archivo.
+// 'import: "default"' extrae directamente el string.
+const iconFiles = import.meta.glob('/src/assets/icons/*.svg', { 
+  query: '?raw', 
+  import: 'default', 
+  eager: true 
+});
+
+// 3. Helper para obtener el string del SVG
+const getIconContent = (path: string | undefined): string | null => {
+  if (!path) return null;
+  const normalizedPath = path.replace('@assets', '/src/assets');
+  // TypeScript puede quejarse aquí si no casteamos, pero en runtime funciona perfecto
+  return (iconFiles[normalizedPath] as string) || null;
+};
+
+const today = new Date();
 ---
 <footer id="globalfooter" role="contentinfo" aria-label="Global footer" tabindex="-1">
   <Grain />
@@ -28,7 +39,20 @@ const mySocialHandles = [
     </aside>
     <p>Thanks for stopping by! If you have any questions, want to collaborate, or just want to say hi, feel free to reach out through any of the social platforms below. Looking forward to connecting with you!</p>
     <address class="social-handles">
-      <SocialHandles handlesToShow={mySocialHandles} />
+      <ul>
+        {socialLinks.map((handle) => {
+          const svgContent = getIconContent(handle.icon);
+          return (
+            <li>
+              <a href={handle.url} target="_blank" rel="noopener noreferrer" aria-label={handle.title} title={handle.title} class="social-link">
+                {/* set:html inyecta el código SVG directamente en el DOM */}
+                {svgContent && <Fragment set:html={svgContent} />}
+                <span class="sr-only">{handle.title}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
     </address>
     <div class="legal">
       <nav class="legal-links" aria-label="Legal">

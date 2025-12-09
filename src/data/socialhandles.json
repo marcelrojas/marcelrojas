@@ -1,46 +1,67 @@
 {
   "x": {
     "title": "X",
+    "icon": "@assets/icons/x.svg",
     "url": "https://x.com/whyismarcel"
   },
   "instagram": {
     "title": "Instagram",
+    "icon": "@assets/icons/instagram.svg",
     "url": "https://www.instagram.com/immarcelrojas/"
   },
   "pinterest": {
     "title": "Pinterest",
+    "icon": "@assets/icons/pinterest.svg",
     "url": "https://www.pinterest.com/whyismarcel"
   },
   "linkedin": {
     "title": "LinkedIn",
+    "icon": "@assets/icons/linkedin.svg",
     "url": "https://www.linkedin.com/in/whyismarcel"
   },
   "youtube": {
     "title": "YouTube",
+    "icon": "@assets/icons/youtube.svg",
     "url": "https://www.youtube.com/@marcelrojas"
   },
   "github": {
     "title": "GitHub",
+    "icon": "@assets/icons/github.svg",
     "url": "https://github.com/marcelrojas"
   },
   "arena": {
     "title": "Are.na",
+    "icon": "@assets/icons/arena.svg",
     "url": "https://www.are.na/marcel-rojas/channels"
   },
   "tiktok": {
     "title": "TikTok",
+    "icon": "@assets/icons/tiktok.svg",
     "url": "https://www.tiktok.com/@whyismarcel"
   },
   "contra": {
     "title": "Contra",
+    "icon": "@assets/icons/contra.svg",
     "url": "https://contra.com/marcelrojas"
   },
   "upwork": {
     "title": "Upwork",
+    "icon": "@assets/icons/upwork.svg",
     "url": "https://www.upwork.com/"
   },
   "fiverr": {
     "title": "Fiverr",
+    "icon": "@assets/icons/fiverr.svg",
     "url": "https://www.fiverr.com/sellers/whyismarcel/"
+  },
+  "spotify": {
+    "title": "Spotify",
+    "icon": "@assets/icons/spotify.svg",
+    "url": "https://open.spotify.com/user/314njpjr7ig5q5ry3ai7whnxbpsm"
+  },
+  "tidal": {
+    "title": "Tidal",
+    "icon": "@assets/icons/tidal.svg",
+    "url": "https://tidal.com/@marcelrojas"
   }
 }

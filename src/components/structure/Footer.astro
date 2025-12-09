@@ -1,5 +1,6 @@
 ---
 import Grain from '@components/decorators/Grain.astro';
+import Anchor from '@components/Anchor.astro';
 import { getHandles } from '@types/social';
 
 const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
@@ -45,11 +46,11 @@ const today = new Date();
           const svgContent = getIconContent(handle.icon);
           return (
             <li>
-              <a href={handle.url} target="_blank" rel="noopener noreferrer" aria-label={handle.title} title={handle.title} class="social-link">
+              <Anchor href={handle.url} target="_blank" rel="noopener noreferrer" class="social-link">
                 {/* set:html inyecta el código SVG directamente en el DOM */}
                 {svgContent && <Fragment set:html={svgContent} />}
                 <span class="sr-only">{handle.title}</span>
-              </a>
+              </Anchor>
             </li>
           );
         })}
@@ -181,6 +182,32 @@ const today = new Date();
         justify-content: center;
         gap: 16px;
         padding-block: 16px;
+        & ul {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+          & li {
+            & a.social-link {
+              width: 32px;
+              height: 32px;
+              color: var(--color-label-);
+              transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              transition-duration: 0.15s;
+              @media (hover: hover) {
+                &:hover {
+                  color: oklch(0.21 0.01 0);
+                }
+              }
+              & svg {
+                width: 20px;
+                height: 20px;
+                fill: currentColor;
+                stroke: currentColor;
+              }
+            }
+          }
+        }
       }
       & div.legal {
         position: relative;

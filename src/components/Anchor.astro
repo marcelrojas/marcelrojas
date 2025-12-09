@@ -94,12 +94,6 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       &:focus-visible {
         outline: 2px solid var(--color-focus)
       }
-      &.wide-fit {
-        width: fit-content
-      }
-      &.wide-fill {
-        width: 100%
-      }
       &.variant-text {
         
       }
@@ -115,11 +109,36 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
           }
         }
       }
-      &[role="button"] {
-        border-radius: 32px
+      &.action-default {
+        color: var(--color-label-)
       }
-      &[role="button"][aria-pressed="true"] {
-        
+      &.action-neutral {
+        color: var(--color-label-)
+      }
+
+      &.size-small {
+        font-size: var(--font-size-12);
+        padding: 4px 8px;
+      }
+      &.size-medium {
+        font-size: var(--font-size-14);
+        padding: 6px 12px;
+      }
+      &.size-large {
+        font-size: var(--font-size-16);
+        padding: 8px 16px;
+      }
+      &.wide-fit {
+        width: fit-content
+      }
+      &.wide-fill {
+        width: 100%
+      }
+      &[role="button"] {
+        border-radius: 32px;
+        &[aria-pressed="true"] {
+          
+        }
       }
     }
   }

@@ -46,7 +46,7 @@ const today = new Date();
           const svgContent = getIconContent(handle.icon);
           return (
             <li>
-              <Anchor variant="platted" size="medium" wide="fit" href={handle.url} target="_blank" rel="noopener noreferrer" class="social-link">
+              <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={handle.url} target="_blank" rel="noopener noreferrer" class="social-link">
                 {/* set:html inyecta el código SVG directamente en el DOM */}
                 {svgContent && <Fragment set:html={svgContent} />}
                 <span class="sr-only">{handle.title}</span>

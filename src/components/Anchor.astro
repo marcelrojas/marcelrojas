@@ -1,9 +1,11 @@
 ---
 interface Props {
   /** La variante visual del botón. */
-  variant?: 'text' | 'platted';
+  variant?: 'platterless' | 'platted';
   /** El color del botón. */
   action?: 'default' | 'neutral';
+  /** El tipo de etiqueta del ancla. */
+  label?: 'text-and-icon' | 'text-only' | 'icon-only';
   /** El tamaño del ancla. */
   size?: 'small' | 'medium' | 'large';
   /** El ancho del botón.*/
@@ -20,6 +22,7 @@ interface Props {
 const {
   variant = 'text',
   action = 'default',
+  label = 'text-and-icon',
   size = 'medium',
   wide = 'fit',
   disabled = false,
@@ -42,6 +45,7 @@ const classList = [
   'anchor',
   `variant-${variant}`,
   `action-${action}`,
+  `label-${label}`,
   `size-${size}`,
   `wide-${wide}`,
   userClass,
@@ -65,7 +69,6 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
       font-family: var(--font-family-sans);
       font-weight: var(--font-weight-regular);
       text-align: center;
@@ -94,14 +97,13 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       &:focus-visible {
         outline: 2px solid var(--color-focus)
       }
-      &.variant-text {
+      /* Variants */
+      &.variant-platterless {
         
       }
       &.variant-platted {
-        padding: 8px 10px;
         border-radius: 8px;
         background: var(--color-fill);
-        color: var(--color-label-controls);
         @media (hover: hover) {
           &:hover {
             --color-anchor-hover: okchl(1 1 1 / 0.08);
@@ -109,25 +111,55 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
           }
         }
       }
+      /* Actions */
       &.action-default {
-        color: var(--color-label-)
+        color: var(--color-label-controls);
+        fill: var(--color-label-controls)
       }
       &.action-neutral {
-        color: var(--color-label-)
+        color: var(--color-label-);
+        fill: var(--color-label-)
       }
-
+      /* Sizes */
       &.size-small {
         font-size: var(--font-size-12);
-        padding: 4px 8px;
+        &.label-text-and-icon {
+          
+        }
+        &.label-text-only {
+          
+        }
+        &.label-icon-only {
+          
+        }
       }
       &.size-medium {
         font-size: var(--font-size-14);
-        padding: 6px 12px;
+        &.label-text-and-icon {
+          padding: 10px 16px;
+          gap: 5px
+        }
+        &.label-text-only {
+          padding: 10px 14px
+        }
+        &.label-icon-only {
+          padding: 14px
+        }
       }
       &.size-large {
         font-size: var(--font-size-16);
-        padding: 8px 16px;
+        &.label-text-and-icon {
+          padding: 12px 20px;
+          gap: 6px
+        }
+        &.label-text-only {
+          padding: 12px 16px
+        }
+        &.label-icon-only {
+          padding: 16px
+        }
       }
+      /* Widths */
       &.wide-fit {
         width: fit-content
       }

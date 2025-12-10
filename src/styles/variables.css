@@ -245,7 +245,7 @@
     --animate-pulse: pulse 2s var(--easing-ease-in-out) infinite;
     --animate-blink: blink 2s var(--easing-ease-in-out) infinite;
 
-    --ring-inset: ;
+    --ring-inset: 0px;
     --ring-offset: 1px;
     --width-ring-offset: 2px;
   }

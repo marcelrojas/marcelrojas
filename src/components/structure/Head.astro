@@ -2,8 +2,6 @@
 import { ClientRouter } from 'astro:transitions';
 import '@styles/variables.css';
 import '@styles/global.css';
-//import GlobalVariables from '@styles/variables.css';
-//import GlobalStyles from '@styles/global.css';
 import { SITE_TITLE } from '@types/consts';
 import FallbackImage from '/public/images/og-logo.png';
 import type { ImageMetadata } from 'astro';
@@ -45,13 +43,12 @@ const { title, description, image = FallbackImage } = Astro.props;
 <!-- Font Preloads -->
 <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 <link rel="preload" href="/fonts/InterVariable-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-<link rel="preload" href="/fonts/InterDisplay.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 <link rel="preload" href="/fonts/GeistMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 <link rel="preload" href="/fonts/GeistMono-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
-<link rel="canonical" href="marcelrojas.marcelrojas.workers.dev" />
+<link rel="canonical" href="https://marcelrojas.marcelrojas.workers.dev" />
 <!-- link rel="alternate" href={} hreflang={} /-->
 
 <!-- Primary Meta Tags -->
@@ -60,12 +57,14 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta name="description" content={description} />
 
 <!-- Web Analytics -->
-<!-- Web analytics code here -->
 
-<!-- Styles 
+
+<!-- Stylesheets -->
+<!--
 <link rel="stylesheet" as="style" href={GlobalVariables} type="text/css" referrerpolicy="strict-origin-when-cross-origin" />
 <link rel="stylesheet" as="style" href={GlobalStyles} type="text/css" referrerpolicy="strict-origin-when-cross-origin" />
 -->
+
 <!-- Scripts -->
 <script async src="/script.js"></script>
 

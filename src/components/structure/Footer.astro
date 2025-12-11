@@ -7,7 +7,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
 /* Y29udGFjdEBtYXJjZWxyb2phcy5jb20= */
 
 // 1. Obtener los datos
-const socialLinks = getHandles(['x', 'instagram', 'pinterest', 'linkedin', 'youtube', 'github']);
+const socialLinks = getHandles(['x', 'instagram', 'pinterest', 'youtube', 'github']);
 
 // 2. Importar los SVGs como TEXTO (Raw strings)
 // 'query: "?raw"' le dice a Vite que queremos el código del SVG, no la ruta del archivo.
@@ -178,6 +178,8 @@ const today = new Date();
       }
       & address.social-handles {
         position: relative;
+        max-width: 28rem;
+        margin-inline: auto;
         display: flex;
         justify-content: center;
         & ul {

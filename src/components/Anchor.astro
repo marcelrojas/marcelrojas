@@ -1,67 +1,56 @@
 ---
-interface Props {
-  /** La variante visual del botón. */
-  variant?: 'platterless' | 'platted';
-  /** El color del botón. */
-  action?: 'default' | 'neutral';
-  /** El tipo de etiqueta del ancla. */
-  label?: 'text-and-icon' | 'text-only' | 'icon-only';
-  /** El tamaño del ancla. */
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {
+  variant?: 'platted' | 'text';
   size?: 'small' | 'medium' | 'large';
-  /** El ancho del botón.*/
-  wide?: 'fit' | 'fill';
-  /** Si el botón debe estar deshabilitado. */
-  disabled?: boolean;
-  /** Clases CSS adicionales para personalizar. */
-  class?: string;
-  /** Atributos adicionales como `onclick`, `id`, `data-*`, etc. */
-  [key: string]: any;
+  wide?: 'fill' | 'fit';
+  label?: 'icon-only' | 'text';
+  isActive?: boolean; // Permite forzar el estado activo si es necesario
 }
 
-// 1. Desestructurar props con valores por defecto.
 const {
-  variant = 'text',
-  action = 'default',
-  label = 'text-and-icon',
-  size = 'medium',
-  wide = 'fit',
-  disabled = false,
-  class: userClass,
   href,
-  ...rest
+  variant = 'text',
+  size = 'medium',
+  wide = 'auto',
+  label,
+  isActive: forceActive,
+  class: className,
+  ...props
 } = Astro.props;
 
-// 2. Atributos finales para el elemento (incluye el resto de props).
-// Sólo añadir `role` cuando se haya pasado como prop.
-const attrs: Record<string, any> = {
-  ...rest,
-  disabled,
-  'aria-disabled': disabled ? 'true' : undefined,
-  tabindex: disabled ? -1 : undefined,
-};
+// 2. Lógica de URL y Estado Activo
+const { pathname } = Astro.url;
+const currentPath = pathname.replace(/\/$/, ''); // Normaliza la ruta actual (quita slash final)
+const targetHref = href?.toString().replace(/\/$/, ''); // Normaliza el href
 
-// 3. Construir la lista de clases dinámicamente y la clase final.
-const classList = [
+// Detecta si es la página actual o una sub-página
+const isActive = forceActive ?? (
+  targetHref === currentPath ||
+  (targetHref !== '' && targetHref !== '/' && currentPath.startsWith(targetHref + '/'))
+);
+
+// 3. Lógica de Enlaces Externos (Seguridad)
+const isExternal = href?.toString().startsWith('http');
+// Si es externo, fuerza _blank y noopener. Si no, usa lo que venga en props o nada.
+const target = isExternal ? '_blank' : props.target;
+const rel = isExternal ? 'noopener noreferrer' : props.rel;
+
+// 4. Clases dinámicas (BEM style o Utility classes)
+const classes = [
   'anchor',
   `variant-${variant}`,
-  `action-${action}`,
-  `label-${label}`,
   `size-${size}`,
   `wide-${wide}`,
-  userClass,
-].filter(Boolean);
-
-const finalClass = classList.join(' ');
-
-const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
-const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+  label === 'icon-only' ? 'is-icon-only' : '',
+  isActive ? 'is-active' : '', // Clase automática para CSS
+  className
+];
 ---
 
-<a href={href} class={finalClass} aria-current={isActive ? 'page' : undefined} {...attrs}>
-  <slot name="iconLeft" />
+<a href={href} class:list={classes} target={target} rel={rel} aria-current={isActive ? 'page' : undefined} data-astro-prefetch={isExternal ? 'false' : 'viewport'} {...props}>
   <slot />
-  <slot name="iconRight" />
 </a>
 
 <style>
@@ -100,9 +89,6 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
         outline: 2px solid var(--ring)
       }
       /* Variants */
-      &.variant-platterless {
-        
-      }
       &.variant-platted {
         border-radius: 8px;
         border: 1px solid oklch(1 0 0 / 0.1);

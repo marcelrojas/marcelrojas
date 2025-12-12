@@ -1,5 +1,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
+  import Button from '@components/Button.astro';
 
   export let buttonText: string = "Subscribe";
   export let placeholder: string = "you@example.com";
@@ -54,10 +55,10 @@
         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
       </svg>
 
-      <input type="email" name="email" bind:value={email} disabled={status === 'loading' || status === 'success'} {placeholder} class:error={status === 'error'} aria-invalid={status === 'error'} aria-describedby="form-message" required />
+      <input type="email" name="email" bind:value={email} disabled={status === 'loading' || status === 'success'} {placeholder} class:error={status === 'error'} aria-invalid={status === 'error'} aria-describedby="form-message" autocomplete="email" required />
     </div>
 
-    <button type="submit" disabled={status === 'loading' || status === 'success'} class:success={status === 'success'}>
+    <Button type="submit" disabled={status === 'loading' || status === 'success'} class:success={status === 'success'} client:load>
       {#if status === 'loading'}
         <svg class="icon spin" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
@@ -71,7 +72,7 @@
       {:else}
         {buttonText}
       {/if}
-    </button>
+    </Button>
   </div>
 
   <div id="form-message" class="message-area"aria-live="polite">
@@ -88,9 +89,7 @@
 </form>
 
 <style>
-  /* Scoped CSS 
-    Modify these variables or values to match your design system 
-  */
+  /* Scoped CSS */
   .newsletter-form {
     width: 100%
   }
@@ -140,13 +139,6 @@
     color: #111;
   }
 
-  /* Dark mode support check (works if parent has class="dark" or uses media query) */
-  :global(.dark) input {
-    background-color: #222;
-    border-color: #444;
-    color: #fff;
-  }
-
   input:focus {
     border-color: #3b82f6; /* Blue */
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
@@ -160,42 +152,6 @@
     opacity: 0.7;
     cursor: not-allowed;
     background-color: #f9fafb;
-  }
-
-  /* Button Styles */
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #18181b; /* Zinc 900 */
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    white-space: nowrap;
-    min-width: 120px;
-  }
-
-  button:hover:not(:disabled) {
-    background-color: #27272a;
-  }
-
-  button:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-  }
-
-  button.success {
-    background-color: #16a34a; /* Green */
-  }
-
-  button.success:hover {
-    background-color: #15803d;
   }
 
   /* Animations */

@@ -1,9 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import NewsletterForm from '@components/NewsletterForm.svelte';
+import NewsletterForm from '@components/NewsletterForm.astro';
 import Anchor from '@components/Anchor.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
 ---
+
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <section class="aboutpage-section collection-module">
     <article class="module">
@@ -68,6 +69,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
     </article>
   </section>
 </Layout>
+
 <style>
   #module-hero {
     & .content {

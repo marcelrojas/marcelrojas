@@ -67,6 +67,7 @@ const classList = [
   hasIcon && 'has-icon',
 ].filter(Boolean).join(' ');
 ---
+
 <Tag class={classList} {...attrs}>
   <slot name="iconLeft" />
   {Tag !== 'input' && (
@@ -74,6 +75,7 @@ const classList = [
   )}
   <slot name="iconRight" />
 </Tag>
+
 <style>
   :is(button, input:is([type="button"], [type="submit"], [type="reset"])).button {
     justify-content: center;

@@ -3,6 +3,7 @@ import Anchor from '@components/Anchor.astro';
 import Icon from '@components/Icon.astro';
 import articles from '@data/articles.json';
 ---
+
 <ul class="list-tiles">
   {
     Object.values(articles).map((article) => (
@@ -16,6 +17,7 @@ import articles from '@data/articles.json';
     ))
   }
 </ul>
+
 <style>
   ul.list-tiles {
     position: relative;

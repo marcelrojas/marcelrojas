@@ -8,6 +8,7 @@ interface Props {
 
 const { nextPage, disabled } = Astro.props;
 ---
+
 <div class="pagination catalog-counter">
   <span class="catalog-list_total-count">Showing {currentNumber} of {totalNumber} results</span>
   <progress max={totalNumber} class="list_progress" value={currentNumber}></progress>

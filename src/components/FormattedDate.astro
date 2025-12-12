@@ -14,7 +14,9 @@ const formattedDate = dateObj.toLocaleDateString('en-us', {
   day: 'numeric',
 });
 ---
+
 <time datetime={dateObj.toISOString()} class={className}>{formattedDate}</time>
+
 <style>
   time, time.timestamp {
     position: relative;

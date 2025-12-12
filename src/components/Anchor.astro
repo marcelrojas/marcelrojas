@@ -57,11 +57,13 @@ const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
 const subpath = pathname.match(/[^\/]+/g);
 const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 ---
+
 <a href={href} class={finalClass} aria-current={isActive ? 'page' : undefined} {...attrs}>
   <slot name="iconLeft" />
   <slot />
   <slot name="iconRight" />
 </a>
+
 <style>
   @layer components {
     :is(a, a[role="button"]).anchor {

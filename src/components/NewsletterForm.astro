@@ -1,187 +1,152 @@
 ---
-// NewsletterForm.astro
 import Button from '@components/Button.astro';
 
 interface Props {
-  buttonText?: string;
   placeholder?: string;
+  buttonText?: string;
 }
 
 const { 
-  buttonText = "Subscribe", 
-  placeholder = "you@example.com" 
+  placeholder = "you@ejemplo.com", 
+  buttonText = "Suscribirse" 
 } = Astro.props;
 ---
 
-<div class="newsletter-component">
-  <form class="newsletter-form" novalidate aria-label="Newsletter subscription form">
-    <div class="input-group">
-      <div class="input-wrapper">
-        <svg class="icon input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect width="20" height="16" x="2" y="4" rx="2"/>
-          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+<form class="newsletter-form" novalidate aria-label="Formulario de suscripción">
+  <div class="input-group">
+    
+    <div class="input-wrapper">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="16" x="2" y="4" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </svg>
+      <input type="email" name="email" placeholder={placeholder} autocomplete="email" required />
+    </div>
+
+    <Button type="submit" variant="tonal" action="default" size="medium" class="submit-btn">
+      <span slot="iconLeft" class="state-icon-wrapper">
+        <svg class="icon spin icon-loading" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
         </svg>
-        
-        <input 
-          type="email" 
-          name="email" 
-          placeholder={placeholder}
-          autocomplete="email"
-          required 
-          class="form-input"
-        />
-      </div>
+        <svg class="icon icon-success" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </span>
 
-      <Button type="submit" class="submit-btn">
-        <span class="content-idle">
-          {buttonText}
-        </span>
-        
-        <span class="content-loading">
-          <svg class="icon spin" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
-          </svg>
-          <span>Processing...</span>
-        </span>
+      <span slot="text" class="state-text-wrapper">
+        <span class="text-idle">{buttonText}</span>
+        <span class="text-loading">Procesando</span>
+        <span class="text-success">Suscrito</span>
+      </span>
+    </Button>
+  </div>
 
-        <span class="content-success">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"/>
-          </svg>
-          <span>Subscribed</span>
-        </span>
-      </Button>
-    </div>
-
-    <div class="message-area" aria-live="polite">
-      <span class="msg error"></span>
-      <span class="msg success"></span>
-    </div>
-  </form>
-</div>
+  <div class="message-area" aria-live="polite">
+    <span class="msg error"></span>
+    <span class="msg success"></span>
+  </div>
+</form>
 
 <script>
   // Lógica del cliente
-  // Seleccionamos todos los formularios para que funcione si se usa el componente varias veces
-  const forms = document.querySelectorAll('.newsletter-form');
+  const forms = document.querySelectorAll('form.newsletter-form');
 
   forms.forEach((form) => {
-    const input = form.querySelector('input') as HTMLInputElement;
-    const submitBtn = form.querySelector('button') as HTMLButtonElement;
-    const msgError = form.querySelector('.msg.error') as HTMLElement;
-    const msgSuccess = form.querySelector('.msg.success') as HTMLElement;
+    const formEl = form as HTMLFormElement;
+    const input = formEl.querySelector('input') as HTMLInputElement;
+    const submitBtn = formEl.querySelector('button') as HTMLButtonElement;
+    const msgError = formEl.querySelector('.msg.error') as HTMLElement;
+    const msgSuccess = formEl.querySelector('.msg.success') as HTMLElement;
     
-    // Regex original del componente Svelte [cite: 3]
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    // Función auxiliar para establecer estado
     const setStatus = (status: 'idle' | 'loading' | 'success' | 'error', message = "") => {
-      form.setAttribute('data-status', status);
+      formEl.setAttribute('data-status', status);
       
-      // Manejo de UI basado en estado
-      if (status === 'error') {
-        input.classList.add('error');
-        input.setAttribute('aria-invalid', 'true');
-        msgError.textContent = message;
-        msgError.style.display = 'block';
-        msgSuccess.style.display = 'none';
-      } else if (status === 'success') {
-        input.classList.remove('error');
-        input.setAttribute('aria-invalid', 'false');
-        msgSuccess.textContent = message;
-        msgSuccess.style.display = 'block';
-        msgError.style.display = 'none';
-        input.value = ""; // Limpiar input [cite: 7]
-      } else {
-        // Idle o Loading
-        input.classList.remove('error');
-        input.setAttribute('aria-invalid', 'false');
-        msgError.style.display = 'none';
-        msgSuccess.style.display = 'none';
-      }
-
-      // Deshabilitar controles durante carga [cite: 12]
       const isLoading = status === 'loading' || status === 'success';
       input.disabled = isLoading;
       submitBtn.disabled = isLoading;
+      
+      // Accesibilidad para el botón
+      submitBtn.setAttribute('aria-disabled', isLoading ? 'true' : 'false');
+
+      if (status === 'error') {
+        msgError.textContent = message;
+        msgError.style.display = 'block';
+        msgSuccess.style.display = 'none';
+        input.focus();
+      } else if (status === 'success') {
+        msgSuccess.textContent = message;
+        msgSuccess.style.display = 'block';
+        msgError.style.display = 'none';
+        input.value = "";
+      } else {
+        msgError.style.display = 'none';
+        msgSuccess.style.display = 'none';
+      }
     };
 
-    form.addEventListener('submit', async (e) => {
+    formEl.addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = input.value;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-      // 1. Validación Básica 
       if (!email || !emailRegex.test(email)) {
-        setStatus('error', "Please enter a valid email address."); // [cite: 5]
+        setStatus('error', "Por favor ingresa un correo válido.");
         return;
       }
 
-      // 2. Estado de Carga [cite: 5]
       setStatus('loading');
 
       try {
-        // Simulación de API [cite: 6]
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
-        setStatus('success', "Thanks for subscribing! Check your inbox."); // [cite: 7]
+        const formData = new FormData();
+        formData.append('email', email);
 
-        // Reset opcional [cite: 8]
+        // Llamada a la API de Astro
+        const response = await fetch('/api/subscribe', {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) throw new Error(result.message || "Error al suscribirse");
+        
+        setStatus('success', result.message || "¡Gracias! Revisa tu bandeja de entrada.");
+
+        // Resetear a estado idle después de 4 segundos
         setTimeout(() => {
           setStatus('idle');
-        }, 5000);
+        }, 4000);
 
-      } catch (err) {
+      } catch (err: any) {
         console.error(err);
-        setStatus('error', "Something went wrong. Please try again later."); // [cite: 10]
+        setStatus('error', err.message || "Algo salió mal. Intenta de nuevo.");
       }
     });
   });
 </script>
 
 <style>
-  .newsletter-component {
-    width: 100%;
-  }
-
   .newsletter-form {
     width: 100%;
-    /* Variables para controlar visibilidad según data-status */
-    --display-idle: block;
-    --display-loading: none;
-    --display-success: none;
+    max-width: 480px; /* Opcional: limitar ancho */
   }
 
-  /* Lógica de visualización basada en atributos data-status */
-  .newsletter-form[data-status="loading"] {
-    --display-idle: none;
-    --display-loading: flex; /* Flex para alinear icono y texto */
-    --display-success: none;
-  }
-
-  .newsletter-form[data-status="success"] {
-    --display-idle: none;
-    --display-loading: none;
-    --display-success: flex;
-  }
-
-  /* Control de visibilidad del contenido del botón */
-  .content-idle { display: var(--display-idle); }
-  .content-loading { display: var(--display-loading); align-items: center; gap: 0.5rem; }
-  .content-success { display: var(--display-success); align-items: center; gap: 0.5rem; }
-
-  /* Estilos portados del original [cite: 16-29] */
   .input-group {
     display: flex;
-    gap: 0.75rem; /* [cite: 16] */
-    align-items: stretch;
+    gap: 8px; /* Coherente con el gap de tu botón */
+    position: relative;
   }
 
   @media (max-width: 480px) {
     .input-group {
-      flex-direction: column; /* [cite: 16] */
+      flex-direction: column;
+    }
+    .submit-btn {
+      width: 100%; /* El botón se expandirá en móvil */
     }
   }
 
+  /* --- Input Styles (Mejorados para coincidir con el botón) --- */
   .input-wrapper {
     position: relative;
     flex-grow: 1;
@@ -189,77 +154,91 @@ const {
     align-items: center;
   }
 
-  .icon {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
   .input-icon {
     position: absolute;
-    left: 0.75rem;
-    color: #888;
-    pointer-events: none; /* [cite: 19] */
+    left: 14px;
+    color: var(--color-label-tertiary, #888);
+    pointer-events: none;
+    z-index: 1;
   }
 
   input {
     width: 100%;
-    padding: 0.75rem 1rem 0.75rem 2.5rem; /* Padding izquierdo para icono [cite: 21] */
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    font-size: 1rem;
+    height: 100%;
+    min-height: 44px; /* Altura mínima para coincidir con botón medium */
+    padding: 10px 14px 10px 42px; /* Espacio para el icono */
+    border: 1px solid var(--color-separator, #ccc);
+    border-radius: 32px; /* Misma curvatura que tu Button.astro */
+    font-family: inherit;
+    font-size: 15px; /* Coherente con Button size-medium */
     outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s; /* [cite: 22] */
-    background-color: #fff;
-    color: #111;
+    background-color: var(--color-background, #fff);
+    color: var(--color-label-primary, #000);
+    transition: all 200ms ease-in-out;
   }
 
   input:focus {
-    border-color: #3b82f6; /* Azul [cite: 23] */
+    border-color: var(--color-focus, #3b82f6);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
   }
-
-  input.error {
-    border-color: #ef4444; /* Rojo [cite: 24] */
+  
+  /* Estado de error en el input */
+  .newsletter-form[data-status="error"] input {
+    border-color: var(--color-danger, #ef4444);
+    background-color: var(--color-fill-danger-secondary, #fef2f2);
   }
 
   input:disabled {
     opacity: 0.7;
-    cursor: not-allowed; /* [cite: 25] */
+    cursor: not-allowed;
     background-color: #f9fafb;
   }
 
-  /* Animación Spin [cite: 26] */
+  /* --- Gestión de Estados del Botón --- */
+  /* Por defecto (idle) */
+  .icon-loading, .icon-success, .text-loading, .text-success {
+    display: none;
+  }
+  
+  /* Cuando está cargando */
+  .newsletter-form[data-status="loading"] .text-idle { display: none; }
+  .newsletter-form[data-status="loading"] .icon-success { display: none; }
+  
+  .newsletter-form[data-status="loading"] .icon-loading { display: block; }
+  .newsletter-form[data-status="loading"] .text-loading { display: block; }
+
+  /* Cuando es exitoso */
+  .newsletter-form[data-status="success"] .text-idle { display: none; }
+  .newsletter-form[data-status="success"] .icon-loading { display: none; }
+  
+  .newsletter-form[data-status="success"] .icon-success { display: block; }
+  .newsletter-form[data-status="success"] .text-success { display: block; }
+
+
+  /* Animación del spinner */
   .spin {
     animation: spin 1s linear infinite;
   }
+  @keyframes spin { to { transform: rotate(360deg); } }
 
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-
-  /* Mensajes [cite: 27] */
+  /* --- Mensajes --- */
   .message-area {
-    min-height: 1.5rem;
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
+    min-height: 24px;
+    margin-top: 8px;
+    padding-left: 14px; /* Alinear visualmente con el texto del input */
+    font-size: 14px;
   }
 
   .msg {
-    display: none; /* Oculto por defecto en JS */
-    /* Transición suave para simular el fade de Svelte */
-    animation: fadeIn 0.2s ease-in-out; 
+    display: none;
+    animation: fadeIn 0.3s ease;
   }
+
+  .msg.error { color: var(--color-danger, #ef4444); }
+  .msg.success { color: var(--color-success, #16a34a); }
 
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  .msg.error {
-    color: #ef4444; /* [cite: 29] */
-  }
-
-  .msg.success {
-    color: #16a34a; /* [cite: 29] */
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 </style>

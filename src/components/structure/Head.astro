@@ -8,6 +8,7 @@ import '@styles/global.css';
 // Tipado más robusto para imágenes (soporta importación local o URL externa)
 import type { ImageMetadata } from 'astro';
 import FallbackImage from '/public/images/og-logo.png';
+import Schema from '@components/Schema.astro';
 
 interface Props {
   title: string;
@@ -79,6 +80,8 @@ const ogImageURL = new URL(imageSrc, Astro.site);
   <meta name="keywords" content="marcelrojas, whyismarcel, Marcel Rojas, Juan Marcel Rojas Hernández, web developer, Astro, design, Venezuela" />
 
   <script defer src="/script.js"></script>
-  
+
   <ClientRouter fallback="animate" />
+
+  <Schema />
 </head>

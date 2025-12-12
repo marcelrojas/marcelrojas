@@ -6,22 +6,16 @@ interface Props {
   buttonText?: string;
 }
 
-const { 
-  placeholder = "you@ejemplo.com", 
-  buttonText = "Suscribirse" 
+const {
+  placeholder = "you@example.com",
+  buttonText = "Subscribe"
 } = Astro.props;
 ---
 
-<form class="newsletter-form" novalidate aria-label="Formulario de suscripción">
+<form class="newsletter-form" novalidate aria-label="Subscription form">
   <div class="input-group">
-    
-    <div class="input-wrapper">
-      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect width="20" height="16" x="2" y="4" rx="2"/>
-        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-      </svg>
-      <input type="email" name="email" placeholder={placeholder} autocomplete="email" required />
-    </div>
+
+    <input type="email" name="email" placeholder={placeholder} autocomplete="email" required />
 
     <Button type="submit" variant="tonal" action="default" size="medium" class="submit-btn">
       <span slot="iconLeft" class="state-icon-wrapper">
@@ -146,52 +140,35 @@ const {
     }
   }
 
-  /* --- Input Styles (Mejorados para coincidir con el botón) --- */
-  .input-wrapper {
-    position: relative;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-  }
-
-  .input-icon {
-    position: absolute;
-    left: 14px;
-    color: var(--color-label-tertiary, #888);
-    pointer-events: none;
-    z-index: 1;
-  }
-
   input {
     width: 100%;
-    height: 100%;
-    min-height: 44px; /* Altura mínima para coincidir con botón medium */
+    min-height: 44px;
     padding: 10px 14px 10px 42px; /* Espacio para el icono */
     border: 1px solid var(--color-separator, #ccc);
-    border-radius: 32px; /* Misma curvatura que tu Button.astro */
+    border-radius: 32px;
     font-family: inherit;
-    font-size: 15px; /* Coherente con Button size-medium */
+    font-size: 15px;
     outline: none;
-    background-color: var(--color-background, #fff);
-    color: var(--color-label-primary, #000);
-    transition: all 200ms ease-in-out;
+    background-color: var(--color-background);
+    color: var(--color-label-primary);
+    transition: all 200ms ease-in-out
   }
 
   input:focus {
-    border-color: var(--color-focus, #3b82f6);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    border-color: var(--color-focus);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1)
   }
   
   /* Estado de error en el input */
   .newsletter-form[data-status="error"] input {
-    border-color: var(--color-danger, #ef4444);
-    background-color: var(--color-fill-danger-secondary, #fef2f2);
+    border-color: var(--color-danger);
+    background-color: var(--color-fill-danger-secondary)
   }
 
   input:disabled {
     opacity: 0.7;
     cursor: not-allowed;
-    background-color: #f9fafb;
+    background-color: #f9fafb
   }
 
   /* --- Gestión de Estados del Botón --- */
@@ -234,11 +211,11 @@ const {
     animation: fadeIn 0.3s ease;
   }
 
-  .msg.error { color: var(--color-danger, #ef4444); }
-  .msg.success { color: var(--color-success, #16a34a); }
+  .msg.error { color: var(--color-danger, #ef4444) }
+  .msg.success { color: var(--color-success, #16a34a) }
 
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-4px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(-4px) }
+    to { opacity: 1; transform: translateY(0) }
   }
 </style>

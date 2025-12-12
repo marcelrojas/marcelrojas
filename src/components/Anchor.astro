@@ -76,7 +76,7 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       -webkit-font-smoothing: subpixel-antialiased;
       touch-action: manipulation;
       will-change: color, background-color, border-radius, transform;
-      transition: color 150ms, background-color 150ms, border-radius 150ms, transform 150ms;
+      transition: color 105ms ease-out, background-color 105ms ease-out, border-radius 105ms ease-out, transform 105ms ease-out;
       &[aria-current="page"] {
         border-radius: 32px;
         color: var(--label-primary-active, oklch(0.99 0 0));
@@ -103,7 +103,10 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       }
       &.variant-platted {
         border-radius: 8px;
+        border: 1px solid oklch(1 0 0 / 0.1);
         background: var(--fill-tertiary);
+        background: oklch(0% 0 0 / 0.11);
+        backdrop-filter: blur(20px);
         @media (hover: hover) {
           &:hover {
             --anchor-hover: okchl(1 1 1 / 0.08);
@@ -124,32 +127,43 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
       &.size-small {
         font-size: var(--font-size-12);
         &.label-text-and-icon {
-          
+          padding: 0px 0px;
+          gap: 3px
         }
         &.label-text-only {
-          
+          padding: 0px 0px
         }
         &.label-icon-only {
-          
+          padding: 0px;
+          border-radius: 50%
+        }
+        & svg {
+          width: 24px;
+          height: 24px
         }
       }
       &.size-medium {
         font-size: var(--font-size-14);
         &.label-text-and-icon {
-          padding: 10px 16px;
+          padding: 10px 14px;
           gap: 5px
         }
         &.label-text-only {
           padding: 10px 14px
         }
         &.label-icon-only {
-          padding: 7px
+          padding: 14px;
+          border-radius: 50%
+        }
+        & svg {
+          width: 32px;
+          height: 32px
         }
       }
       &.size-large {
         font-size: var(--font-size-16);
         &.label-text-and-icon {
-          padding: 12px 20px;
+          padding: 12px 16px;
           gap: 6px
         }
         &.label-text-only {
@@ -157,6 +171,10 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
         }
         &.label-icon-only {
           padding: 16px
+        }
+        & svg {
+          width: 40px;
+          height: 40px
         }
       }
       /* Widths */
@@ -172,6 +190,7 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
           
         }
       }
+      & svg { object-fit: cover }
     }
   }
 </style>

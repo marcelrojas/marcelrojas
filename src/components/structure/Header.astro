@@ -1,6 +1,7 @@
 ---
 import Anchor from '@components/Anchor.astro';
 import Clock from '@components/decorators/Clock.svelte';
+import Logo from '@components/Logo.astro';
 
 const navAnchor = [
   { href: "/", text: "About" },
@@ -13,9 +14,8 @@ const navAnchor = [
 
 <header id="header">
   <div class="content">
-    <a href="#main" tabindex="0" class="skip-to-content">Skip to main content</a>
     <Clock client:load />
-    <h1>Marcel<br />Rojas</h1>
+    <Logo />
     <nav class="globalnav haptic-nav" aria-label="Global">
       <ul>
         {navAnchor.map(link => (
@@ -44,54 +44,6 @@ const navAnchor = [
       padding-bottom: max(var(--spacing-sab) + 40px);
       gap: 28px;
       align-items: center;
-      & > a.skip-to-content {
-        position: absolute;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        width: 1px;
-        margin: -1px;
-        &:focus:not(:focus-visible) {
-          background-color: rgba(0, 0, 0, 0);
-          outline: none;
-          -webkit-box-decoration-break: slice;
-          box-decoration-break: slice;
-        }
-        &:focus {
-          top: .5em;
-          left: .25em;
-          overflow: visible;
-          clip: initial;
-          height: auto;
-          width: auto;
-          margin: 0;
-          box-shadow: 0 0 0 3px #0b0c0c, 0 0 .4em 0em #1f1f22;
-          padding: .5em .5em;
-        }
-        &:focus-visible {
-          background-color: #fff;
-          outline: 3px solid #0b0c0c;
-          outline-offset: 1px;
-          -webkit-box-decoration-break: clone;
-          box-decoration-break: clone;
-        }
-      }
-      & > h1 {
-        position: relative;
-        width: auto;
-        max-width: 496px;
-        height: auto;
-        white-space: pre-wrap;
-        word-break: break-word;
-        word-wrap: break-word;
-        font-family: var(--font-family-display);
-        font-size: calc(calc(1rem * 5) * 1);
-        font-weight: var(--font-weight-semibold);
-        line-height: 1.1;
-        letter-spacing: -0.01em;
-        text-align: center;
-        color: oklch(0.19 0 0 / 0.1)
-      }
       & > nav {
         position: relative;
         width: 100%;

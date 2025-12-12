@@ -7,33 +7,45 @@ import vesper from './src/data/vesper.json';
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    build: {
-      sourcemap: false, // Disable sourcemaps for production
-    },
-  },
-
-  devToolbar: {
-    enabled: false
-  },
-
+  // URL canónica de producción
   site: 'https://marcelrojas.com',
-  trailingSlash: "ignore",
-  prefetch: true,
 
-  prefetch: {
-    defaultStrategy: 'viewport',
-    prefetchAll: true
-  },
+  // SEO: Forzar 'never' para que las URLs no tengan barra final.
+  // Esto evita contenido duplicado (marcelrojas.com/about vs marcelrojas.com/about/)
+  trailingSlash: 'never',
 
+  // Seguridad
   security: {
     checkOrigin: true
   },
 
+  // Rendimiento: Configuración de Prefetch unificada
+  prefetch: {
+    defaultStrategy: 'viewport', // Carga enlaces cuando entran en pantalla
+    prefetchAll: true // Habilita prefetch para todos los links internos
+  },
+
+  // Optimizaciones de compilación (Vite)
+  vite: {
+    build: {
+      sourcemap: false, // Menor peso en build final
+      cssCodeSplit: true, // Asegura que el CSS se divida por chunks
+    },
+  },
+
+  // Herramientas de desarrollo
+  devToolbar: {
+    enabled: false
+  },
+
+  // Integraciones
   integrations: [
     svelte(),
     mdx(),
-    sitemap()
+    sitemap({
+      // Opcional: Configura el sitemap para respetar el 'trailingSlash: never'
+      // Aunque el plugin suele leer la config de Astro automáticamente.
+    })
   ],
 
   markdown: {

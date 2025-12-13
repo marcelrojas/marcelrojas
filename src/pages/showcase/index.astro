@@ -1,69 +1,26 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import PageHeader from "@components/structure/PageHeader.astro";
+import Layout from '@layouts/Layout.astro';
+import PageHeader from '@components/structure/PageHeader.astro';
+import FAMGallery from '@components/structure/FAMGallery.astro';
 
 const {
-  title = "Showcase",
-  description = "Explore my showcase of projects and achievements.",
+  title = 'Showcase',
+  description = 'Explore my showcase of projects and achievements.',
 } = Astro.props;
 ---
 
 <Layout title={title} description={description}>
   <PageHeader title={title} />
-  <section class="homepage-section" tabindex="-1">
-    <div class="module-content">
-      <div id="fam-gallery" class="fam-gallery" aria-label="Gallery of my services, including , , and ">
-        <h3 class="visuallyhidden">FAM Gallery</h3>
-        <div class="fam-gallery-marquee" role="marquee">
-          <div class="fam-gallery-item fgi-clone">
-            <a class="fam-gallery-link" href="" aria-hidden="true" tabindex="-1">
-              <div class="fam-gallery-bg fam-gallery-bg-4" style="background-color: #0a0303">
-                <div class="fam-gallery-logo fam-gallery-logo-fitness">
-                  
-                </div>
-                <div class="fam-gallery-overlay">
-                  <span class="fam-gallery-button button button-primary-light">Watch now</span>
-                </div>
-              </div>
-              <div class="fam-gallery-copy">
-                <h2 class="fam-gallery-title">Project I</h2>
-              </div>
-            </a>
-          </div>
-          <div class="fam-gallery-item fgi-clone">
-            <a class="fam-gallery-link" href="" aria-hidden="true" tabindex="-1">
-              <div class="fam-gallery-bg-music" style="background-color: rgb(222,91,192)">
-                <div class="fam-gallery-logo is-theme-light fam-gallery-logo-music">
-                  
-                </div>
-                <div class="fam-gallery-overlay">
-                  <span class="fam-gallery-button button button-primary-light">Watch now</span>
-                </div>
-                <div class="fam-gallery-album-art fam-gallery-album-art-2">
-                </div>
-              </div>
-              <div class="fam-gallery-copy-music is-theme-light">
-                <h2 class="fam-gallery-title">Project II</h2>
-              </div>
-            </a>
-          </div>
-          <div class="fam-gallery-item fgi-clone">
-            <a class="fam-gallery-link" href="" aria-hidden="true" tabindex="-1">
-              <div class="fam-gallery-bg fam-gallery-bg-6" style="background-color: #002c66">
-                <div class="fam-gallery-logo fam-gallery-logo-arcade">
-                  
-                </div>
-                <div class="fam-gallery-overlay">
-                  <span class="fam-gallery-button button button-primary-light">Watch now</span>
-                </div>
-              </div>
-              <div class="fam-gallery-copy">
-                <h2 class="fam-gallery-title">Project III</h2>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="showcasepage-section" tabindex="-1">
+    <FAMGallery />
   </section>
 </Layout>
+
+<style>
+  section.showcasepage-section {
+    padding-top: 80px;
+    padding-bottom: 75px;
+  }
+  background-color: oklch(67.074% 0.19862 337.481)
+  background-color: oklch(30.604% 0.11201 257.745)
+</style>

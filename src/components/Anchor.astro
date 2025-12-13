@@ -5,7 +5,7 @@ interface Props extends HTMLAttributes<'a'> {
   variant?: '' | 'platted' | 'text';
   size?: 'small' | 'medium' | 'large';
   wide?: 'fill' | 'fit';
-  label?: 'icon-only' | 'text';
+  label?: 'icon' | 'text';
   isActive?: boolean; // Permite forzar el estado activo si es necesario
 }
 
@@ -43,7 +43,7 @@ const classes = [
   `variant-${variant}`,
   `size-${size}`,
   `wide-${wide}`,
-  label === 'icon-only' ? 'is-icon-only' : '',
+  label === 'icon' ? 'is-icon-only' : '',
   isActive ? 'is-active' : '', // Clase automática para CSS
   className
 ];
@@ -127,10 +127,10 @@ const classes = [
           padding: 0px 0px;
           gap: 3px
         }
-        &.label-text-only {
+        &.label-text {
           padding: 0px 0px
         }
-        &.label-icon-only {
+        &.label-icon {
           padding: 0px;
           border-radius: 50%
         }
@@ -145,10 +145,10 @@ const classes = [
           padding: 10px 14px;
           gap: 5px
         }
-        &.label-text-only {
+        &.label-text {
           padding: 10px 14px
         }
-        &.label-icon-only {
+        &.label-icon {
           padding: 14px;
           border-radius: 50%
         }
@@ -163,10 +163,10 @@ const classes = [
           padding: 12px 16px;
           gap: 6px
         }
-        &.label-text-only {
+        &.label-text {
           padding: 12px 16px
         }
-        &.label-icon-only {
+        &.label-icon {
           padding: 16px
         }
         & svg {

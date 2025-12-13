@@ -20,7 +20,7 @@ const navAnchor = [
       <ul>
         {navAnchor.map(link => (
           <li>
-            <Anchor wide="fill" href={link.href}>{link.text}</Anchor>
+            <Anchor wide="fill" class="nav-item" href={link.href}>{link.text}</Anchor>
           </li>
         ))}
       </ul>
@@ -29,53 +29,54 @@ const navAnchor = [
 </header>
 
 <style>
-  header#header {
-    position: relative;
-    z-index: 40;
-    padding-left: max(var(--spacing-sal) + 22px);
-    padding-right: max(var(--spacing-sar) + 22px);
-    & div.content {
+  @layer components {
+    header#header {
       position: relative;
-      height: min-content;
-      overflow: clip;
-      display: flex;
-      flex-flow: column;
-      padding-top: max(var(--spacing-sat) + 56px);
-      padding-bottom: max(var(--spacing-sab) + 40px);
-      gap: 28px;
-      align-items: center;
-      & > nav {
+      z-index: 40;
+      padding-left: max(var(--spacing-sal) + 22px);
+      padding-right: max(var(--spacing-sar) + 22px);
+      & div.content {
         position: relative;
-        width: 100%;
-        max-width: 420px;
         height: min-content;
-        will-change: opacity, visibility, allow-discrete;
-        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, allow-discrete 0.3s ease-in-out;
-        & > ul {
+        overflow: clip;
+        display: flex;
+        flex-flow: column;
+        padding-top: max(var(--spacing-sat) + 56px);
+        padding-bottom: max(var(--spacing-sab) + 40px);
+        gap: 28px;
+        align-items: center;
+        & > nav {
           position: relative;
-          display: flex;
-          flex-flow: row;
-          justify-content: center;
-          gap: 4px;
-          & > li {
+          width: 100%;
+          max-width: 420px;
+          height: min-content;
+          will-change: opacity, visibility, allow-discrete;
+          transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, allow-discrete 0.3s ease-in-out;
+          & > ul {
             position: relative;
-            width: 100%;
-            max-width: 100%;
-            &:first-child > a {
-              border-radius: 32px 8px 8px 32px
-            }
-            &:last-child > a {
-              border-radius: 8px 32px 32px 8px
-            }
-            &:not(:first-child):not(:last-child) > a {
-              border-radius: 8px
-            }
-            & > a {
-              padding-block: 10px;
-              padding-inline: 10px;
-              font-size: var(--font-size-14);
-              color: var(--color-label-primary);
-              background-color: oklch(0.96 0 0)
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            gap: 4px;
+            & > li {
+              position: relative;
+              width: 100%;
+              &:first-child > a.nav-item {
+                border-radius: 32px 8px 8px 32px
+              }
+              &:last-child > a.nav-item {
+                border-radius: 8px 32px 32px 8px
+              }
+              &:not(:first-child):not(:last-child) > a.nav-item {
+                border-radius: 8px
+              }
+              & > a.nav-item {
+                padding-block: 10px;
+                padding-inline: 10px;
+                font-size: var(--font-size-14);
+                color: var(--color-label-primary);
+                background-color: oklch(0.96 0 0)
+              }
             }
           }
         }

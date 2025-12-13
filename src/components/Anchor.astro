@@ -43,7 +43,7 @@ const classes = [
   `variant-${variant}`,
   `size-${size}`,
   `wide-${wide}`,
-  label === 'icon' ? 'is-icon-only' : '',
+  `label-${label ?? 'text-only'}`,
   isActive ? 'is-active' : '', // Clase automática para CSS
   className
 ];

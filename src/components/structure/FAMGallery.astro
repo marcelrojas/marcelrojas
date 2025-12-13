@@ -12,7 +12,7 @@ const posts = (await getCollection('showcase')).sort(
 ---
 
 <div class="fam-gallery" aria-label="Gallery of my services, including , , and ">
-  <h3 class="visuallyhidden">FAM Gallery</h3>
+  <h3 class="sr-only">FAM Gallery</h3>
   <div class="marquee" role="marquee">
     {
       posts.map(post => (

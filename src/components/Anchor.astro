@@ -2,7 +2,7 @@
 import type { HTMLAttributes } from 'astro/types';
 
 interface Props extends HTMLAttributes<'a'> {
-  variant?: 'platted' | 'text';
+  variant?: '' | 'platted' | 'text';
   size?: 'small' | 'medium' | 'large';
   wide?: 'fill' | 'fit';
   label?: 'icon-only' | 'text';
@@ -95,6 +95,15 @@ const classes = [
         background: var(--fill-tertiary);
         background: oklch(0% 0 0 / 0.11);
         backdrop-filter: blur(20px);
+        @media (hover: hover) {
+          &:hover {
+            --anchor-hover: okchl(1 1 1 / 0.08);
+            background-color: var(--anchor-hover)
+          }
+        }
+      }
+      &.variant-text {
+        
         @media (hover: hover) {
           &:hover {
             --anchor-hover: okchl(1 1 1 / 0.08);

@@ -2,13 +2,9 @@
 import { SITE_TITLE } from '@types/consts';
 ---
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="logo-title logo-desc">
   <style>
     .logo-text {
-      position: relative;
-      width: auto;
-      max-width: 496px;
-      height: auto;
       white-space: pre-wrap;
       word-break: break-word;
       word-wrap: break-word;
@@ -21,7 +17,16 @@ import { SITE_TITLE } from '@types/consts';
       fill: oklch(0.19 0 0 / 0.1)
     }
   </style>
-  <title>{SITE_TITLE}</title>
-  <text>Marcel</text>
-  <text>Rojas</text>
+  <title id="logo-title">{SITE_TITLE}</title>
+  <text class="logo-text">Marcel</text>
+  <text class="logo-text">Rojas</text>
 </svg>
+
+<style>
+  svg#logo {
+    position: relative;
+    width: auto;
+    max-width: 496px;
+    height: auto
+  }
+</style>

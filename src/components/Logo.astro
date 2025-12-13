@@ -9,7 +9,6 @@ import { SITE_TITLE } from '@types/consts';
       word-break: break-word;
       word-wrap: break-word;
       font-family: var(--font-family-display);
-      /*font-size: calc(calc(1rem * 5) * 1);*/
       font-weight: var(--font-weight-semibold);
       line-height: 1.1;
       letter-spacing: -0.01em;
@@ -19,13 +18,14 @@ import { SITE_TITLE } from '@types/consts';
     }
   </style>
   <title id="logo-title">{SITE_TITLE}</title>
-  <text x="50%" y="90" class="logo-text" font-size="90">Marcel</text>
-  <text x="50%" y="180" class="logo-text" font-size="90">Rojas</text>
+  <text x="50%" y="90" class="logo-text" font-size="80">Marcel</text>
+  <text x="50%" y="180" class="logo-text" font-size="80">Rojas</text>
 </svg>
 
 <style>
   svg#logo {
     position: relative;
+    z-index: 50;
     width: 100%;
     max-width: 496px;
     height: auto

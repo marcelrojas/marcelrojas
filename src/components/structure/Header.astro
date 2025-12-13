@@ -20,7 +20,7 @@ const navAnchor = [
       <ul>
         {navAnchor.map(link => (
           <li>
-            <Anchor wide="fill" class="nav-item" href={link.href}>{link.text}</Anchor>
+            <Anchor size="medium" wide="fill" class="nav-item" href={link.href}>{link.text}</Anchor>
           </li>
         ))}
       </ul>
@@ -62,19 +62,16 @@ const navAnchor = [
               position: relative;
               width: 100%;
               &:first-child > a.nav-item {
-                border-radius: 32px 8px 8px 32px
+                border-top-left-radius: 32px;
+                border-bottom-left-radius: 32px
               }
               &:last-child > a.nav-item {
-                border-radius: 8px 32px 32px 8px
-              }
-              &:not(:first-child):not(:last-child) > a.nav-item {
-                border-radius: 8px
+                border-top-right-radius: 32px;
+                border-bottom-right-radius: 32px
               }
               & > a.nav-item {
                 padding-block: 10px;
                 padding-inline: 10px;
-                font-size: var(--font-size-14);
-                color: var(--color-label-primary);
                 background-color: oklch(0.96 0 0)
               }
             }

@@ -1,7 +1,7 @@
 ---
-title: 'Markdown Style Guide'
+title: 'Markdown style guide'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jun 19 2025'
+pubDate: 'Dec 19 2025'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
@@ -94,7 +94,7 @@ The blockquote element represents content that is quoted from another source, op
 
 ### Syntax
 
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
+We can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
 
 ````markdown
 ```html

@@ -1,32 +1,12 @@
 ---
 import Grain from '@components/decorators/Grain.astro';
 import Anchor from '@components/Anchor.astro';
-import { getHandles } from '@types/social';
+import Icon from '@components/Icon.astro';
+import { SOCIAL_X, SOCIAL_INSTAGRAM, SOCIAL_PINTEREST, SOCIAL_YOUTUBE, SOCIAL_GITHUB } from '@types/consts';
+import { COPYRIGHT_NAME, COPYRIGHT_YEAR } from '@types/consts';
 
 const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
 /* Y29udGFjdEBtYXJjZWxyb2phcy5jb20= */
-
-// 1. Obtener los datos
-const socialLinks = getHandles(['x', 'instagram', 'pinterest', 'youtube', 'github']);
-
-// 2. Importar los SVGs como TEXTO (Raw strings)
-// 'query: "?raw"' le dice a Vite que queremos el código del SVG, no la ruta del archivo.
-// 'import: "default"' extrae directamente el string.
-const iconFiles = import.meta.glob('/src/assets/icons/*.svg', { 
-  query: '?raw', 
-  import: 'default', 
-  eager: true 
-});
-
-// 3. Helper para obtener el string del SVG
-const getIconContent = (path: string | undefined): string | null => {
-  if (!path) return null;
-  const normalizedPath = path.replace('@assets', '/src/assets');
-  // TypeScript puede quejarse aquí si no casteamos, pero en runtime funciona perfecto
-  return (iconFiles[normalizedPath] as string) || null;
-};
-
-const today = new Date();
 ---
 
 <footer id="footer" role="contentinfo" aria-label="Global footer" tabindex="-1">
@@ -43,16 +23,11 @@ const today = new Date();
     <p>Thanks for stopping by! If you have any questions, want to collaborate, or just want to say hi, feel free to reach out through any of the social platforms below. Looking forward to connecting with you!</p>
     <address class="social-handles">
       <ul>
-        {socialLinks.map((handle) => {
-          const svgContent = getIconContent(handle.icon);
-          return (
-            <li>
-              <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={handle.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit my ${handle.title} profile`} class="social-link">
-                {svgContent && <Fragment set:html={svgContent} />}
-              </Anchor>
-            </li>
-          );
-        })}
+        <li>
+          <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_X} target="_blank" rel="noopener noreferrer" aria-label={`Visit my - profile`} class="social-link">
+            <Icon name="x" size={32} />
+          </Anchor>
+        </li>
       </ul>
     </address>
     <div class="legal">
@@ -69,46 +44,12 @@ const today = new Date();
           </li>
         </ul>
       </nav>
-      <small class="copyright">&copy; {today.getFullYear()} Marcel Rojas. All rights reserved.</small>
+      <small class="copyright">&copy; {COPYRIGHT_YEAR} {COPYRIGHT_NAME}. All rights reserved.</small>
     </div>
   </div>
 </footer>
-<div inert="" class="section-make-it-real_Root">
-  <div class="section-make-it-real_Inner">
-    <span class="section-make-it-real_Text">make it&nbsp;real</span>
-  </div>
-</div>
 
 <style>
-  .section-make-it-real_Root {
-    --background: #111;
-    --text: #333;
-    --pattern: #666;
-    overflow: hidden;
-    text-align: center;
-    user-select: none;
-    background-color: var(--background);
-    clip-path: border-box;
-    color: var(--text);
-    font-weight: 500;
-    letter-spacing: -.04em;
-    @media (width >= 800px) {
-      white-space: nowrap;
-      font-size: calc(21 * var(--spacing-vw));
-      line-height: .7;
-      height: 1lh;
-    }
-    & .section-make-it-real_Inner {
-      position: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-  }
-
   footer#footer {
     position: relative;
     inset: 0;

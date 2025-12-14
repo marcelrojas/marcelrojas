@@ -327,7 +327,7 @@
 
   @media screen and (prefers-color-scheme: dark) {
     :root {
-      --background-primary: oklch(0 0 0);
+      --background-primary: oklch(16.376% 0.00002 271.152);
       --background-secondary: oklch(0 0 0);
       --background-tertiary: oklch(0 0 0);
 

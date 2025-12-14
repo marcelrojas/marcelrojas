@@ -1,68 +1,31 @@
 ---
-import iconsIndex from '@data/icons.json';
+import { icons, type IconName } from '@types/icons';
 
-// Importa todos los SVGs desde `src/assets/icons` usando import.meta.glob (eager/raw).
-const modules = import.meta.glob('../../assets/icons/*.svg', { as: 'raw', eager: true });
-const fileMap = new Map(Object.entries(modules).map(([p, content]) => {
-  const file = p.split('/').pop() || '';
-  const name = file.replace(/\.svg$/i, '');
-  return [name, String(content)];
-}));
-
-// Construye un mapa de íconos usando las claves de icons.json -> contenido SVG.
-const iconMap = new Map<string, string>();
-for (const key of Object.keys(iconsIndex)) {
-  const src = (iconsIndex as any)[key].src as string;
-  const base = src.split('/').pop()?.replace(/\.svg$/i, '') || '';
-  iconMap.set(key, fileMap.get(base) || '');
-}
-
-export interface Props {
-  name: keyof typeof iconsIndex;
+interface Props {
+  name: IconName;
   class?: string;
-  [key: string]: any;
+  size?: number; // Opcional: para controlar width/height
 }
 
-const { name, class: className, ...rest } = Astro.props;
-const raw = iconMap.get(name) || '';
+const { name, class: className, size = 24 } = Astro.props;
 
-// Procesa el SVG raw para inyectar clases en la etiqueta <svg> raíz.
-let processed = raw;
-if (raw) {
-  processed = raw.replace(/^\s*<svg([^>]*)>/i, (match: string, existingAttrs: string) => {
-    if (/\bclass\s*=/.test(existingAttrs)) {
-      return `<svg${existingAttrs.replace(/class\s*=\s*("[^"]*"|'[^']*')/, (m: string, q: string) => {
-        const existing = q.slice(1, -1);
-        return `class="${existing} icon icon-${name}"`;
-      })}>`;
-    }
-    return `<svg${existingAttrs} class="icon icon-${name}">`;
-  });
+const svgContent = icons[name];
+
+if (!svgContent) {
+  throw new Error(`Icono "${name}" no encontrado en /src/assets/icons/`);
 }
+
+// Opcional: Se puede manipular el string svgContent aquí si es necesario inyectar clases
+// directamente al SVG, aunque es mejor hacerlo mediante un contenedor o CSS global.
 ---
 
-<!--
-** Ejemplos de uso:
-* Ícono decorativo (por defecto)
-<Icon name="arrow-up-right" />
-
-* Ícono con significado y accesible para lectores de pantalla
-<Icon name="email" title="Enviar correo" />
-
-* Ícono con tamaño y clase personalizados
-<Icon name="copy" class="text-blue-500" width="32" height="32" />
--->
-{
-  processed && (
-    <span class={className} {...rest} set:html={processed} />
-  )
-}
+<span class={`${className}`} style={{ width: `${size}px`, height: `${size}px` }} set:html={svgContent} />
 
 <style>
   svg.icon {
-    width: 1.2em;
-    height: 1.2em;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     vertical-align: middle;
     fill: currentColor
   }

@@ -121,13 +121,12 @@ const {
 
 <style>
   .newsletter-form {
-    width: 100%;
-    max-width: 480px; /* Opcional: limitar ancho */
+    max-width: 480px
   }
 
   .input-group {
     display: flex;
-    gap: 8px; /* Coherente con el gap de tu botón */
+    gap: 8px;
     position: relative;
   }
 
@@ -136,26 +135,25 @@ const {
       flex-direction: column;
     }
     .submit-btn {
-      width: 100%; /* El botón se expandirá en móvil */
+      width: 100%
     }
   }
 
   input {
-    width: 100%;
     min-height: 44px;
-    padding: 10px 14px 10px 42px; /* Espacio para el icono */
-    border: 1px solid var(--color-separator, #ccc);
+    padding: 10px 14px 10px 42px;
+    border: 1px solid var(--fill-border);
     border-radius: 32px;
     font-family: inherit;
     font-size: 15px;
     outline: none;
-    background-color: var(--color-background);
+    background-color: var(--fill-background-secondary);
     color: var(--color-label-primary);
     transition: all 200ms ease-in-out
   }
 
   input:focus {
-    border-color: var(--color-focus);
+    border-color: var(--ring);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1)
   }
   

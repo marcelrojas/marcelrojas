@@ -3,7 +3,7 @@ import Anchor from '@components/Anchor.astro';
 import Clock from '@components/decorators/Clock.svelte';
 import Logo from '@components/Logo.astro';
 
-const navAnchor = [
+const anchors = [
   { href: "/", text: "About" },
   { href: "/services", text: "Services" },
   { href: "/showcase", text: "Showcase" },
@@ -18,9 +18,9 @@ const navAnchor = [
     <Logo />
     <nav class="globalnav haptic-nav" aria-label="Global">
       <ul>
-        {navAnchor.map(link => (
+        {anchors.map(link => (
           <li>
-            <Anchor variant="platted" size="small" wide="fill" label="text-only" class="nav-item" href={link.href}>{link.text}</Anchor>
+            <Anchor variant="platted" size="small" wide="fill" label="text-only" href={link.href}>{link.text}</Anchor>
           </li>
         ))}
       </ul>
@@ -60,20 +60,7 @@ const navAnchor = [
             gap: 4px;
             & > li {
               position: relative;
-              width: 100%;
-              &:first-child > a.nav-item {
-                border-top-left-radius: 32px;
-                border-bottom-left-radius: 32px
-              }
-              &:last-child > a.nav-item {
-                border-top-right-radius: 32px;
-                border-bottom-right-radius: 32px
-              }
-              & > a.nav-item {
-                padding-block: 10px;
-                padding-inline: 10px;
-                background-color: oklch(0.96 0 0)
-              }
+              width: 100%
             }
           }
         }

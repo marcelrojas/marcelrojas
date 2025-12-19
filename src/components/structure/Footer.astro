@@ -168,6 +168,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+        gap: var(--spacing-04);
         margin-block-start: auto;
         margin-block-end: 44px;
         & nav.legal-links {
@@ -178,21 +179,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
             position: relative;
             display: flex;
             flex-direction: row;
-            gap: 16px;
-            & li {
-              position: relative;
-              & a {
-                transition-property: color, background-color, border-color,
-                  text-decoration-color, fill, stroke;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                transition-duration: 0.15s;
-                @media (hover: hover) {
-                  &:hover {
-                    color: oklch(0.21 0.01 0);
-                  }
-                }
-              }
-            }
+            gap: 16px
           }
         }
       }
@@ -200,6 +187,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
         position: relative;
         display: block;
         font-family: var(--font-family-serif);
+        text-transform: uppercase
       }
     }
   }

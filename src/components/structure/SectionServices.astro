@@ -77,13 +77,10 @@ import Anchor from '@components/Anchor.astro';
         padding-top: 96px;
         padding-bottom: 96px;
         position: relative;
-          --grid-gutter: var(--size-8);
-          --grid-column-width: calc( ((var(--vw, 1vw) * 100) - (2 * var(--grid-margin))) / var(--grid-columns) - (var(--grid-gutter) * (var(--grid-columns) - 1) / var(--grid-columns)) );
-          grid-gap: calc((var(--grid-column-width)*1) + (var(--grid-gutter)*(1 - 1)));
-          justify-content: center;
-          align-items: center;
-          display: flex;
-          contain: style;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        contain: style;
         & article.card {
           width: 23.875em;
           position: relative;

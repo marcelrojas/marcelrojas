@@ -29,7 +29,7 @@ function setupSplashScreen() {
     showSplashScreen(); // Asegurarse de que es visible
 
     // Esperamos un tiempo antes de empezar a ocultarlo.
-    setTimeout(hideSplashScreen, 2000);
+    setTimeout(hideSplashScreen, 7000);
   } else {
     // Ya se mostró en esta sesión, lo ocultamos inmediatamente.
     splashScreen.style.display = 'none';

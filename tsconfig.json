@@ -12,7 +12,9 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "allowJs": true,
+    "baseUrl": ".",
     "paths": {
+      "@src/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
       "@content/*": ["src/content/*"],

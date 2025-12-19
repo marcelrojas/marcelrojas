@@ -2,20 +2,18 @@
 const { title } = Astro.props;
 ---
 
-<div id="PageHeader">
-  <h1 class="title">{title}</h1>
-</div>
+<section id="PageHeader">
+  <h1>{title}</h1>
+</section>
 
 <style>
-  div#PageHeader {
+  section#PageHeader {
     --offset: 80px;
     width: calc(87.5vw - var(--global-scrollbar-buffer, 0px));
     max-width: 1680px;
     margin-inline: auto;
     padding-block: var(--offset);
-    overflow: hidden;
     display: block;
-    user-select: none;
     @media screen and (width <= 480px) {
       --offset: 56px
     }
@@ -25,8 +23,7 @@ const { title } = Astro.props;
     @media screen and (width <= 1068px) {
       --offset: 72px
     }
-    & > h1.title {
-      --fontSize: 80px;
+    & > h1 {
       font-family: var(--font-family-sans);
       font-size: var(--fontSize);
       font-weight: var(--font-weight-semibold);
@@ -34,10 +31,10 @@ const { title } = Astro.props;
       letter-spacing: -.015em;
       color: var(--color-text-primary);
       @media screen and (width <= 480px) {
-        --fontSize: 40px
+        --fontSize: 36px
       }
       @media screen and (width <= 734px) {
-        --fontSize: 48px
+        --fontSize: 44px
       }
       @media screen and (width <= 1068px) {
         --fontSize: 64px

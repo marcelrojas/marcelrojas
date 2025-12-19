@@ -5,15 +5,13 @@ import { SITE_TITLE } from '@types/consts';
 <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-labelledby="logo-title">
   <style>
     .logo-text {
-      white-space: pre-wrap;
-      word-break: break-word;
-      word-wrap: break-word;
       font-family: var(--font-family-display);
-      font-weight: var(--font-weight-semibold);
-      letter-spacing: -0.01em;
-      text-align: center;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
       text-anchor: middle;
-      fill: oklch(0.19 0 0 / 0.1)
+      fill: oklch(0.19 0 0 / 0.1);
+      backdrop-filter: grayscale(100%) contrast(200%);
+      mix-blend-mode: difference
     }
   </style>
   <title id="logo-title">{SITE_TITLE}</title>

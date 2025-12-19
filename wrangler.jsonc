@@ -5,7 +5,7 @@
   "workers_dev": true,
   "send_metrics": false,
   "assets": {
-    "directory": "./public/",
+    "directory": "./dist/",
   //  "binding": "ASSETS"
   },
   //"routes": [

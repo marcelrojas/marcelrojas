@@ -6,15 +6,15 @@
   "send_metrics": false,
   "assets": {
     "directory": "./public/",
-    //"binding": "ASSETS"
+  //  "binding": "ASSETS"
   },
-  "routes": [
-    {
-      "pattern": "marcelrojas.com",
-      "zone_name": "marcelrojas.com",
-      "custom_domain": true
-    }
-  ],
+  //"routes": [
+  //  {
+  //    "pattern": "marcelrojas.com",
+  //    "zone_name": "marcelrojas.com",
+  //    "custom_domain": true
+  //  }
+  //],
   "compatibility_flags": [
     "nodejs_compat",
     "global_fetch_strictly_public"

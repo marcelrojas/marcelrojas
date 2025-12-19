@@ -10,7 +10,6 @@ import { SITE_TITLE } from '@types/consts';
       word-wrap: break-word;
       font-family: var(--font-family-display);
       font-weight: var(--font-weight-semibold);
-      line-height: 1.1;
       letter-spacing: -0.01em;
       text-align: center;
       text-anchor: middle;
@@ -18,8 +17,10 @@ import { SITE_TITLE } from '@types/consts';
     }
   </style>
   <title id="logo-title">{SITE_TITLE}</title>
-  <text x="50%" y="90" class="logo-text" font-size="80">Marcel</text>
-  <text x="50%" y="180" class="logo-text" font-size="80">Rojas</text>
+  <text class="logo-text" font-size="80">
+    <tspan x="50%" y="90">Marcel</tspan>
+    <tspan x="50%" y="180">Rojas</tspan>
+  </text>
 </svg>
 
 <style>
@@ -27,7 +28,6 @@ import { SITE_TITLE } from '@types/consts';
     position: relative;
     z-index: 50;
     width: 100%;
-    max-width: 496px;
-    height: auto
+    max-width: 496px
   }
 </style>

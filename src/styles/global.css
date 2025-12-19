@@ -139,10 +139,27 @@
     font-family: 'InterVariable';
     font-style: italic;
     font-weight: 100 900;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-feature-settings: 'liga' 1, 'calt' 1;
     font-synthesis: none;
     font-display: swap;
     src: local('InterVariable-Italic'), url('/fonts/InterVariable-Italic.woff2') format('woff2') tech('variations'), url('/fonts/InterVariable-Italic.woff2') format('woff2-variations')
+  }
+  @font-face {
+    font-family: 'InterDisplay';
+    font-style: normal;
+    font-weight: 800;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    font-synthesis: none;
+    font-display: swap;
+    src: local('InterDisplay'), url('/fonts/InterDisplay-ExtraBold.woff2') format('woff2') tech('variations'), url('/fonts/InterDisplay-ExtraBold.woff2') format('woff2-variations')
+  }
+  @font-face {
+    font-family: 'TrajanPro';
+    font-style: normal;
+    font-weight: 400;
+    font-synthesis: none;
+    font-display: swap;
+    src: local('TrajanPro'), url('/fonts/TrajanPro-Regular.ttf') format('truetype')
   }
   @font-face {
     font-family: 'GeistMono';

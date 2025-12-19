@@ -5,12 +5,12 @@
   "workers_dev": true,
   "send_metrics": false,
   "assets": {
-    "directory": "./dist",
+    "directory": "./public/",
     //"binding": "ASSETS"
   },
   "routes": [
     {
-      "pattern": "marcelrojas.com/*",
+      "pattern": "marcelrojas.com",
       "zone_name": "marcelrojas.com",
       "custom_domain": true
     }

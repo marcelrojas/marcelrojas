@@ -1,30 +1,14 @@
 ---
-import Anchor from '@components/Anchor.astro';
 import Clock from '@components/decorators/Clock.svelte';
 import Logo from '@components/Logo.astro';
-
-const anchors = [
-  { href: "/", text: "About" },
-  { href: "/services", text: "Services" },
-  { href: "/showcase", text: "Showcase" },
-  { href: "/blog", text: "Blog" },
-  { href: "/shop", text: "Shop" },
-];
+import NavBar from '@components/structure/NavBar.astro';
 ---
 
 <header id="header">
   <div class="content">
     <Clock client:load />
     <Logo />
-    <nav class="globalnav haptic-nav" aria-label="Global">
-      <ul>
-        {anchors.map(link => (
-          <li>
-            <Anchor variant="platted" size="small" wide="fill" label="text-only" href={link.href}>{link.text}</Anchor>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <NavBar />
   </div>
 </header>
 
@@ -44,26 +28,7 @@ const anchors = [
         padding-top: max(var(--spacing-sat) + 56px);
         padding-bottom: max(var(--spacing-sab) + 40px);
         gap: 28px;
-        align-items: center;
-        & > nav {
-          position: relative;
-          width: 100%;
-          max-width: 420px;
-          height: min-content;
-          will-change: opacity, visibility, allow-discrete;
-          transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, allow-discrete 0.3s ease-in-out;
-          & > ul {
-            position: relative;
-            display: flex;
-            flex-flow: row;
-            justify-content: center;
-            gap: 4px;
-            & > li {
-              position: relative;
-              width: 100%
-            }
-          }
-        }
+        align-items: center
       }
     }
   }

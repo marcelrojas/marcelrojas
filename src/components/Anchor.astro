@@ -69,15 +69,13 @@ const classes = [
       will-change: color, background-color, border-radius, transform;
       transition: color 105ms ease-out, background-color 105ms ease-out, border-radius 105ms ease-out, transform 105ms ease-out;
       &[aria-current="page"] {
-        border-radius: 32px;
         color: var(--label-primary-active);
-        background-color: var(--anchor-bg-active;
+        background-color: var(--anchor-bg-active);
         cursor: default;
         pointer-events: none
       }
       @media (hover: hover) {
         &:hover {
-          border-radius: 4px;
           transform: scale(1.03)
         }
       }

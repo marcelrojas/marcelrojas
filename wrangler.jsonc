@@ -2,6 +2,17 @@
   "name": "marcelrojas",
   "compatibility_date": "2025-11-15",
   "assets": {
-    "directory": "./dist"
-  }
+    "directory": "./dist",
+    //"binding": "ASSETS"
+  },
+  "routes": [
+    {
+      "pattern": "marcelrojas.com",
+      "custom_domain": true
+    }
+  ],
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ]
 }

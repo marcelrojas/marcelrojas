@@ -7,14 +7,10 @@ import vesper from './src/data/vesper.json';
 
 // https://astro.build/config
 export default defineConfig({
-  // URL canónica de producción
   site: 'https://marcelrojas.com',
 
-  // SEO: Forzar 'never' para que las URLs no tengan barra final.
-  // Esto evita contenido duplicado (marcelrojas.com/about vs marcelrojas.com/about/)
   trailingSlash: 'never',
 
-  // Seguridad
   security: {
     checkOrigin: true
   },
@@ -33,12 +29,10 @@ export default defineConfig({
     },
   },
 
-  // Herramientas de desarrollo
   devToolbar: {
     enabled: false
   },
 
-  // Integraciones
   integrations: [
     svelte(),
     mdx(),

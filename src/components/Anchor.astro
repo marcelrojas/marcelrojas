@@ -53,10 +53,9 @@ const classes = [
   <slot />
 </a>
 
-<style>
+<style is:global>
   @layer components {
     :is(a, a[role="button"]).anchor {
-      height: fit-content;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -80,7 +79,6 @@ const classes = [
         }
       }
       &:active {
-        border-radius: 4px;
         transform: scale(1.03)
       }
       &:focus-visible {
@@ -88,7 +86,6 @@ const classes = [
       }
       /* Variants */
       &.variant-platted {
-        border-radius: 8px;
         border: 1px solid var(--fill-border);
         background: var(--fill-tertiary);
         backdrop-filter: blur(20px);
@@ -146,7 +143,7 @@ const classes = [
           padding: 10px 14px
         }
         &.label-icon-only {
-          padding: 14px;
+          padding: 10px;
           border-radius: 50%
         }
         & svg {
@@ -166,7 +163,7 @@ const classes = [
           padding-inline: 32px
         }
         &.label-icon-only {
-          padding: 18px
+          padding: 16px
         }
         & svg {
           width: 40px;

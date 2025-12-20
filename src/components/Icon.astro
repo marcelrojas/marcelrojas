@@ -3,30 +3,38 @@ import { icons, type IconName } from '@types/icons';
 
 interface Props {
   name: IconName;
-  class?: string;
-  size?: number; // Opcional: para controlar width/height
+  size?: number;
 }
 
-const { name, class: className, size = 24 } = Astro.props;
+const { name, size } = Astro.props;
 
 const svgContent = icons[name];
 
 if (!svgContent) {
   throw new Error(`Icono "${name}" no encontrado en /src/assets/icons/`);
 }
-
-// Opcional: Se puede manipular el string svgContent aquí si es necesario inyectar clases
-// directamente al SVG, aunque es mejor hacerlo mediante un contenedor o CSS global.
 ---
 
-<span class={`${className}`} style={{ width: `${size}px`, height: `${size}px` }} set:html={svgContent} />
+<span class="icon-label" style={{ width: `${size}px`, height: `${size}px` }}>
+  <slot set:html={svgContent} />
+</span>
 
-<style>
-  svg.icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    fill: currentColor
+<style is:global>
+  @layer components {
+    span.icon-label {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      & > svg {
+        width: max-content;
+        height: max-content;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        fill: currentColor
+      }
+    }
   }
 </style>

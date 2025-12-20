@@ -66,7 +66,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <Footer />
   </body>
 </html>
-<style>
+
+<style is:global>
   @layer layout {
     main#blogpost {
       width: calc(100% - 2em);

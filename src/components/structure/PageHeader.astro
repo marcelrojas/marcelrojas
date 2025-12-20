@@ -6,7 +6,7 @@ const { title } = Astro.props;
   <h1>{title}</h1>
 </section>
 
-<style>
+<style is:global>
   section#PageHeader {
     --offset: 80px;
     width: calc(87.5vw - var(--global-scrollbar-buffer, 0px));

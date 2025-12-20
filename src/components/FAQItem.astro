@@ -19,13 +19,13 @@ const { question, answer } = Astro.props;
   </div>
 </details>
 
-<style>
+<style is:global>
   details.faq-item {
-    padding-bottom: 0.625rem;
+    padding-bottom: var(--spacing-04);
     border-bottom: 1px solid oklch(0.17 0 0 / 0.1);
     &[open] > summary.question > svg {
       opacity: 0.4;
-      transform: rotate(45deg) translateZ(0px)
+      transform: rotate(45deg)
     }
     & > summary.question {
       padding: var(--spacing-03);
@@ -34,7 +34,7 @@ const { question, answer } = Astro.props;
       flex-direction: row;
       justify-content: flex-start;
       flex-wrap: nowrap;
-      align-items: stretch;
+      align-items: center;
       font-family: var(--font-family-sans);
       font-weight: var(--font-weight-medium);
       font-size: var(--font-size-16);
@@ -44,8 +44,12 @@ const { question, answer } = Astro.props;
       &::-webkit-details-marker {
         display: hidden
       }
+      &:hover {
+        color: oklch(52.617% 0.26402 263.603)
+      }
       & > svg {
         flex-shrink: 0;
+        transform: rotate(0deg);
         transition: transform 200ms ease-out
       }
     }
@@ -60,7 +64,7 @@ const { question, answer } = Astro.props;
       color: oklch(16.77% 0.00267 248.154 / 0.6);
       letter-spacing: -0.32px;
       line-height: 130%;
-      & p {
+      & > p {
         font-family: inherit;
         font-weight: inherit
         font-size: inherit;

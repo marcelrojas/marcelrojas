@@ -25,27 +25,27 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
       <ul>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_X} target="_blank" rel="noopener noreferrer" aria-label={`Visit my X profile`} class="social-link">
-            <Icon name="x" size={32} />
+            <Icon name="x" size={20} />
           </Anchor>
         </li>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label={`Visit my Instagram profile`} class="social-link">
-            <Icon name="instagram" size={32} />
+            <Icon name="instagram" size={20} />
           </Anchor>
         </li>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_YOUTUBE} target="_blank" rel="noopener noreferrer" aria-label={`Visit my YouTube profile`} class="social-link">
-            <Icon name="youtube" size={32} />
+            <Icon name="youtube" size={20} />
           </Anchor>
         </li>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_GITHUB} target="_blank" rel="noopener noreferrer" aria-label={`Visit my GitHub profile`} class="social-link">
-            <Icon name="github" size={32} />
+            <Icon name="github" size={20} />
           </Anchor>
         </li>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_PINTEREST} target="_blank" rel="noopener noreferrer" aria-label={`Visit my Pinterest profile`} class="social-link">
-            <Icon name="pinterest" size={32} />
+            <Icon name="pinterest" size={20} />
           </Anchor>
         </li>
       </ul>
@@ -69,7 +69,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
   </div>
 </footer>
 
-<style>
+<style is:global>
   footer#footer {
     position: relative;
     inset: 0;
@@ -124,6 +124,8 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
             transform: scale(1.1);
           }
           & span.label {
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-14);
             color: var(--color-label-tertiary);
           }
         }
@@ -132,6 +134,8 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
         position: relative;
         max-width: 28rem;
         margin-inline: auto;
+        font-family: var(--font-family-sans);
+        font-size: var(--font-size-14);
         text-align: center;
         &:first-of-type {
           margin-block-start: 0
@@ -152,20 +156,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
         & ul {
           display: flex;
           flex-direction: row;
-          gap: 16px;
-          & li {
-            & .social-link {
-              width: 32px;
-              height: 32px;
-              color: var(--color-label-);
-              & svg {
-                width: 20px;
-                height: 20px;
-                fill: currentColor;
-                stroke: currentColor
-              }
-            }
-          }
+          gap: 16px
         }
       }
       & div.legal {
@@ -193,6 +184,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
         position: relative;
         display: block;
         font-family: var(--font-family-serif);
+        font-size: var(--font-size-14);
         text-transform: uppercase
       }
     }

@@ -74,15 +74,10 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
     position: relative;
     inset: 0;
     z-index: 0;
-    height: 100dvh;
-    width: 100dvw;
     contain: layout paint;
     content-visibility: auto;
     will-change: visibility, opacity;
     transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    font-family: var(--font-family-sans);
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-12);
     & div.content {
       display: flex;
       flex-direction: column;
@@ -90,6 +85,17 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
       height: 100%;
       padding-inline-start: max(var(--spacing-sal) + 22px);
       padding-inline-end: max(var(--spacing-sar) + 22px);
+      padding-block-start: max(var(--spacing-sat) + var(--spacing-07));
+      padding-block-end: max(var(--spacing-sab) + var(--spacing-07));
+      @media screen and (width <= 480px) {
+        
+      }
+      @media screen and (width <= 734px) {
+        
+      }
+      @media screen and (width <= 1068px) {
+        
+      }
       & aside {
         position: relative;
         display: flex;
@@ -128,13 +134,13 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
         margin-inline: auto;
         text-align: center;
         &:first-of-type {
-          margin-block-start: 0;
+          margin-block-start: 0
         }
         &:last-of-type {
-          margin-block-end: 32px;
+          margin-block-end: 32px
         }
         & + p {
-          margin-block-start: 8px;
+          margin-block-start: 8px
         }
       }
       & address.social-handles {
@@ -156,7 +162,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
                 width: 20px;
                 height: 20px;
                 fill: currentColor;
-                stroke: currentColor;
+                stroke: currentColor
               }
             }
           }
@@ -192,4 +198,5 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
     }
   }
 </style>
+
 <script src="@scripts/encEmail.js"></script>

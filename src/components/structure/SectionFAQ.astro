@@ -3,7 +3,7 @@ import FAQItem from '@components/FAQItem.astro';
 ---
 
 <section id="section-faq">
-  <h2 class="headline">How all this work / FAQs</h2>
+  <h2 class="headline">How all this work</h2>
   <p class="subhead">Here are some frequently asked questions about my services.</p>
   <ul>
     <li>
@@ -103,7 +103,7 @@ import FAQItem from '@components/FAQItem.astro';
     flex-direction: column;
     gap: 12px;
     justify-content: center;
-    padding: 20px;
+    padding-block: var(--spacing-13);
     width: 100%;
     & h2.headline {
       font-size: var(--font-size-32);
@@ -123,7 +123,7 @@ import FAQItem from '@components/FAQItem.astro';
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 0.625rem
+      gap: var(--spacing-04)
     }
   }
 </style>

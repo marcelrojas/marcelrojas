@@ -35,7 +35,9 @@ const { question, answer } = Astro.props;
       justify-content: flex-start;
       flex-wrap: nowrap;
       align-items: stretch;
+      font-family: var(--font-family-sans);
       font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-16);
       color: oklch(16.77% 0.00267 248.154 / 0.8);
       cursor: pointer;
       transition: 200ms ease-out;
@@ -59,14 +61,10 @@ const { question, answer } = Astro.props;
       letter-spacing: -0.32px;
       line-height: 130%;
       & p {
-        font-family: var(--font-family-sans);
-        font-weight: var(--font-weight-medium);
-        font-size: var(--font-size-16);
-        line-height: 130%;
-        a {
-          color: var(--color-link);
-          text-decoration: underline
-        }
+        font-family: inherit;
+        font-weight: inherit
+        font-size: inherit;
+        line-height: inherit
       }
     }
   }

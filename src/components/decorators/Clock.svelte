@@ -47,7 +47,7 @@
       font-weight: var(--font-weight-medium);
       letter-spacing: var(--font-tracking-common);
       line-height: 1;
-      color: oklch(0.64 0 0)
+      color: oklch(0.56 0 0)
     }
   }
 </style>

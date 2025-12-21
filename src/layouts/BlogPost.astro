@@ -29,16 +29,19 @@ export interface TransitionDirectionalAnimations {
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, lang = 'en', pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" dir="auto" transition:name="root" transition:animate="none">
+<html lang={lang} dir="auto" transition:name="root" transition:animate="none">
   <Head title={title} description={description} />
   <body>
+    <a href="#main" tabindex="0" class="skip-to-content">Skip to main content</a>
+
     <SplashScreen />
     <Header />
     <Curtain />
+
     <main id="main" tabindex="-1">
       <article id="blogpost">
         <picture class="hero-media">
@@ -63,6 +66,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         </div>
       </article>
     </main>
+
     <Footer />
   </body>
 </html>

@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 @layer variables, base, utilities, components, forms, themes, pages, states, animations, print;
 /*/
  * scroll-padding-top: var(--)

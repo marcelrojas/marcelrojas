@@ -162,22 +162,20 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
       & div.legal {
         position: relative;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
         gap: var(--spacing-04);
         margin-block-start: auto;
         margin-block-end: 44px;
         & nav.legal-links {
           position: relative;
           display: block;
-          padding-block: 6px;
           & ul {
             position: relative;
             display: flex;
             flex-direction: row;
-            gap: 16px
-          }
+            gap: var(--spacing-04)
         }
       }
       & small.copyright {

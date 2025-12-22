@@ -1,8 +1,8 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import PageHeader from '@components/structure/PageHeader.astro';
-import TileMosaic from '@components/structure/TileMosaic.astro';
-import TileList from '@components/structure/TileList.astro';
+import SectionArticles from '@components/structure/SectionArticles.astro';
+import SectionFeatured from '@components/structure/SectionFeatured.astro';
 
 const {
   title = 'Blog',
@@ -12,6 +12,6 @@ const {
 
 <Layout title={title} description={description}>
   <PageHeader title={title} />
-  <TileMosaic />
-  <TileList />
+  <SectionArticles />
+  <SectionFeatured />
 </Layout>

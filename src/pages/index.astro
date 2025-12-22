@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import PageHeader from '@components/structure/PageHeader.astro';
-import NewsletterForm from '@components/NewsletterForm.astro';
+import SectionNewsletter from '@components/structure/SectionNewsletter.astro';
 import Anchor from '@components/Anchor.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../types/consts';
 
@@ -70,12 +70,10 @@ const {
       <p class="module-description">Location Venezuela<br />Languages Spanish, English<br />Skillset Development, Design and Strategy</p>
       <Anchor role="button" wide="fit" class="module-badge" href="/curriculum">Open</Anchor>
     </article>
-    <article class="module">
-      <h1 class="module-title">Subscribe to my newsletter</h1>
-      <p class="module-description">Essays and other updates shared infrequently.</p>
-      <NewsletterForm />
-    </article>
+
   </section>
+
+  <SectionNewsletter />
 </Layout>
 
 <style>

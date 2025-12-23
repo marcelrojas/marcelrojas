@@ -11,6 +11,15 @@ export default defineConfig({
 
   trailingSlash: 'never',
 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+    routing: {
+      fallbackType: 'rewrite',
+      prefixDefaultLocale: false
+    },
+  },
+
   security: {
     checkOrigin: true
   },
@@ -37,7 +46,7 @@ export default defineConfig({
     svelte(),
     mdx(),
     sitemap({
-      // Opcional: Configura el sitemap para respetar el 'trailingSlash: never'
+      // Opcional: Configurar el sitemap para respetar el 'trailingSlash: never'
       // Aunque el plugin suele leer la config de Astro automáticamente.
     })
   ],

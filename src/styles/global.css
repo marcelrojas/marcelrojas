@@ -240,7 +240,9 @@
 }
 :focus, :focus-visible, :focus-within { outline: unset }
 :link {}
-:visited {}
+:visited {
+  color: var(--accent-visited)
+}
 :any-link {
   -webkit-tap-highlight-color: oklch(84.522% 0.0001 271.152 / 0.4);
   cursor: pointer;
@@ -250,7 +252,7 @@
   filter: unset;
   opacity: unset
 }
-:local-link { background-color: var(--color-primary) }
+:local-link { background-color: var(--background-primary) }
 a {
   overflow: hidden;
   cursor: not-allowed;
@@ -663,7 +665,7 @@ map {
 track {
 
 }
-svg { width: inherit; height: inherit }
+
 picture, video, source, img {
   display: block;
   width: 100%;

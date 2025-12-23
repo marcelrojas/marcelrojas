@@ -1,5 +1,4 @@
 ---
-import Anchor from '@components/Anchor.astro';
 import Icon from '@components/Icon.astro';
 import articles from '@data/articles.json';
 ---
@@ -7,21 +6,19 @@ import articles from '@data/articles.json';
 <section class="section-featured" aria-label="List of articles and publications">
   <div class="content">
     <h2>As featured in</h2>
-    <ul>
+    <ol>
       {
         Object.values(articles).map((article) => (
           <li>
-            <div class="copy">
-              <h2 class="headline">{article.title}</h2>
-              <span class="publisher">Published by: <Anchor href={article.publisherURL} target="_blank" rel="noopener noreferrer">{article.publisher}</Anchor></span>
-            </div>
-            <Anchor label="icon-only" wide="fit" aria-hidden="true" href={article.url} target="_blank" rel="noopener noreferrer">
+            <a href={article.url} target="_blank" rel="noopener noreferrer">
+              <span class="headline">{article.title}</span>
               <Icon name="arrow-up-right" />
-            </Anchor>
+            </a>
+            <span class="publisher">Published by: <a href={article.publisherURL} target="_blank" rel="noopener noreferrer">{article.publisher}</a></span>
           </li>
         ))
       }
-    </ul>
+    </ol>
   </div>
 </section>
 
@@ -46,7 +43,7 @@ import articles from '@data/articles.json';
         line-height: var(--font-leading-tight);
         color: var(--label-primary);
       }
-      & > ul {
+      & > ol {
         padding: var(--spacing-03);
         gap: var(--spacing-03);
         border-radius: 30px;
@@ -56,9 +53,7 @@ import articles from '@data/articles.json';
         & > li {
           position: relative;
           display: flex;
-          flex-direction: row;
-          width: 100%;
-          gap: 16px;
+          flex-direction: column;
           padding: 24px;
           border-radius: 24px;
           background-color: var(--background-primary);
@@ -71,14 +66,12 @@ import articles from '@data/articles.json';
             outline: 2px solid var(--color-focus);
             outline-offset: 2px
           }
-          & > div.copy {
-            flex: 1;
+          & > a {
+            padding-bottom: var(--spacing-04);
             display: flex;
-            flex-direction: column;
-            gap: 4px;
-            justify-content: center;
-            align-items: flex-start;
-            & > h2.headline {
+            justify-content: space-between;
+            border-bottom: 1px solid oklch(0.87 0.01 0);
+            & > span.headline {
               max-width: 300px;
               font-family: var(--font-family-sans);
               font-weight: var(--font-weight-semibold);
@@ -86,17 +79,17 @@ import articles from '@data/articles.json';
               line-height: var(--line-height-24);
               line-clamp: 3;
               box-orient: vertical;
-              color: var(--color-label-primary);
+              color: var(--color-label-primary)
             }
-            & > span.publisher {
-              margin-top: 12px;
-              font-family: var(--font-family-sans);
-              font-weight: var(--font-weight-medium);
-              font-size: var(--font-size-12);
-              line-height: var(--font-leading-tight);
-              line-clamp: 1;
-              color: var(--color-label-secondary)
-            }
+          }
+          & > span.publisher {
+            margin-top: 12px;
+            font-family: var(--font-family-sans);
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-12);
+            line-height: var(--font-leading-tight);
+            line-clamp: 1;
+            color: var(--color-label-secondary)
           }
         }
       }

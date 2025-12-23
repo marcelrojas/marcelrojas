@@ -25,27 +25,27 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
       <ul>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_X} target="_blank" rel="noopener noreferrer" aria-label={`Visit my X profile`} class="social-link">
-            <Icon name="x" size={20} />
+            <Icon name="x" />
           </Anchor>
         </li>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label={`Visit my Instagram profile`} class="social-link">
-            <Icon name="instagram" size={20} />
+            <Icon name="instagram" />
           </Anchor>
         </li>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_YOUTUBE} target="_blank" rel="noopener noreferrer" aria-label={`Visit my YouTube profile`} class="social-link">
-            <Icon name="youtube" size={20} />
+            <Icon name="youtube" />
           </Anchor>
         </li>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_GITHUB} target="_blank" rel="noopener noreferrer" aria-label={`Visit my GitHub profile`} class="social-link">
-            <Icon name="github" size={20} />
+            <Icon name="github" />
           </Anchor>
         </li>
         <li>
           <Anchor variant="platted" label="icon-only" size="medium" wide="fill" href={SOCIAL_PINTEREST} target="_blank" rel="noopener noreferrer" aria-label={`Visit my Pinterest profile`} class="social-link">
-            <Icon name="pinterest" size={20} />
+            <Icon name="pinterest" />
           </Anchor>
         </li>
       </ul>
@@ -149,10 +149,9 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
       }
       & address.social-handles {
         position: relative;
-        max-width: 28rem;
-        margin-inline: auto;
+        max-width: 448px;
         display: flex;
-        justify-content: center;
+        align-self: center;
         & ul {
           display: flex;
           flex-direction: row;
@@ -163,11 +162,13 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
         position: relative;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: baseline;
-        gap: var(--spacing-04);
         margin-block-start: auto;
-        margin-block-end: 44px;
+        @media screen and (width <= 734px) {
+          gap: var(--spacing-04);
+          flex-direction: column;
+          align-items: end
+        }
         & nav.legal-links {
           position: relative;
           display: block;
@@ -176,6 +177,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
             display: flex;
             flex-direction: row;
             gap: var(--spacing-04)
+          }
         }
       }
       & small.copyright {

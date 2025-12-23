@@ -3,10 +3,9 @@ import { icons, type IconName } from '@types/icons';
 
 interface Props {
   name: IconName;
-  size?: number;
 }
 
-const { name, size } = Astro.props;
+const { name } = Astro.props;
 
 const svgContent = icons[name];
 
@@ -15,24 +14,21 @@ if (!svgContent) {
 }
 ---
 
-<span class="icon-label" style={{ width: `${size}px`, height: `${size}px` }}>
+<span class="icon-label">
   <slot set:html={svgContent} />
 </span>
 
 <style is:global>
   @layer components {
     span.icon-label {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
+      width: fit-content;
+      height: fit-content;
+      display: inline-block;
       vertical-align: middle;
       & > svg {
-        width: max-content;
-        height: max-content;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
+        display: inline-block;
         vertical-align: middle;
+        object-fit: cover;
         fill: currentColor
       }
     }

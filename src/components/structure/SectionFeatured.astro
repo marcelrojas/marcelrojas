@@ -33,7 +33,6 @@ import articles from '@data/articles.json';
       padding-inline-end: max(var(--spacing-sar) + 22px);
       margin-left: auto;
       margin-right: auto;
-      gap: var(--spacing-05);
       & > h2 {
         margin-bottom: var(--spacing-10);
         margin-left: var(--spacing-04);
@@ -54,10 +53,12 @@ import articles from '@data/articles.json';
           position: relative;
           display: flex;
           flex-direction: column;
+          overflow: hidden;
           padding: 24px;
           border-radius: 24px;
           background-color: var(--background-primary);
           will-change: opacity, transform;
+          user-select: none;
           @starting-style {
             opacity: 0;
             transform: translateY(20px)
@@ -70,7 +71,13 @@ import articles from '@data/articles.json';
             padding-bottom: var(--spacing-04);
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
             border-bottom: 1px solid oklch(0.87 0.01 0);
+            @media (hover: hover) {
+              &:hover {
+                background-color: oklch(0.97 0.01 84.37)
+              }
+            }
             & > span.headline {
               max-width: 300px;
               font-family: var(--font-family-sans);

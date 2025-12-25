@@ -17,7 +17,7 @@
   html { scrollbar-width: none; scrollbar-gutter: stable both-edges; scroll-behavior: smooth; scroll-snap-type: y mandatory; font-size: var(--font-size-base); background-color: var(--color-background); -webkit-tap-highlight-color: transparent }
   body { display: block; position: relative; overflow-wrap: break-word; }
   body ::-webkit-scrollbar { display: none }
-  main { display: block; position: relative; z-index: 1; unicode-bidi: isolate; background-color: var(--color-background) }
+  main { display: block; position: relative; unicode-bidi: isolate; background-color: var(--color-background) }
   nav, aside, footer { user-select: none }
   footer { overflow: hidden }
 

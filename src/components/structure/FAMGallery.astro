@@ -1,15 +1,15 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import { Image } from 'astro:assets';
-import Anchor from '@components/Anchor.astro';
+import FormattedDate from '@components/FormattedDate.astro';
 
 const posts = (await getCollection('showcase')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
-<section class="fam-gallery" aria-label="Gallery of project showcases">
-  <div class="content" role="marquee">
+<section id="fam-gallery" aria-label="Gallery of project showcases">
+  <div class="content stage" role="marquee">
     {
       posts.map(post => (
         <article class="item" aria-hidden="true" tabindex="-1">
@@ -19,13 +19,12 @@ const posts = (await getCollection('showcase')).sort(
                 <Image width={720} height={360} src={post.data.heroImage} loading="eager" decoding="async" fetchpriority="auto" alt={post.data.description} />
               )}
             </figure>
-            <div class="overlay">
-              <Anchor role="button" href={`/showcase/${post.id}`}>Watch now</Anchor>
-            </div>
           </div>
-          <div class="copy">
-            <h2 class="headline">{post.data.title}</h2>
-          </div>
+          <a class="overlay" href={`/showcase/${post.id}`}>
+            <span class="headline">{post.data.title}</span>
+            <FormattedDate date={post.data.pubDate} />
+            <span class="cta">Open</span>
+          </a>
         </article>
       ))
     }
@@ -33,28 +32,30 @@ const posts = (await getCollection('showcase')).sort(
 </section>
 
 <style is:global>
-  section.fam-gallery {
+  section#fam-gallery {
     position: relative;
     padding-top: var(--spacing-11);
     padding-bottom: var(--spacing-11);
-    & > div.content {
+    & > div.content.stage {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       max-width: 980px;
       padding-inline-start: max(var(--spacing-sal) + 22px);
       padding-inline-end: max(var(--spacing-sar) + 22px);
       margin-left: auto;
       margin-right: auto;
+      perspective: 1200px; /* Critical for 3D depth */
+      overflow: hidden;
       & > article.item {
         display: flex;
         position: relative;
         aspect-ratio: 2/1;
         overflow: hidden;
-        background-color: var(--color-surface-primary);
         border-radius: 32px;
-        & + article.item {
-          margin-left: var(--spacing-05)
-        }
+        border: 2px solid var(--background-primary);
+        background-color: var(--background-primary);
+        will-change: opacity, transform;
+        user-select: none;
         & > div.background {
           position: absolute;
           inset: 0;
@@ -67,57 +68,38 @@ const posts = (await getCollection('showcase')).sort(
               width: 100%;
               height: 100%;
               object-fit: cover;
-              object-position: center;
-              transition: transform .3s ease-in-out;
-              @media (hover: hover) {
-                article.item:hover & {
-                  transform: scale(1.05)
-                }
-              }
-            }
-          }
-          & > div.overlay {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: oklch(0 0 0 / 0.5);
-            opacity: 0;
-            transition: opacity .3s ease-in-out;
-            @media (hover: hover) {
-              article.item:hover & {
-                opacity: 1
-              }
-            }
-            & > a {
-              padding: var(--spacing-03) var(--spacing-05);
-              border-radius: 8px;
-              background-color: var(--color-accent);
-              color: var(--color-on-accent);
-              font-size: var(--font-size-16);
-              font-weight: var(--font-weight-medium);
-              text-decoration: none;
-              transition: background-color .3s ease-in-out, color .3s ease-in-out;
-              @media (hover: hover) {
-                article.item:hover & {
-                  background-color: var(--color-accent-hover);
-                  color: var(--color-on-accent-hover)
-                }
-              }
+              object-position: center
             }
           }
         }
-        & > div.copy {
+        & > a.overlay {
           position: absolute;
-          bottom: var(--spacing-04);
-          left: var(--spacing-04);
+          left: var(--spacing-03);
+          right: var(--spacing-03);
+          bottom: var(--spacing-03);
           z-index: 1;
-          & > h2.headline {
+          padding: var(--spacing-04);
+          border-radius: 28px;
+          display: flex;
+          flex-direction: column;
+          background-color: oklch(0 0 0 / 0.5);
+          opacity: 0;
+          backdrop-filter: blur(0px);
+          transition: opacity .3s ease-in-out;
+          @media (hover: hover) {
+            article.item:hover & {
+              opacity: 1;
+              backdrop-filter: blur(4px)
+            }
+          }
+          & > span.headline {
             font-size: var(--font-size-20);
             font-weight: var(--font-weight-bold);
             line-height: 120%;
-            color: var(--color-on-surface-primary)
+            color: var(--label-primary)
+          }
+          & > span.cta {
+            
           }
         }
       }

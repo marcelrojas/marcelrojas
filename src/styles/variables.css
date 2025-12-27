@@ -115,13 +115,27 @@
     --font-weight-ultrabold: 800;
     --font-weight-black: 900;
 
+    --font-leading-tightest: 0.86;
+    --font-leading-normal: 1;
+    --font-leading-very-compact: 1.1;
+    --font-leading-compact: 1.2;
     --font-leading-tight: 1.3;
-    --font-leading-normal: 1.5;
-    --font-leading-1_7x: 1.7;
+    --font-leading-common: 1.5;
+    --font-leading-relaxed: 1.75;
+    --font-leading-loose: 2;
 
+    --font-tracking-: -0.2em;
+    --font-tracking-: -0.16em;
+    --font-tracking-: -0.12em;
+    --font-tracking-: -0.04em;
     --font-tracking-common: -0.01em;
-    --font-tracking-1: -0.04em;
-    --font-tracking-2: -0.12em;
+    --font-tracking-normal: 0em;
+    --font-tracking-: 0.01em;
+    --font-tracking-: 0.04em;
+    --font-tracking-: 0.08em;
+    --font-tracking-: 0.12em;
+    --font-tracking-: 0.16em;
+    --font-tracking-: 0.2em;
 
     --global-scrollbar-buffer: 15px;
     --header-height: 64px;

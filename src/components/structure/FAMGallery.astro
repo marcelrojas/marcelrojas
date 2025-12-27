@@ -8,7 +8,7 @@ const posts = (await getCollection('showcase')).sort(
 );
 ---
 
-<section id="fam-gallery" aria-label="Gallery of project showcases">
+<section id="fam-gallery" role="feed" aria-busy="false" aria-label="Gallery of project showcases">
   <div class="content stage" role="marquee">
     {
       posts.map(post => (

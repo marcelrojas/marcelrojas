@@ -3,7 +3,7 @@ import Icon from '@components/Icon.astro';
 import articles from '@data/articles.json';
 ---
 
-<section class="section-featured" aria-label="List of articles and publications">
+<section id="section-featured" role="feed" aria-busy="false" aria-label="List of articles and publications">
   <div class="content">
     <h2>As featured in</h2>
     <ol>
@@ -23,7 +23,7 @@ import articles from '@data/articles.json';
 </section>
 
 <style is:global>
-  section.section-featured {
+  section#section-featured {
     position: relative;
     padding-top: var(--spacing-11);
     padding-bottom: var(--spacing-11);

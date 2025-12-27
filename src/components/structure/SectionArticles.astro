@@ -9,7 +9,7 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 
-<section class="section-articles" aria-label="List of blog articles">
+<section id="section-articles" role="feed" aria-busy="false" aria-label="List of blog articles">
   <div class="content">
     {
       posts.map(post => (
@@ -34,7 +34,7 @@ const posts = (await getCollection('blog')).sort(
 </section>
 
 <style is:global>
-  section.section-articles {
+  section#section-articles {
     position: relative;
     padding-top: var(--spacing-11);
     padding-bottom: var(--spacing-11);
@@ -69,7 +69,8 @@ const posts = (await getCollection('blog')).sort(
           width: 100%;
           overflow: hidden;
           filter: grayscale(1);
-          transition: scale .5s cubic-bezier(.22, .61, .36, 1), filter .25s cubic-bezier(.22, .61, .36, 1);
+          will-change: filter;
+          transition: filter 800ms ease;
           @media (hover: hover) {
             .tile:hover & {
               filter: grayscale(0)

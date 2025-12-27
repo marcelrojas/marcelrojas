@@ -1,31 +1,29 @@
----
-import { SITE_TITLE } from '@types/consts';
----
-
-<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-labelledby="logo-title">
-  <style>
-    .logo-text {
-      font-family: var(--font-family-display);
-      letter-spacing: -0.02em;
-      text-transform: uppercase;
-      text-anchor: middle;
-      fill: oklch(0.19 0 0 / 0.1);
-      backdrop-filter: grayscale(100%) contrast(200%);
-      mix-blend-mode: difference
-    }
-  </style>
-  <title id="logo-title">{SITE_TITLE}</title>
-  <text class="logo-text" font-size="80">
-    <tspan x="50%" y="90">Marcel</tspan>
-    <tspan x="50%" y="180">Rojas</tspan>
-  </text>
-</svg>
+<span id="logo" aria-hidden="true" focusable="false">
+  <span>Marcel</span>
+  <span>Rojas</span>
+</span>
 
 <style is:global>
-  svg#logo {
+  span#logo {
     position: relative;
     z-index: 50;
-    width: 100%;
-    max-width: 496px
+    max-width: min-content;
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-76);
+    line-height: 0.86;
+    letter-spacing: var(--font-tracking-common);
+    text-align: right;
+    text-transform: uppercase;
+    text-anchor: middle;
+    color: oklch(0.19 0 0 / 0.1);
+    animation: logo_view var(--duration-macro-x1) ease-in 0s 1 normal forwards
+  }
+  @keyframes logo_view {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
   }
 </style>

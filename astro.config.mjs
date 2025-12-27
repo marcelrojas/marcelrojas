@@ -18,6 +18,9 @@ export default defineConfig({
       fallbackType: 'rewrite',
       prefixDefaultLocale: false
     },
+    fallback: {
+      es: "en"
+    },
   },
 
   security: {

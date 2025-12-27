@@ -40,13 +40,12 @@
   @layer components {
     span#clock {
       position: relative;
-      width: max-content;
       font-family: var(--font-family-mono);
       font-feature-settings: "zero", "tnum";
       font-size: var(--font-size-12);
-      font-weight: var(--font-weight-medium);
-      letter-spacing: var(--font-tracking-common);
-      line-height: 1;
+      font-weight: var(--font-weight-regular);
+      letter-spacing: var(--font-tracking-normal);
+      line-height: var(--font-leading-normal);
       color: oklch(0.56 0 0)
     }
   }

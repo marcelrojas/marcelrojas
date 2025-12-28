@@ -2,8 +2,7 @@
 import Grain from '@components/decorators/Grain.astro';
 import Anchor from '@components/Anchor.astro';
 import Icon from '@components/Icon.astro';
-import { SOCIAL_X, SOCIAL_INSTAGRAM, SOCIAL_PINTEREST, SOCIAL_YOUTUBE, SOCIAL_GITHUB } from '@types/consts';
-import { COPYRIGHT_NAME, COPYRIGHT_YEAR } from '@types/consts';
+import { COPYRIGHT_NAME, COPYRIGHT_YEAR, SOCIAL_X, SOCIAL_INSTAGRAM, SOCIAL_PINTEREST, SOCIAL_YOUTUBE, SOCIAL_GITHUB } from '@types/consts';
 
 const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
 /* Y29udGFjdEBtYXJjZWxyb2phcy5jb20= */
@@ -48,16 +47,16 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
       </ul>
     </address>
     <div class="legal">
-      <nav class="legal-links" aria-label="Legal">
+      <nav aria-label="Legal">
         <ul>
           <li>
-            <Anchor href="/colophon">Colophon</Anchor>
+            <a href="/colophon">Colophon</a>
           </li>
           <li>
-            <Anchor href="/impressum">Impressum</Anchor>
+            <a href="/impressum">Impressum</a>
           </li>
           <li>
-            <Anchor href="/privacy-policy">Privacy Policy</Anchor>
+            <a href="/privacy-policy">Privacy Policy</a>
           </li>
         </ul>
       </nav>
@@ -75,7 +74,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
     content-visibility: auto;
     will-change: visibility, opacity;
     transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    & div.content {
+    & > div.content {
       display: flex;
       flex-direction: column;
       position: relative;
@@ -145,21 +144,23 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
           gap: 16px
         }
       }
-      & div.legal {
+      & > div.legal {
         position: relative;
         display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        margin-block-start: auto;
         @media screen and (width <= 734px) {
           gap: var(--spacing-04);
           flex-direction: column;
           align-items: end
         }
-        & nav.legal-links {
+        @media screen and (width >= 734px) {
+          flex-direction: row;
+          align-items: baseline;
+          justify-content: space-between
+        }
+        & > nav {
           position: relative;
           display: block;
-          & ul {
+          & > ul {
             position: relative;
             display: flex;
             flex-direction: row;
@@ -167,7 +168,7 @@ const {encEmail = 'bWFyY2Vscm9qYXMya0BnbWFpbC5jb20='} = Astro.props;
           }
         }
       }
-      & small.copyright {
+      & > small.copyright {
         position: relative;
         display: block;
         font-family: var(--font-family-serif);

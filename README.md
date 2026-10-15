@@ -7,9 +7,7 @@
   ·
   <a href="https://marcelrojas.net/resources">Resources</a>
   ·
-  <a href="https://sound.warp.net">Sound</a>
-  ·
-  <a href="https://marcelrojas.net/"></a>
+  <a href="https://sound.marcelrojas.net">Sound</a>
   ·
   <a href="https://contra.com/marcelrojas">Freelance Services</a>
   ·

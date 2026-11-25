@@ -12,7 +12,7 @@
   <a href="https://marcelrojas.net/services/#how-i-work">How I Work</a>
 </nav>
 
-**UI/UX Designer, Front-end Engineer, Open-source Maker**
+**UI/UX Designer, Front-end Engineer, Open-source Maker** | Administrator
 
 **Stack:** Astro, Remix, SvelteKit / Svelte, React / Python, Kotlin, Go, Ruby / C, CPP, Rust.
 

@@ -1,25 +1,21 @@
 <nav align="center">
   <a href="https://marccelrojas.net">Website</a>
   ·
-  <a href="https://marcelrojas.net/showcase">Showcase</a>
+  <a href="https://marcelrojas.net/portfolio">Portfolio</a>
   ·
-  <a href="https://marcelrojas.net/weblog">Weblog</a>
+  <a href="https://marcelrojas.net/blog">Weblog</a>
   ·
   <a href="https://marcelrojas.net/resources">Resources</a>
   ·
-  <a href="https://sound.marcelrojas.net">Sound</a>
+  <a href="https://sound.marcelrojas.net">My Sounds</a>
   ·
-  <a href="https://contra.com/marcelrojas">Freelance Services</a>
-  ·
-  <a href="https://marcelrojas.net/weblog/how-i-work">How I Work</a>
+  <a href="https://marcelrojas.net/services/#how-i-work">How I Work</a>
 </nav>
 
-## About me
+**UI/UX Designer, Front-end Engineer, Open-source Maker**
 
-- I’m currently working on ...
-- I’m currently learning ...
-- I’m looking to collaborate on ...
-- I’m looking for help with ...
-- Ask me about ...
-- Reach me: marcelrojas2k@gmail.com
-- Fun fact: ...
+**Stack:** Astro, Remix, SvelteKit / Svelte, React / Python, Kotlin, Go, Ruby / C, CPP, Rust.
+
+[Hire me on Contra](https://contra.com/marcelrojas/)
+
+marcelrojas2k@gmail.com
